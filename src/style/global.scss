@@ -12,7 +12,7 @@
 }
 
 html, body {
-    background-color: none;
+    background-color: transparent;
     height: 100%;
     width: 100%;
     max-width: 1440px;
@@ -22,9 +22,34 @@ html, body {
     justify-content: center;
 }
 
+main {
+    flex: 1;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
 h1 {
     color: white;
-    font-size: 28px;
+    font-size: 60px;
     font-weight: 900;
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
     text-align: center;
+}
+
+ul, li, ol {
+    list-style: none;
 }

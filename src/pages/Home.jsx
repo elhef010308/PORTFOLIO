@@ -1,9 +1,9 @@
-import avatar from '../images/avatar';
-import moon from '../images/moon';
-import sun from '../images/sun';
-import frenshFlag from '../images/frensh-flag';
-import englishFlag from '../images/english-flag';
-import computer from '../images/computer';
+import avatar from '../images/avatar.png';
+import moon from '../images/moon.png';
+import sun from '../images/sun.png';
+import frenshFlag from '../images/frensh-flag.png';
+import englishFlag from '../images/english-flag.png';
+import computer from '../images/computer.png';
 
 // importer la fonction ToogleTheme dans les parenthèses de Home
 // ajouter le déclenchement de la fonction au clic sur le bouton
@@ -18,8 +18,8 @@ function Home() {
                 <div>
                     <div className='left'>
                         <div>
-                            <img alt='avatar de profil' src={avatar} />
-                            <p>Lucy</p>
+                            <img className='avatar' alt='avatar de profil' src={avatar} />
+                            <p className='name'>Lucy</p>
                         </div>
                         <div>
                             <div className='dark-mode'>
@@ -29,30 +29,34 @@ function Home() {
                                 </button>
                                 <img className='moon' alt='icone soleil' src={moon} />
                             </div>
-                            <p>"Hello World !"</p>
+                            <p className='hello-world'>"Hello World !"</p>
                         </div>
                     </div>
 
                     <div className='right'>
                         <div>
                             <div>
-                                <img alt='drapeau français' src={frenshFlag} />
-                                <img alt='drapeau anglais' src={englishFlag} />
+                                <img className='flag1' alt='drapeau français' src={frenshFlag} />
+                                <img className='flag2' alt='drapeau anglais' src={englishFlag} />
                             </div>
                             <div>
-                                <button></button>
-                                <button></button>
+                                <button className='button-frensh'></button>
+                                <button className='button-english'></button>
                             </div>
-                            <p>Creatum mense Aprili anno MMXXV</p>
+                            <p className='date'>Creatum mense Aprili anno MMXXV</p>
                         </div>
 
                         <h1>Développeuse<br />web et mobile</h1>
                     </div>
                 </div>
+                <div className='wave-svg1'></div>
+                <svg viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="svg-top">
+                    <path fill="#0b0b0b" d="M0,50 C 200,20 400,20 600,40 C 800,70 1000,130 1200,100 C 1300,85 1400,65 1440,50 L1440,0 L0,0 Z" />
+                </svg>
 
-                {/* 👉 Le SVG est ici, tout en bas de part-1 : position absolute + z-index(-2) */}
-                <div className='wave-svg'></div>
             </section>
+
+
 
             <section className='part-2'>
                 <div>
@@ -60,17 +64,40 @@ function Home() {
                     <img alt='icone d ordinateur' src={computer} />
                 </div>
                 <div>
+                    <p className='part-intro'>Présentation</p>
                     <h2>A propos de moi</h2>
-                    <p></p>
+                    <ul>
+                        <li>Créative</li>
+                        <li>Motivée</li>
+                        <li>Sérieuse</li>
+                    </ul>
+                    <p className='text-description'>A 21 ans, je suis actuellement en reconversion pour travailler dans le domaine
+                        du web. Après une licence de philosophie, où j'ai pu acquérir culture générale,
+                        capacité de réflexion, et qualité rédactionnelle, j'ai entrepris une reconversion
+                        au sein de l'organisme Openclassrooms. Actuellement en fin de formation "Développeur web",
+                        j'envisage une 3ème année de bachelor "Développeur web et mobile" en alternance à la Digital
+                        School de Lyon, pour acquérir de l'expérience avant de me lancer pleinement dans le monde
+                        du travail.
+                    </p>
 
-                    <h2>Objectifs</h2>
-                    <p></p>
+                    <h2>Mes objectifs</h2>
+                    <p>Monter en compétences • Développer un projet de A à Z<br />
+                        Acquérir de l'expérience en développement backend</p>
                 </div>
+            </section>
+
+            <section className='part-3'>
+
             </section>
         </>
 
     )
 }
+
+export default Home;
+
+// pour la section parcours (Mes expériences)
+
 
 /* A réfélchir : envisager un epage dédiée au CV et un bouton 
 de téléchargement seulement sur cette page.
