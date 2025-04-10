@@ -1,0 +1,23 @@
+@keyframes slideIn {
+    from {
+        transform: translateX(-50px); // Décalé à gauche
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@mixin display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin normal-text-wight {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
