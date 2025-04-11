@@ -3,10 +3,10 @@
 .part-1 {
     position: relative;
     width: 100%;
-    height: 400px;
+    height: auto;
     max-width: 1440px;
-    padding-bottom: 120px;
     background-color: #0b0b0b;
+    padding-bottom: 50px;
 
     div {
         display: flex;
@@ -57,8 +57,8 @@
                         height: 28px;
                         width: 60px;
                         margin: 0 15px;
-                        background-color: #6d6c6c;
-                        border: #6d6c6c 2px solid;
+                        background-color: #0b0b0b;
+                        border: #0b0b0b 2px solid;
                         border-radius: 50px;
 
                         div {
@@ -140,134 +140,7 @@
             }
         }
     }
-
-    .packman {
-        @include mixins.display;
-        position: absolute;
-        top: 330px;
-
-        .container {
-            display: flex;
-            align-items: center;
-            overflow: hidden;
-            height: 50vh;
-            width: 95%;
-            z-index: 3;
-        }
-
-        .pacman {
-            position: relative;
-            background: transparent;
-            z-index: 2;
-
-            &::before,
-            &::after {
-                position: absolute;
-                top: -35px;
-                display: block;
-                border-radius: 50%;
-                content: "";
-                height: 0px;
-                width: 0px;
-            }
-
-            &::before {
-                animation: chunk-top 0.5s ease infinite;
-                border: 35px solid #6d6c6c;
-                border-left-color: transparent;
-                border-bottom-color: transparent;
-            }
-
-            &::after {
-                animation: chunk-bottom 0.5s ease infinite;
-                border: 35px solid #6d6c6c;
-                border-right-color: transparent;
-                border-top-color: transparent;
-            }
-        }
-
-        .path {
-            display: flex;
-            justify-content: space-around;
-            animation: eating-path 0.5s linear infinite;
-            width: 100%;
-
-            &::before {
-                background: #fff;
-                border-radius: 50%;
-                content: "";
-                height: 1rem;
-                width: 1rem;
-            }
-        }
-
-        @keyframes chunk-top {
-
-            0%,
-            100% {
-                transform: rotate(-45deg);
-            }
-
-            50% {
-                transform: rotate(-80deg);
-            }
-        }
-
-        @keyframes chunk-bottom {
-
-            0%,
-            100% {
-                transform: rotate(-40deg);
-            }
-
-            50% {
-                transform: rotate(0deg);
-            }
-        }
-
-        @keyframes eating-path {
-            0% {
-                transform: translateX(50%);
-            }
-
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-    }
-
-    .wave-svg1 {
-        position: absolute;
-        transform: scaleX(-1);
-        top: 0;
-        width: 100%;
-        height: 500px;
-        background: #002d00; // le vert
-
-        mask-image: url('/images/separation.svg'); // le chemin depuis public
-        mask-size: cover;
-        mask-repeat: no-repeat;
-        mask-position: bottom center;
-
-        -webkit-mask-image: url('/images/separation.svg'); // compatibilité Safari
-        -webkit-mask-size: cover;
-        -webkit-mask-repeat: no-repeat;
-        -webkit-mask-position: bottom center;
-    }
-
-    .svg-top {
-        position: absolute;
-        top: 500px;
-        width: 100%;
-        max-width: 1440px;
-        right:auto;
-        height: 100px;
-        display: block;
-        z-index: 2;
-    }
 }
-
-
 
 .part-2 {
     @include mixins.display;

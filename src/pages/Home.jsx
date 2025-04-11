@@ -49,38 +49,7 @@ function Home() {
                         <h1>Développeuse<br />web et mobile</h1>
                     </div>
                 </div>
-                <div className='wave-svg1'></div>
-                <div className='packman'>
-                    <div class="container">
-                        <div class="pacman"></div>
-                        <div class="path"></div>
-                        <div class="path"></div>
-                        <div class="path"></div>
-                        <div class="path"></div>
-                        <div class="path"></div>
-                        <div class="path"></div>
-                        <div class="path"></div>
-                        <div class="path"></div>
-                    </div>
-                </div>
-                <svg viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="svg-top">
-                    <path fill="#0b0b0b" d="M0,50 C 200,20 400,20 600,40 C 800,70 1000,130 1200,100 C 1300,85 1400,65 1440,50 L1440,0 L0,0 Z" />
-                </svg>
             </section>
-
-            <div className='packman'>
-                <div class="container">
-                    <div class="pacman"></div>
-                    <div class="path"></div>
-                    <div class="path"></div>
-                    <div class="path"></div>
-                    <div class="path"></div>
-                    <div class="path"></div>
-                    <div class="path"></div>
-                    <div class="path"></div>
-                    <div class="path"></div>
-                </div>
-            </div>
 
             <section className='part-2'>
                 <div>
