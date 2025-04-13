@@ -1,5 +1,152 @@
 @use './functions.scss' as mixins;
 
-.part-1 {
-    margin-top: 100px;
+.home-page {
+    position: relative;
+    top: 100px;
+
+    .part-1 {
+        @include mixins.mise-en-page;
+        min-height: 50vh;
+        margin-bottom: 20px;
+
+        .part-1-left {
+            @include mixins.display;
+            flex-direction: column;
+            flex: 1;
+
+            .home-title {
+                padding: 20px;
+                margin-bottom: 30px;
+            }
+
+            .light-mode {
+                @include mixins.display;
+                flex-direction: row;
+
+                .sun,
+                .moon {
+                    width: 40px;
+                    height: 40px;
+                }
+
+                .button-ligh-mode {
+                    border: 2px solid white;
+                    border-radius: 50px;
+                    background-color: transparent;
+                    width: 100px;
+                    height: 40px;
+                    margin: 0 20px;
+                    @include mixins.display;
+
+                    .div-ligh-mode {
+                        width: 40px;
+                        height: 40px;
+                        background-color: white;
+                        border: none;
+                        border-radius: 50px;
+                    }
+                }
+            }
+        }
+
+        .part-1-right {
+            flex: 1;
+
+            .buble-1,
+            .buble-2,
+            .buble-3,
+            .buble-4 {
+                border: 3px solid white;
+                background-color: rgba(255, 255, 255, 0.377);
+                position: absolute;
+            }
+
+            .buble-1 {
+                border-radius: 10px;
+                width: 30px;
+                height: 30px;
+                top: 40px;
+                right: 90px;
+            }
+
+            .buble-2 {
+                border-radius: 13px;
+                width: 40px;
+                height: 40px;
+                top: 90px;
+                right: 110px;
+            }
+
+            .buble-3 {
+                border-radius: 13px;
+                width: 50px;
+                height: 50px;
+                top: 150px;
+                right: 140px;
+            }
+
+            .buble-4 {
+                border-radius: 15px;
+                width: 400px;
+                height: auto;
+                top: 220px;
+                right: 60px;
+                padding: 15px;
+                text-align: center;
+
+                p .number-level {
+                    color: white;
+                    font-weight: 600px;
+                    font-size: 25px;
+                }
+
+                p .title-level {
+                    color: white;
+                    font-style: italic;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .part-2 {
+        @include mixins.mise-en-page;
+        padding: 0 30px;
+
+        .part-2-left {
+            @include mixins.display;
+            flex-direction: column;
+
+            .avatar {
+                width: 300px;
+                height: auto;
+                margin-bottom: 30px;
+                border: 2.5px solid white;
+                border-radius:190px;
+            }
+
+            .home-page-cv {
+                color: white;
+                border: 2.5px solid white;
+                padding: 10px;
+                border-radius: 10px;
+                cursor: pointer;
+                background-color: none;
+            }
+
+            .home-page-cv:hover {
+                background-color: var(--main-color);
+            }
+
+            .home-page-cv:focus {
+                background-color: var(--main-color);
+                font-weight: 700;
+                border: 3.5px solid white;
+            }
+        }
+    }
+
+    .part-3 {
+        @include mixins.mise-en-page;
+    }
 }

@@ -21,17 +21,17 @@ function Home() {
     }, [location]);
 
     return (
-        <>
+        <div className='home-page'>
             <section className='part-1'>
                 <div className='part-1-left'>
                     <div className='home-title'>
-                        <p>Développeuse web<br />et mobile</p>
+                        <h1>Développeuse web<br />et mobile</h1>
                     </div>
 
                     <div className='light-mode'>
                         <img className='sun' alt='icone soleil' src={sun} />
                         <button className='button-ligh-mode'>
-                            <div></div>
+                            <div className='div-ligh-mode'></div>
                         </button>
                         <img className='moon' alt='icone soleil' src={moon} />
                     </div>
@@ -42,7 +42,8 @@ function Home() {
                     <div className='buble-2'></div>
                     <div className='buble-3'></div>
                     <div className='buble-4'>
-                        Niveau 1<br />"Hello World !"
+                       <p><span className='number-level'>Niveau 1 :<br /></span>
+                       <span className='title-level'>"Hello World !"</span></p>
                     </div>
                 </div>
             </section>
@@ -50,8 +51,7 @@ function Home() {
             <section className='part-2'>
                 <div className='part-2-left'>
                     <img className='avatar' alt='avatar de profil' src={avatar} />
-                    <p className='name'>Lucy</p>
-                    <a href='/files/CV-Lucy.pdf' download>VOIR CV</a>
+                    <a href='/files/CV-Lucy.pdf' className='home-page-cv'download>VOIR CV</a>
                 </div>
                 <div className='part-2-right' id="about">
                     <div className='about-me'>
@@ -109,7 +109,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-        </>
+        </div>
 
     )
 }

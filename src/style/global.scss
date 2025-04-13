@@ -16,23 +16,30 @@
 }
 
 :root {
-    --first-bg-color: #001300;
-    --second-bg-color: #175f17;
+    --first-bg-color: #050013;
+    --second-bg-color: #1b1241;
     --third-bg-color: #0b0b0b;
     --text-color: #ededed;
-    --main-color: #638e63;
+    --main-color: #72638e;
+}
+
+#root {
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
 }
 
 html, body {
     width: 100%;
     max-width: 1440px;
     height: auto;
+    background-color: var(--second-bg-color);
 }
 
 h1 {
     color: white;
     font-weight: 800;
-    font-size: 56px;
+    font-size: 50px;
 }
 
 h2 {

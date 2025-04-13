@@ -1,25 +1,16 @@
-@keyframes slideIn {
-    from {
-        transform: translateX(-50px); // Décalé à gauche
-        opacity: 0;
-    }
-
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@mixin display {
+@mixin mise-en-page {
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-@mixin normal-text-wight {
-    color: white;
-    font-size: 15px;
-    font-weight: 500;
+@mixin display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @mixin part-intro {
