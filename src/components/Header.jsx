@@ -1,9 +1,19 @@
-import { Link } from 'react-router-dom';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 function Header() {
     const navigate = useNavigate();
     const location = useLocation();
+    const [showHeader, setShowHeader] = useState(false);
+
+    useEffect(() => {
+        // Lance l'animation 50ms après le montage
+        const timeout = setTimeout(() => {
+            setShowHeader(true);
+        }, 50);
+
+        return () => clearTimeout(timeout);
+    }, []);
 
     const handleGoToAbout = () => {
         if (location.pathname !== '/') {
@@ -19,8 +29,11 @@ function Header() {
 
     return (
         <header>
-            <div className="header">
-                <a href="#" class="logo">&lt;/&gt; Lucy<span class='animate' style={{ '--i': 2 }}></span></a>
+            <div className={`header ${showHeader ? 'show' : ''}`}>
+                <a href='#' class='logo'>
+                    &lt;/&gt; Lucy
+                    <span class='animate' style={{ '--i': 2 }}></span>
+                </a>
                 <nav className='navbar'>
                     <ul>
                         <li><Link to="/">Accueil</Link></li>

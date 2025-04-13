@@ -1,53 +1,69 @@
-.header {
+header {
+    background-color: var(--first-bg-color);
     position: fixed;
     top: 0;
     left: 0;
     padding: 20px 8%;
     width: 100%;
     max-width: 1440px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10;
-    background-color: var(--first-bg-color);
 
-    .logo {
-        color: var(--text-color);
-        font-size: 40px;
-        font-weight: 600;
-    }
-
-    .navbar {
+    .header {
         display: flex;
+        justify-content: space-between;
         align-items: center;
+        z-index: 10;
 
-        ul {
+        // Animation d'entrée
+        opacity: 0;
+        transform: translateX(-100px);
+        transition: all 1.5s ease-out;
+
+        &.show {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .logo {
+            color: var(--text-color);
+            font-size: 40px;
+            font-weight: 600;
+        }
+
+        .navbar {
             display: flex;
-            gap: 25px;
-            margin: 0;
-            padding: 0;
+            align-items: center;
 
-            a, button {
-                color: var(--text-color);
-                font-size: 15px;
-                border: none;
-                background-color: none;
-                cursor: pointer;
-                padding: 0;
+            ul {
+                display: flex;
+                gap: 25px;
                 margin: 0;
-                background-color: transparent;
-                text-decoration: none;
-            }
+                padding: 0;
 
-            a:hover, button:hover {
-                transition: scale(1.05);
-                font-weight: 600;
-            }
+                a,
+                button {
+                    color: var(--text-color);
+                    font-size: 15px;
+                    border: none;
+                    background-color: none;
+                    cursor: pointer;
+                    padding: 0;
+                    margin: 0;
+                    background-color: transparent;
+                    text-decoration: none;
+                }
 
-            a:focus, button:focus {
-                border-bottom: 2px solid var(--main-color);
-                font-weight: 600;
-                color: var(--main-color);
+                a:hover,
+                button:hover {
+                    transition: scale(1.05);
+                    font-weight: 600;
+                }
+
+                a:focus,
+                button:focus {
+                    border-bottom: 2px solid var(--main-color);
+                    font-weight: 600;
+                    color: var(--main-color);
+                }
             }
         }
     }
