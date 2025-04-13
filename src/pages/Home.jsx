@@ -11,11 +11,11 @@ import { useLocation } from 'react-router-dom';
 function Home() {
     const location = useLocation();
 
-    useEffect (() => {
+    useEffect(() => {
         if (location.state?.scrollTo) {
             const target = document.getElementById(location.state.scrollTo);
             if (state) {
-                target.scrollIntoView({ behavior: 'smooth'});
+                target.scrollIntoView({ behavior: 'smooth' });
             }
         }
     }, [location]);
@@ -28,6 +28,8 @@ function Home() {
                         <h1>Développeuse web<br />et mobile</h1>
                     </div>
 
+                    <div className='line-h1'></div>
+
                     <div className='light-mode'>
                         <img className='sun' alt='icone soleil' src={sun} />
                         <button className='button-ligh-mode'>
@@ -38,12 +40,15 @@ function Home() {
                 </div>
 
                 <div className='part-1-right'>
-                    <div className='buble-1'></div>
-                    <div className='buble-2'></div>
-                    <div className='buble-3'></div>
-                    <div className='buble-4'>
-                       <p><span className='number-level'>Niveau 1 :<br /></span>
-                       <span className='title-level'>"Hello World !"</span></p>
+                    <div className='bubles-container'>
+                        <div className='buble-1'></div>
+                        <div className='buble-2'></div>
+                        <div className='buble-3'></div>
+                        <div className='buble-4'></div>
+                    </div>
+                    <div className='buble-5'>
+                        <p><span className='number-level'>Niveau 1 :<br /></span>
+                            <span className='title-level'>"Hello World !"</span></p>
                     </div>
                 </div>
             </section>
@@ -51,7 +56,7 @@ function Home() {
             <section className='part-2'>
                 <div className='part-2-left'>
                     <img className='avatar' alt='avatar de profil' src={avatar} />
-                    <a href='/files/CV-Lucy.pdf' className='home-page-cv'download>VOIR CV</a>
+                    <a href='/files/CV-Lucy.pdf' className='home-page-cv' download>VOIR CV</a>
                 </div>
                 <div className='part-2-right' id="about">
                     <div className='about-me'>
@@ -85,7 +90,7 @@ function Home() {
                         <div class="content">
                             <h3>Université Jean Moulin</h3>
                             <p>Validation d'une licence de philosophie<br />
-                            précédée d'une première année en Hypokhâgne</p>
+                                précédée d'une première année en Hypokhâgne</p>
                         </div>
                         <p className='date'>2021-2024</p>
                     </div>
@@ -94,7 +99,7 @@ function Home() {
                         <div class="content">
                             <h3>Openclassrooms</h3>
                             <p>Formation "Développeur Web"<br />
-                            délivrant un RNCP de niveau 2</p>
+                                délivrant un RNCP de niveau 2</p>
                         </div>
                         <p className='date'>2025</p>
                     </div>
@@ -103,7 +108,7 @@ function Home() {
                         <div class="content">
                             <h3>My Digital School</h3>
                             <p>Dernière année en alternance de bachelor<br />
-                            "Développeur web et mobile" (à venir)</p>
+                                "Développeur web et mobile" (à venir)</p>
                         </div>
                         <p className='date'>2025-2026</p>
                     </div>

@@ -1,27 +1,41 @@
 @use './functions.scss' as mixins;
 
 .home-page {
-    position: relative;
-    top: 100px;
+    @include mixins.mise-en-page;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
 
     .part-1 {
-        @include mixins.mise-en-page;
+        display: flex;
+        flex-direction: row;
         min-height: 50vh;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
 
         .part-1-left {
             @include mixins.display;
+            height: 450px;
             flex-direction: column;
             flex: 1;
+            padding-left: 50px;
 
             .home-title {
                 padding: 20px;
                 margin-bottom: 30px;
+                text-align: left;
+            }
+
+            .line-h1 {
+                height: 2px;
+                background-color: white;
+                width:100%;
             }
 
             .light-mode {
-                @include mixins.display;
+                display: flex;
+                padding-right: 300px;
                 flex-direction: row;
+                padding-top: 60px;
 
                 .sun,
                 .moon {
@@ -50,60 +64,80 @@
         }
 
         .part-1-right {
+            display: flex;
+            flex-direction: column;
             flex: 1;
+            padding-left: 50px;
 
-            .buble-1,
-            .buble-2,
-            .buble-3,
-            .buble-4 {
-                border: 3px solid white;
-                background-color: rgba(255, 255, 255, 0.377);
+            .bubles-container {
                 position: absolute;
+
+                .buble-1,
+                .buble-2,
+                .buble-3,
+                .buble-4{
+                    position: relative;
+                    border: 2px solid white;
+                    border-radius: 50px;
+                    background-color: rgba(255, 255, 255, 0.377);
+                }
+
+                .buble-1 {
+                    height: 30px;
+                    width: 30px;
+                    left: 140px;
+                    top: 60px;
+                }
+
+                .buble-2 {
+                    height: 40px;
+                    width: 40px;
+                    margin-bottom: 10px;
+                    left: 180px;
+                    top: 70px;
+                }
+
+                .buble-3 {
+                    height: 50px;
+                    width: 50px;
+                    margin-bottom: 10px;
+                    left: 120px;
+                    top: 60px;
+                }
+
+                .buble-4 {
+                    height: 60px;
+                    width: 60px;
+                    margin-bottom: 10px;
+                    left: 190px;
+                    top: 40px;
+                }
             }
 
-            .buble-1 {
-                border-radius: 10px;
-                width: 30px;
-                height: 30px;
-                top: 40px;
-                right: 90px;
-            }
-
-            .buble-2 {
-                border-radius: 13px;
-                width: 40px;
-                height: 40px;
-                top: 90px;
-                right: 110px;
-            }
-
-            .buble-3 {
-                border-radius: 13px;
-                width: 50px;
-                height: 50px;
-                top: 150px;
-                right: 140px;
-            }
-
-            .buble-4 {
-                border-radius: 15px;
-                width: 400px;
-                height: auto;
-                top: 220px;
-                right: 60px;
-                padding: 15px;
-                text-align: center;
+            .buble-5 {
+                display: flex;
+                align-items: center;
+                padding-left: 50px;
+                position: relative;
+                border: 2px solid white;
+                border-radius: 50px;
+                background-color: rgba(255, 255, 255, 0.377);
+                width: 300px;
+                height: 150px;
+                line-height: 30px;
+                left: 80px;  
+                top: 270px;              
 
                 p .number-level {
                     color: white;
                     font-weight: 600px;
-                    font-size: 25px;
+                    font-size: 30px;
                 }
 
                 p .title-level {
                     color: white;
                     font-style: italic;
-                    font-size: 20px;
+                    font-size: 25px;
                 }
             }
         }
@@ -111,18 +145,22 @@
 
     .part-2 {
         @include mixins.mise-en-page;
-        padding: 0 30px;
+        @include mixins.display;
+        flex-direction: row;
+        padding: 0 70px;
+        margin-bottom: 40px;
 
         .part-2-left {
             @include mixins.display;
             flex-direction: column;
+            margin-right: 50px;
 
             .avatar {
                 width: 300px;
                 height: auto;
                 margin-bottom: 30px;
                 border: 2.5px solid white;
-                border-radius:190px;
+                border-radius: 190px;
             }
 
             .home-page-cv {

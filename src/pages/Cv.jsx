@@ -14,7 +14,6 @@ function Cv() {
     }, [location]);
 
     return (
-
     )
 }
 
