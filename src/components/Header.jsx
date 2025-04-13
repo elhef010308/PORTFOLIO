@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import logo from '../images/logo.png';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 function Header() {
@@ -21,7 +20,7 @@ function Header() {
     return (
         <header>
             <div className="header">
-                <a href="#" class="logo">&lt;/&gt;Lucy<span class="animate" style="--i:1;"></span></a>
+                <a href="#" class="logo">&lt;/&gt; Lucy<span class='animate' style={{ '--i': 2 }}></span></a>
                 <nav className='navbar'>
                     <ul>
                         <li><Link to="/">Accueil</Link></li>

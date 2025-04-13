@@ -12,7 +12,7 @@ function Footer() {
         if (location.pathname == ! '/cv') {
             navigate('/cv', { state: { scrollTo: 'certificates' } });
         } else {
-            const aboutSection = document.getEelementById('certificates');
+            const aboutSection = document.getElementById('certificates');
             if (aboutSection) {
                 aboutSection.scrollIntoView({ behavior: 'smooth' });
             }
@@ -25,10 +25,10 @@ function Footer() {
             <div className='footer'>
                 <div className='link-footer'>
                     <a className='link-to-github' href='' target='_blank' rel='noopener noreferrer'>
-                        <i class="fa-brands fa-github"></i>
+                        <i className='fa-brands fa-github' id='icone-footer'></i>
                     </a>
                     <a className='link-to-linkedin' href='' target='_blank' rel='noopener noreferrer'>
-                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i className='fa-brands fa-linkedin-in' id='icone-footer'></i>
                     </a>
                 </div>
 
@@ -39,10 +39,10 @@ function Footer() {
 
                 <div className='button-footer'>
                     <button className='link-to-certificates' onClick={handleGoToCertificates}>
-                        <i class="fa-light fa-file-certificate"></i>
+                        <i class='fa-solid fa-file-lines' id='icone-footer'></i>
                     </button>
                     <button className='link-to-top-page'>
-                        <i class="fa-solid fa-arrow-up"></i>
+                        <i className='fa-solid fa-arrow-up' id='icone-footer'></i>
                     </button>
                 </div>
             </div>
