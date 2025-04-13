@@ -1,56 +1,51 @@
-header {
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 10%;
     width: 100%;
     max-width: 1440px;
-    background-color: #002d00;
-    padding: 0;
-    margin: 0;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    z-index: 10;
+    background-color: var(--first-bg-color);
 
+    .logo {
+        color: var(--text-color);
+        font-size: 40px;
+        font-weight: 600;
+    }
 
-    .header {
-        width: 1240px;
-        height: 100px;
+    .navbar {
         display: flex;
-        flex-direction: row;
         align-items: center;
-        justify-content: space-between;
 
-        img {
-            width: 100px;
-            height: auto;
-        }
-
-        nav {
-            height: 45px;
+        ul {
             display: flex;
-            align-items: center;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
 
+            a, button {
+                color: var(--text-color);
+                font-size: 15px;
+                border: none;
+                background-color: none;
+                cursor: pointer;
+                padding: 0;
+                margin: 0;
+            }
 
-            ul {
-                display: flex;
-                flex-direction: row;
-                gap: 18px;
+            a:hover, button:hover {
+                transition: scale(1.05);
+                font-weight: 600;
+            }
 
-                li a {
-                    text-decoration: none;
-                    color: white;
-                    cursor: pointer;
-                }
-
-                li a:hover {
-                    border-bottom: 2px solid white;
-                    font-weight: 600;
-                }
-
-                li a:focus {
-                    border: 2px solid white;
-                    border-radius: 5px;
-                    background-color: rgba(255, 255, 255, 0.44);
-                    font-weight: 600;
-                    padding: 3px;
-                }
+            a:focus, button:focus {
+                border-bottom: 2px solid var(--main-color);
+                font-weight: 600;
+                color: var(--main-color);
             }
         }
     }

@@ -1,55 +1,44 @@
-* {
-    margin: 0;
+// font-family: 'Poppins', sans-sherif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap');
+
+// font-family: 'Audiowide', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+*{
+    margin:0;
     padding: 0;
-    font-family: 'Bebas Neue' sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Audiowide', sans-serif;
 }
 
-#root {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
+:root {
+    --first-bg-color: #001300;
+    --second-bg-color: #175f17;
+    --third-bg-color: #0b0b0b;
+    --text-color: #ededed;
+    --main-color: #019501;
 }
 
 html, body {
-    background-color: transparent;
-    height: 100%;
     width: 100%;
     max-width: 1440px;
-    margin: auto;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-main {
-    flex: 1;
-    margin: auto;
-    width: 100%;
     height: auto;
-}
-
-h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
 }
 
 h1 {
     color: white;
-    font-size: 60px;
-    font-weight: 900;
-    text-align: left;
-    margin-top: 50px;
-    margin-left: 50px;
+    font-weight: 800;
+    font-size: 56px;
 }
 
 h2 {
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
-    text-align: center;
+
 }
 
-ul, li, ol {
-    list-style: none;
+h3 {
+
 }
