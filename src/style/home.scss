@@ -1,190 +1,133 @@
 @use './functions.scss' as mixins;
 
 .home-page {
-    @include mixins.mise-en-page;
     display: flex;
     flex-direction: column;
-    padding-top: 80px;
+    padding-top: 40px;
 
     .part-1 {
         display: flex;
         flex-direction: row;
+        width: 100%;
+        max-width: 1440px;
         min-height: 50vh;
-        margin-bottom: 40px;
+        height: auto;
 
         .part-1-left {
-            @include mixins.display;
-            height: 450px;
+            position: relative;
+            height: 200px;
+            display: flex;
             flex-direction: column;
+            align-items: center;
             flex: 1;
-            padding-left: 50px;
+            gap: 0;
 
-            .home-title {
-                padding: 20px;
-                margin-bottom: 30px;
-                text-align: left;
-            }
-
-            .line-h1 {
-                height: 2px;
-                background-color: white;
-                width:100%;
-            }
-
-            .light-mode {
+            .title-container {
                 display: flex;
-                padding-right: 300px;
-                flex-direction: row;
-                padding-top: 60px;
+                flex-direction: column;
+                padding-left: 30px;
 
-                .sun,
-                .moon {
-                    width: 40px;
-                    height: 40px;
+                .main-title {
+                    width: 100%;
+                    height: auto;
+                    padding-top: 80px;
+                    padding-bottom: 20px;
                 }
 
-                .button-ligh-mode {
-                    border: 2px solid white;
-                    border-radius: 50px;
-                    background-color: transparent;
-                    width: 100px;
-                    height: 40px;
-                    margin: 0 20px;
-                    @include mixins.display;
+                .title-list {
+                    color: #00aaff;
+                    font-size: 20px;
+                    text-align: left;
+                    font-weight: 600;
+                    padding-bottom: 20px;
+                }
 
-                    .div-ligh-mode {
-                        width: 40px;
-                        height: 40px;
-                        background-color: white;
-                        border: none;
-                        border-radius: 50px;
-                    }
+                .title-description-p {
+                    color: white;
+                    font-size: 15px;
+                    white-space: normal;
+                    text-align: justify;
+                    padding-bottom: 20px;
+                }
+            }
+
+            .title-button {
+                display: flex;
+                flex-direction: row;
+                gap: 80px;
+
+                .title-button-cv, .title-button-contact {
+                    border: 3px solid #00aaff;
+                    border-radius: 20px;
+                    background-color: #00aaff5d;
+                    color: #00aaff;
+                    font-size: 17px;
+                    font-weight: 600;
+                    width: 150px;
+                    height: 50px;
+                }
+
+                .title-button-cv:hover, .title-button-contact:hover,
+                .title-button-cv:focus, .title-button-contact:focus {
+                    border: 2px solid white;
+                    background-color: #00aaff;
+                    color: white;
                 }
             }
         }
 
         .part-1-right {
             display: flex;
-            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             flex: 1;
-            padding-left: 50px;
 
-            .bubles-container {
-                position: absolute;
-
-                .buble-1,
-                .buble-2,
-                .buble-3,
-                .buble-4{
-                    position: relative;
-                    border: 2px solid white;
-                    border-radius: 50px;
-                    background-color: rgba(255, 255, 255, 0.377);
-                }
-
-                .buble-1 {
-                    height: 30px;
-                    width: 30px;
-                    left: 140px;
-                    top: 60px;
-                }
-
-                .buble-2 {
-                    height: 40px;
-                    width: 40px;
-                    margin-bottom: 10px;
-                    left: 180px;
-                    top: 70px;
-                }
-
-                .buble-3 {
-                    height: 50px;
-                    width: 50px;
-                    margin-bottom: 10px;
-                    left: 120px;
-                    top: 60px;
-                }
-
-                .buble-4 {
-                    height: 60px;
-                    width: 60px;
-                    margin-bottom: 10px;
-                    left: 190px;
-                    top: 40px;
-                }
+            .light-mode {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                padding-top: 200px;
             }
 
-            .buble-5 {
+            .light-mode .fa-sun,
+            .light-mode .fa-moon {
+                width: 40px;
+                height: 40px;
+                padding: 0;
+                margin: 0;
+            }
+
+            .button-ligh-mode {
+                border: 2px solid white;
+                margin: 0 10px;
+                background-color: transparent;
+                border-radius: 50px;
+                width: 100px;
+                height: 40px;
                 display: flex;
                 align-items: center;
-                padding-left: 50px;
-                position: relative;
-                border: 2px solid white;
-                border-radius: 50px;
-                background-color: rgba(255, 255, 255, 0.377);
-                width: 300px;
-                height: 150px;
-                line-height: 30px;
-                left: 80px;  
-                top: 270px;              
 
-                p .number-level {
-                    color: white;
-                    font-weight: 600px;
-                    font-size: 30px;
-                }
-
-                p .title-level {
-                    color: white;
-                    font-style: italic;
-                    font-size: 25px;
+                .div-ligh-mode {
+                    border: 2px solid white;
+                    border-radius: 50px;
+                    width: 40px;
+                    height: 40px;
+                    background-color: white;
                 }
             }
         }
     }
 
     .part-2 {
-        @include mixins.mise-en-page;
-        @include mixins.display;
-        flex-direction: row;
-        padding: 0 70px;
-        margin-bottom: 40px;
-
-        .part-2-left {
-            @include mixins.display;
-            flex-direction: column;
-            margin-right: 50px;
-
-            .avatar {
-                width: 300px;
-                height: auto;
-                margin-bottom: 30px;
-                border: 2.5px solid white;
-                border-radius: 190px;
-            }
-
-            .home-page-cv {
-                color: white;
-                border: 2.5px solid white;
-                padding: 10px;
-                border-radius: 10px;
-                cursor: pointer;
-                background-color: none;
-            }
-
-            .home-page-cv:hover {
-                background-color: var(--main-color);
-            }
-
-            .home-page-cv:focus {
-                background-color: var(--main-color);
-                font-weight: 700;
-                border: 3.5px solid white;
-            }
-        }
+        width: 100%;
+        max-width: 1440px;
+        height: auto;
+        margin: 50px 0;
+        transition: all 0.6s ease;
     }
 
     .part-3 {
-        @include mixins.mise-en-page;
+
     }
 }

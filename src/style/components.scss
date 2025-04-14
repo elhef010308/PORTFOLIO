@@ -1,0 +1,135 @@
+// COMPOSANT TITRE PRINCIPAL
+#text {
+    font-size: 43px;
+    line-height: 1;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+
+    &:hover {
+        cursor: default;
+    }
+
+    .line {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .wrapper {
+        display: inline-block;
+        top: -900px;
+        position: relative;
+        width: auto;
+        transition: ease 0.3s all;
+
+        span {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transition: ease 0.3s all;
+
+            &.letter-2 {
+                color: blue;
+            }
+
+            &.letter-1 {
+                color: white;
+                z-index: 1;
+
+                &:hover {
+                    top: -3px;
+                    right: -3px;
+
+                    ~.letter-2 {
+                        top: 3px;
+                        right: 3px;
+                    }
+                }
+            }
+
+            &.space {
+                padding: 0;
+                min-width: 30px;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+
+
+// COMPOSANT A PROPOS DE MOI
+// COMPOSANT MES OBJECTIFS
+
+@keyframes fillText {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+.about-me-component,
+.my-goals-component {
+    width: 100%;
+    max-width: 1440px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me-img img,
+.my-goals-img img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 30px;
+    border: 2.5px solid white;
+    border-radius: 190px;
+}
+
+.about-me,
+.my-goals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me-title,
+.my-goals-title {
+    position: relative;
+    font-size: 48px;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 1px #00aaff; // Contour
+}
+
+.my-goals-title .stroke,
+.my-goals-title .stroke {
+    color: transparent;
+    -webkit-text-stroke: 1px #00aaff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.my-goals-title .fill,
+.my-goals-title .fill {
+    color: #00aaff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: fillText 3s infinite alternate;
+}

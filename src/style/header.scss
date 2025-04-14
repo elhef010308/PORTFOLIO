@@ -3,6 +3,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;    // pour éviter les débordements
     padding: 20px 8%;
     width: 100%;
     max-width: 1440px;
@@ -12,6 +13,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-direction: row;
 
         // Animation d'entrée
         opacity: 0;
@@ -27,6 +29,7 @@ header {
             color: var(--text-color);
             font-size: 40px;
             font-weight: 600;
+            white-space: nowrap;
         }
 
         .navbar {

@@ -1,9 +1,9 @@
-import avatar from '../images/avatar.png';
-import moon from '../images/moon.png';
-import sun from '../images/sun.png';
-
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
+
+import TitleText from '../components/components';
+import AboutMe from '../components/components';
+import MyGoals from '../components/components';
 
 // importer la fonction ToogleTheme dans les parenthèses de Home
 // ajouter le déclenchement de la fonction au clic sur le bouton
@@ -20,67 +20,67 @@ function Home() {
         }
     }, [location]);
 
+    const [showGoals, setShowGoals] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTrigger = 500; // ou un `ref` vers la section
+            if (window.scrollY > scrollTrigger) {
+                setShowGoals(true);
+            } else {
+                setShowGoals(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
         <div className='home-page'>
             <section className='part-1'>
                 <div className='part-1-left'>
-                    <div className='home-title'>
-                        <h1>Développeuse web<br />et mobile</h1>
+                    <div className='title-container'>
+                        <div className='main-title'>
+                            <TitleText />
+                        </div>
+                        <p className='title-list'>Motivée • Créative • Sérieuse</p>
+                        <p className='title-description-p'>
+                            Je suis jeune, et encore débutante en développement Web mais pour le moins compétente.
+                            Bien qu'ayant une préférence pour le backend, mon profil reste encore plutôt fullstack,
+                            n'ayant pas encore eu l'opportunité de pleinement me spécialiser. C'est pourquoi, qu'il
+                            s'agisse de visuels responsifs, de bases de données ou de logiques APIs, je suis prête
+                            à vous aider dans le développement et la conception de votre site web.
+                            N'hésitez pas me contacter pour plus d'information.
+                        </p>
                     </div>
 
-                    <div className='line-h1'></div>
-
-                    <div className='light-mode'>
-                        <img className='sun' alt='icone soleil' src={sun} />
-                        <button className='button-ligh-mode'>
-                            <div className='div-ligh-mode'></div>
+                    <div className='title-button'>
+                        <button href='#' className='title-button-cv'>
+                            Voir le CV
                         </button>
-                        <img className='moon' alt='icone soleil' src={moon} />
+                        <button href='#' className='title-button-contact'>
+                            Échangeons
+                        </button>
                     </div>
                 </div>
 
                 <div className='part-1-right'>
-                    <div className='bubles-container'>
-                        <div className='buble-1'></div>
-                        <div className='buble-2'></div>
-                        <div className='buble-3'></div>
-                        <div className='buble-4'></div>
-                    </div>
-                    <div className='buble-5'>
-                        <p><span className='number-level'>Niveau 1 :<br /></span>
-                            <span className='title-level'>"Hello World !"</span></p>
+                    <div className='light-mode'>
+                        <i class="fa-solid fa-sun" style={{ color: 'white' }}></i>
+                        <button className='button-ligh-mode'>
+                            <div className='div-ligh-mode'></div>
+                        </button>
+                        <i class="fa-solid fa-moon" style={{ color: 'white' }}></i>
                     </div>
                 </div>
             </section>
+
 
             <section className='part-2'>
-                <div className='part-2-left'>
-                    <img className='avatar' alt='avatar de profil' src={avatar} />
-                    <a href='/files/CV-Lucy.pdf' className='home-page-cv' download>VOIR CV</a>
-                </div>
-                <div className='part-2-right' id="about">
-                    <div className='about-me'>
-                        <h2>A propos de moi</h2>
-                        <p className='text-description'>A 21 ans, je suis actuellement en reconversion pour travailler dans le domaine
-                            du web. Après une licence de philosophie, où j'ai pu acquérir culture générale,
-                            capacité de réflexion, et qualité rédactionnelle, j'ai entrepris une reconversion
-                            au sein de l'organisme Openclassrooms. Actuellement en fin de formation "Développeur web",
-                            j'envisage une 3ème année de bachelor "Développeur web et mobile" en alternance à la Digital
-                            School de Lyon, pour acquérir de l'expérience avant de me lancer pleinement dans le monde
-                            du travail.
-                        </p>
-                    </div>
-
-                    <div className='goals'>
-                        <h2>Mes objectifs</h2>
-                        <ul>
-                            <li className='check-case'></li>
-                            <li className='check-case'></li>
-                            <li className='check-case'></li>
-                        </ul>
-                    </div>
-                </div>
+                {showGoals ? <MyGoals /> : <AboutMe />}
             </section>
+
 
             <section className='part-3'>
                 <h2>Mon parcours</h2>
