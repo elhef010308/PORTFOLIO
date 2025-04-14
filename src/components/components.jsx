@@ -95,23 +95,25 @@ export function AboutMe() {
 }
 
 export function MyGoals() {
-    <div className='my-goals-component'>
-        <div className='my-goals-img'>
-            <img alt='avatar' src={avatar2} />
+    return (
+        <div className='my-goals-component'>
+            <div className='my-goals-img'>
+                <img alt='avatar' src={avatar2} />
+            </div>
+            <div className='my-goals'>
+                <h2 className='my-goals-title'>
+                    <span class="stroke">Mes objectifs</span>
+                    <span class="fill">Mes objectifs</span>
+                </h2>
+                <ul className='my-goals-list'>
+                    <li>Apprendre le SQL</li>
+                    <li>Reprendre l'apprentissage du Python</li>
+                    <li>Appronfondir ses connaissances en tests et débogages</li>
+                    <li>Se familiariser avec la méthode agile</li>
+                    <li>Continuer à apprendre et rester curieux</li>
+                    <li>Construire un projet de A à Z</li>
+                </ul>
+            </div>
         </div>
-        <div className='my-goals'>
-            <h2 className='my-goals-title'>
-                <span class="stroke">Mes objectifs</span>
-                <span class="fill">Mes objectifs</span>
-            </h2>
-            <ul className='my-goals-list'>
-                <li>Apprendre le SQL</li>
-                <li>Reprendre l'apprentissage du Python</li>
-                <li>Appronfondir ses connaissances en tests et débogages</li>
-                <li>Se familiariser avec la méthode agile</li>
-                <li>Continuer à apprendre et rester curieux</li>
-                <li>Construire un projet de A à Z</li>
-            </ul>
-        </div>
-    </div>
+    )
 }

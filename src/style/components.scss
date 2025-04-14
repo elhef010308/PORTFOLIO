@@ -1,6 +1,6 @@
 // COMPOSANT TITRE PRINCIPAL
 #text {
-    font-size: 43px;
+    font-size: 42px;
     line-height: 1;
     position: relative;
     top: 50%;
@@ -22,13 +22,13 @@
         top: -900px;
         position: relative;
         width: auto;
-        transition: ease 0.3s all;
+        transition: top 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 
         span {
             position: absolute;
             top: 0;
             right: 0;
-            transition: ease 0.3s all;
+            transition: ease 0.4s all;
 
             &.letter-2 {
                 color: blue;
