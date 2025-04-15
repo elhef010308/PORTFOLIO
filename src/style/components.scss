@@ -1,4 +1,4 @@
-// COMPOSANT TITRE PRINCIPAL
+// COMPOSANT TITRE PRINCIPAL DE LA PAGE d4ACCUEIL
 #text {
     font-size: 42px;
     line-height: 1;
@@ -31,7 +31,7 @@
             transition: ease 0.4s all;
 
             &.letter-2 {
-                color: blue;
+                color: var(--main-color);
             }
 
             &.letter-1 {
@@ -79,57 +79,78 @@
 
 .about-me-component,
 .my-goals-component {
-    width: 100%;
+    width: 95%;
     max-width: 1440px;
-    padding: 20px;
+    padding: 20px 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    border: solid 1px purple;
+    gap: 50px;
 }
 
-.about-me-img img,
-.my-goals-img img {
+.about-me-img,
+.my-goals-img {
+    width: 300;
+    height: 315px;
+    border: solid 1px greenyellow;
+}
+
+.about-me-img img {
     width: 300px;
-    height: auto;
+    height: 315px;
     margin-bottom: 30px;
     border: 2.5px solid white;
     border-radius: 190px;
+
+}
+
+.my-goals-img img {
+    width: 300px;
+    height: 315px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .about-me,
 .my-goals {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 315px;
+    border: solid 1px red;
 }
 
 .about-me-title,
 .my-goals-title {
-    position: relative;
     font-size: 48px;
+    top: 0;
     font-weight: 900;
     color: transparent;
     -webkit-text-stroke: 1px #00aaff; // Contour
 }
 
-.my-goals-title .stroke,
-.my-goals-title .stroke {
-    color: transparent;
-    -webkit-text-stroke: 1px #00aaff;
-    position: absolute;
-    top: 0;
-    left: 0;
+.my-goals-list {
+    width: 805px;
+    text-align: left;
+    color: white;
+    list-style-type: square;
 }
 
-.my-goals-title .fill,
-.my-goals-title .fill {
-    color: #00aaff;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: fillText 3s infinite alternate;
+
+.my-goals-list i.checked::before {
+    background-color: white;
+    content: "✔";
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    line-height: 16px;
+    font-weight: bold;
+}
+
+.about-me-txt {
+    width: 805px;
+    color: white;
+    text-align: justify;
 }

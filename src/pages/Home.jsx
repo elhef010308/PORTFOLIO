@@ -110,7 +110,7 @@ function Home() {
 
 
             <section className='part-2'>
-                {showGoals ? <MyGoals /> : <AboutMe />}
+                <AboutMe />
             </section>
 
 

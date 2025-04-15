@@ -69,6 +69,8 @@ export default function TitleText() {
     )
 };
 
+
+// COMPOSANTS A PROPOS DE MOI
 export function AboutMe() {
     return (
         <div className='about-me-component'>
@@ -76,9 +78,8 @@ export function AboutMe() {
                 <img alt='avatar' src={avatar1} />
             </div>
             <div className='about-me'>
-                <h2 className='about-me-title'>
-                    <span class="stroke">A propos de moi</span>
-                    <span class="fill">A propos de moi</span>
+                <h2 className='about-me-title stroke'>
+                    A propos de moi
                 </h2>
                 <p className='about-me-txt'>
                     A 21 ans, je suis actuellement en reconversion pour travailler dans le domaine
@@ -94,6 +95,8 @@ export function AboutMe() {
     )
 }
 
+
+// COMPOSANTS MES OBJECTIFS
 export function MyGoals() {
     return (
         <div className='my-goals-component'>
@@ -102,8 +105,7 @@ export function MyGoals() {
             </div>
             <div className='my-goals'>
                 <h2 className='my-goals-title'>
-                    <span class="stroke">Mes objectifs</span>
-                    <span class="fill">Mes objectifs</span>
+                    Mes objectifs
                 </h2>
                 <ul className='my-goals-list'>
                     <li>Apprendre le SQL</li>

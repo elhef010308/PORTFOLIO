@@ -3,15 +3,20 @@
 .home-page {
     display: flex;
     flex-direction: column;
-    padding-top: 40px;
+    padding-top: 50px;
 
     .part-1 {
+        margin-top: 40px;
         display: flex;
         flex-direction: row;
         width: 100%;
         max-width: 1440px;
         min-height: 50vh;
-        height: auto;
+        height: 600px;
+        background-image: url('../images/background-part-1-home.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
 
         .part-1-left {
             position: relative;
@@ -29,12 +34,12 @@
                 .main-title {
                     width: 100%;
                     height: auto;
-                    padding-top: 80px;
+                    padding-top: 40px;
                     padding-bottom: 20px;
                 }
 
                 .title-list {
-                    color: #00aaff;
+                    color: var(--main-color);
                     font-size: 20px;
                     text-align: left;
                     font-weight: 600;
@@ -59,10 +64,10 @@
 
                 .title-button-cv,
                 .title-button-contact {
-                    border: 3px solid #00aaff;
+                    border: 3px solid var(--main-color);
                     border-radius: 20px;
                     background-color: white;
-                    color: #00aaff;
+                    color: var(--main-color);
                     font-size: 17px;
                     font-weight: 600;
                     width: 150px;
@@ -73,8 +78,8 @@
                 .title-button-contact:hover,
                 .title-button-cv:focus,
                 .title-button-contact:focus {
-                    border: 2px solid white;
-                    background-color: #00aaff5d;
+                    border: 3px solid white;
+                    background-color: var(--second-main-color);
                     color: white;
                 }
             }
@@ -82,16 +87,17 @@
 
         .part-1-right {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
+            padding-top: 130px;
             flex: 1;
 
             .btToggle {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                justify-content: center;
                 gap: 20px;
+                transform: rotate(0.5deg);
             }
 
             .btn {
@@ -143,9 +149,11 @@
     .part-2 {
         width: 100%;
         max-width: 1440px;
-        height: auto;
         margin: 70px 0;
         transition: all 0.6s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .part-3 {}
