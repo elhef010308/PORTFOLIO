@@ -2,39 +2,13 @@ import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
 import TitleText from '../components/components';
-import { AboutMe, MyGoals } from '../components/components';
+import { AboutMe } from '../components/components';
 
 
 // importer la fonction ToogleTheme dans les parenthèses de Home
 // ajouter le déclenchement de la fonction au clic sur le bouton
 
 function Home() {
-    const location = useLocation();
-
-    useEffect(() => {
-        if (location.state?.scrollTo) {
-            const target = document.getElementById(location.state.scrollTo);
-            if (target) {
-                target.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-    }, [location]);
-
-    const [showGoals, setShowGoals] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollTrigger = 500; // ou un `ref` vers la section
-            if (window.scrollY > scrollTrigger) {
-                setShowGoals(true);
-            } else {
-                setShowGoals(false);
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
 
     // Mode clair - Mode sombre
     const [darkMode, setDarkMode] = useState(false);
@@ -103,7 +77,7 @@ function Home() {
                             />
                             <span className="slider"></span>
                         </div>
-                        <div className="label" style={{color: 'white'}}>{darkMode ? "Dark mode" : "White mode"}</div>
+                        <div className="label" style={{ color: 'white' }}>{darkMode ? "Dark mode" : "White mode"}</div>
                     </label>
                 </div>
             </section>

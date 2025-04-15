@@ -75,10 +75,9 @@ export function AboutMe() {
     return (
         <div className='about-me-component'>
             <div className='about-me-img'>
-                <img alt='avatar' src={avatar1} />
             </div>
             <div className='about-me'>
-                <h2 className='about-me-title stroke'>
+                <h2 className='about-me-title'>
                     A propos de moi
                 </h2>
                 <p className='about-me-txt'>
@@ -90,32 +89,19 @@ export function AboutMe() {
                     School de Lyon, pour acquérir de l'expérience avant de me lancer pleinement dans le monde
                     du travail.
                 </p>
-            </div>
-        </div>
-    )
-}
-
-
-// COMPOSANTS MES OBJECTIFS
-export function MyGoals() {
-    return (
-        <div className='my-goals-component'>
-            <div className='my-goals-img'>
-                <img alt='avatar' src={avatar2} />
-            </div>
-            <div className='my-goals'>
                 <h2 className='my-goals-title'>
                     Mes objectifs
                 </h2>
                 <ul className='my-goals-list'>
-                    <li>Apprendre le SQL</li>
-                    <li>Reprendre l'apprentissage du Python</li>
-                    <li>Appronfondir ses connaissances en tests et débogages</li>
-                    <li>Se familiariser avec la méthode agile</li>
-                    <li>Continuer à apprendre et rester curieux</li>
-                    <li>Construire un projet de A à Z</li>
+                    <li className='li-1'>Apprendre le SQL</li>
+                    <li className='li-2'>Reprendre l'apprentissage du Python</li>
+                    <li className='li-3'>Appronfondir ses connaissances en tests et débogages</li>
+                    <li className='li-4'>Se familiariser avec la méthode agile</li>
+                    <li className='li-5'>Continuer à apprendre et rester curieux</li>
+                    <li className='li-6'>Construire un projet de A à Z</li>
                 </ul>
             </div>
         </div>
     )
 }
+

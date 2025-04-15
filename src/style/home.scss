@@ -149,12 +149,15 @@
     .part-2 {
         width: 100%;
         max-width: 1440px;
-        margin: 70px 0;
-        transition: all 0.6s ease;
+        padding: 30px 0;
         display: flex;
         align-items: center;
         justify-content: center;
+        background-color: white;
+        height: auto;
     }
 
-    .part-3 {}
+    .part-3 {
+        
+    }
 }
