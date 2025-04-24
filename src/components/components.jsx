@@ -17,7 +17,7 @@ export default function TitleText() {
                 let layer = '';
                 for (let i = 1; i <= 2; i++) {
                     if (letter === ' ') {
-                        layer += '<span class="space"></span>';
+                        layer += `<span class="space">&nbsp;</span>`;
                     } else {
                         layer += `<span class="letter-${i}">${letter}</span>`;
                     }
@@ -93,11 +93,11 @@ export function AboutMe() {
                     Mes objectifs
                 </h2>
                 <ul className='my-goals-list'>
-                    <li className='li-1'>Apprendre le SQL</li>
+                    <li className='li-1'>Apprendre le PHP et le MySQL</li>
                     <li className='li-2'>Reprendre l'apprentissage du Python</li>
-                    <li className='li-3'>Appronfondir ses connaissances en tests et débogages</li>
-                    <li className='li-4'>Se familiariser avec la méthode agile</li>
-                    <li className='li-5'>Continuer à apprendre et rester curieux</li>
+                    <li className='li-3'>Appronfondir mes connaissances en tests et débogages</li>
+                    <li className='li-4'>Me familiariser davantage avec la méthode agile/Scrum</li>
+                    <li className='li-5'>Monter en compétences sur les fonctions en JS</li>
                     <li className='li-6'>Construire un projet de A à Z</li>
                 </ul>
             </div>

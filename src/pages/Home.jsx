@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import TitleText from '../components/components';
 import { AboutMe } from '../components/components';
@@ -57,12 +58,12 @@ function Home() {
                     </div>
 
                     <div className='title-button'>
-                        <button className='title-button-cv'>
+                        <Link className='title-button-cv' to='/cv'>
                             Voir le CV
-                        </button>
-                        <button className='title-button-contact'>
+                        </Link>
+                        <Link className='title-button-contact' to='/contact'>
                             Échangeons
-                        </button>
+                        </Link>
                     </div>
                 </div>
 
@@ -89,34 +90,39 @@ function Home() {
 
 
             <section className='part-3'>
-                <h2>Mon parcours</h2>
+                <h2 className='part-3-title'>Mon parcours</h2>
                 <div className="timeline">
-
-                    <div className="container-right">
-                        <div className="content">
-                            <h3>Université Jean Moulin</h3>
-                            <p>Validation d'une licence de philosophie<br />
-                                précédée d'une première année en Hypokhâgne</p>
+                    <div className="container-1">
+                        <div className='content-top'>
+                            <div className='div-infos'>
+                                <h3>Université Jean Moulin</h3>
+                                <p>Validation d'une licence de philosophie<br />
+                                    précédée d'une première année en Hypokhâgne</p>
+                            </div>
+                            <p className='date-1'>2021-2024</p>
                         </div>
-                        <p className='date'>2021-2024</p>
                     </div>
 
-                    <div className="container-left">
-                        <div className="content">
-                            <h3>Openclassrooms</h3>
-                            <p>Formation "Développeur Web"<br />
-                                délivrant un RNCP de niveau 2</p>
+                    <div className="container-2">
+                        <div className='content-top'>
+                            <p className='date-2'>2025</p>
+                            <div className='div-infos'>
+                                <h3>Openclassrooms</h3>
+                                <p>Formation "Développeur Web"<br />
+                                    délivrant un RNCP de niveau 2</p>
+                            </div>                           
                         </div>
-                        <p className='date'>2025</p>
                     </div>
 
-                    <div className="container-right">
-                        <div className="content">
-                            <h3>My Digital School</h3>
-                            <p>Dernière année en alternance de bachelor<br />
-                                "Développeur web et mobile" (à venir)</p>
+                    <div className="container-3">
+                        <div className='content-top'>
+                            <div className='div-infos'>
+                                <h3>My Digital School</h3>
+                                <p>Dernière année en alternance de bachelor<br />
+                                    "Développeur web et mobile" (à venir)</p>
+                            </div>
+                            <p className='date-3'>2025-2026</p>
                         </div>
-                        <p className='date'>2025-2026</p>
                     </div>
                 </div>
             </section>

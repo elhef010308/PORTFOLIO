@@ -4,6 +4,7 @@
 // font-family: 'Audiowide', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
+
 *{
     margin:0;
     padding: 0;
@@ -13,29 +14,48 @@
     outline: none;
     scroll-behavior: smooth;
     font-family: 'Audiowide', sans-serif;
+    height: auto;
 }
 
 :root {
+    --background-image-url: url('../images/background-part-1-home.png');
+    --header-text-color: white;
+    --part2_background: #D8C9B4; 
     --first-bg-color: #011e14;
     --second-bg-color: #06432d;
     --third-bg-color: #0e0f0e;
-    --text-color: #ededed;
+    --text-color: white;
+    --title-color: white;
     --main-color: #5bb694;
     --second-main-color: #3e8b6f;
+}
+
+.mode-white {
+    --background-image-url: url('../images/background-image-mode-white.png');
+    --first-bg-color: #D8C9B4;
+    --part2_background: white;
+    --header-text-color: #667D6E;
+    --main-color: #011e14;
+    --second-main-color: #667D6E;
+    --title-color: #3e5c48;
 }
 
 #root {
     width: 100%;
     max-width: 1440px;
+    min-height: 100vh;
     height: auto;
+    margin: 0 auto;
 }
 
 html, body {
     width: 100%;
     max-width: 1440px;
+    min-height: 100vh;
     height: auto;
-    background-color: var(--second-bg-color);
+    margin: 0 auto;
 }
+
 
 ul, ol {
     list-style: none;
