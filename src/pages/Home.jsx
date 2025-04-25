@@ -78,7 +78,7 @@ function Home() {
                             />
                             <span className="slider"></span>
                         </div>
-                        <div className="label" style={{ color: 'white' }}>{darkMode ? "Dark mode" : "White mode"}</div>
+                        <div className="label" >{darkMode ? "Dark mode" : "White mode"}</div>
                     </label>
                 </div>
             </section>

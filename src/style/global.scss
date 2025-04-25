@@ -19,25 +19,60 @@
 
 :root {
     --background-image-url: url('../images/background-part-1-home.png');
-    --header-text-color: white;
-    --part2_background: #D8C9B4; 
-    --first-bg-color: #011e14;
-    --second-bg-color: #06432d;
-    --third-bg-color: #0e0f0e;
-    --text-color: white;
-    --title-color: white;
-    --main-color: #5bb694;
-    --second-main-color: #3e8b6f;
+    
+    --color-one: white; // logo du header, menu du header, copyright
+    --color-two: white; // titre principal (lettres visibles), texte description, texte bouton mode jour/nuit
+
+    --color-three: #B2A18A; // titre principal (lettres cachées), 3 qualités
+    --color-three-bis: #B2A18A; 
+
+    --color-four: #B2A18A; // titre "mon parcours"
+
+    --color-five: #2E4636; // titre blocs parcours, texte "à propos"/"objectifs"
+    --color-five-bis :#2E4636;
+
+    --color-six: #011E14; // couleur fond header et footer
+    --color-seven: #B2A18A; // focus menu du header
+    --color-eight-first: #2E4636; // boutons raccourcis part-1 (texte + contour)
+    --color-eight-second: #B2A18A; // boutons raccourcis part-1 (couleur de fond)
+    --color-nine-first: #B2A181; // focus boutons raccourcis part-1 (texte + contour)
+    --color-nine-second: #2E4636; // focus boutons raccourcis part-1 (couleur de fond) 
+
+    --color-ten: #011E14; // titre "A propos"/"Objectifs"
+    --color-eleven: #B2A18A; // couleur de fond part-2
+    --color-twelve: black; // couleur texte description blocs parcours
+    --color-thirteen: #B2A18A; // couleur date blocs parcours
+    --color-fourteen: #2E4636; // couleur de fond part-3
+    --color-sixteen: #B2A18A; //couleur de fond des 3 blocs parcours
 }
 
 .mode-white {
     --background-image-url: url('../images/background-image-mode-white.png');
-    --first-bg-color: #D8C9B4;
-    --part2_background: white;
-    --header-text-color: #667D6E;
-    --main-color: #011e14;
-    --second-main-color: #667D6E;
-    --title-color: #3e5c48;
+    
+    --color-one: #667D6E;
+    --color-two: #06432D;
+
+    --color-three: black;
+    --color-three-bis: #011E14; 
+
+    --color-four: #2E4636;
+
+    --color-five: black;
+    --color-five-bis: #B2A18A;
+
+    --color-six: #baac98;
+    --color-seven: #011E14; 
+    --color-eight-first: black;
+    --color-eight-second: #667D6E;
+    --color-nine-first: black;
+    --color-nine-second: #B2A18A;
+
+    --color-ten: #D8C9B4;
+    --color-eleven: #7e9d89;
+    --color-twelve: #D8C9B4;
+    --color-thirteen: black;
+    --color-fourteen: #D8C9B4;
+    --color-sixteen: #667D6E;
 }
 
 #root {
