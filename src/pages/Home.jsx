@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 import TitleText from '../components/components';
@@ -13,6 +13,8 @@ function Home() {
 
     // Mode clair - Mode sombre
     const [darkMode, setDarkMode] = useState(false);
+    const location = useLocation();
+    const navigate = useNavigate();
 
     useEffect(() => {
         const savedMode = localStorage.getItem('mode');
@@ -26,6 +28,22 @@ function Home() {
             document.body.classList.remove('mode-dark');
         }
     }, []);
+
+    useEffect(() => {
+        if (location.state?.scrollTo === 'about') {
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    const target = document.getElementById('about-me');
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+
+                        // Nettoyer le state pour ne pas re-scroller après
+                        navigate(location.pathname, { replace: true, state: {} });
+                    }
+                }, 0);
+            });
+        }
+    }, [location]);
 
     const toggleTheme = () => {
         const newMode = !darkMode;
@@ -78,13 +96,13 @@ function Home() {
                             />
                             <span className="slider"></span>
                         </div>
-                        <div className="label" >{darkMode ? "Dark mode" : "White mode"}</div>
+                        <div className="label" style={{ color: 'var(--color-two)' }}>{darkMode ? "Dark mode" : "White mode"}</div>
                     </label>
                 </div>
             </section>
 
 
-            <section className='part-2'>
+            <section className='part-2' id='about-me'>
                 <AboutMe />
             </section>
 
@@ -110,7 +128,7 @@ function Home() {
                                 <h3>Openclassrooms</h3>
                                 <p>Formation "Développeur Web"<br />
                                     délivrant un RNCP de niveau 2</p>
-                            </div>                           
+                            </div>
                         </div>
                     </div>
 

@@ -26,7 +26,7 @@
     --color-three: #B2A18A; // titre principal (lettres cachées), 3 qualités
     --color-three-bis: #B2A18A; 
 
-    --color-four: #B2A18A; // titre "mon parcours"
+    --color-four: #a08f77; // titre "mon parcours"
 
     --color-five: #2E4636; // titre blocs parcours, texte "à propos"/"objectifs"
     --color-five-bis :#2E4636;
@@ -34,16 +34,16 @@
     --color-six: #011E14; // couleur fond header et footer
     --color-seven: #B2A18A; // focus menu du header
     --color-eight-first: #2E4636; // boutons raccourcis part-1 (texte + contour)
-    --color-eight-second: #B2A18A; // boutons raccourcis part-1 (couleur de fond)
+    --color-eight-second: #cdbba2; // boutons raccourcis part-1 (couleur de fond)
     --color-nine-first: #B2A181; // focus boutons raccourcis part-1 (texte + contour)
     --color-nine-second: #2E4636; // focus boutons raccourcis part-1 (couleur de fond) 
 
     --color-ten: #011E14; // titre "A propos"/"Objectifs"
-    --color-eleven: #B2A18A; // couleur de fond part-2
+    --color-eleven: #a08f77; // couleur de fond part-2
     --color-twelve: black; // couleur texte description blocs parcours
     --color-thirteen: #B2A18A; // couleur date blocs parcours
     --color-fourteen: #2E4636; // couleur de fond part-3
-    --color-sixteen: #B2A18A; //couleur de fond des 3 blocs parcours
+    --color-sixteen: #a08f77; //couleur de fond des 3 blocs parcours
 }
 
 .mode-white {
@@ -89,6 +89,10 @@ html, body {
     min-height: 100vh;
     height: auto;
     margin: 0 auto;
+}
+
+body {
+    background-color: var(--color-six);
 }
 
 

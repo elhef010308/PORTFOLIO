@@ -19,7 +19,7 @@ function Header() {
         if (location.pathname !== '/') {
             navigate('/', { state: { scrollTo: 'about' } });
         } else {
-            const aboutSection = document.getElementById('about');
+            const aboutSection = document.getElementById('about-me');
             if (aboutSection) {
                 aboutSection.scrollIntoView({ behavior: 'smooth' });
             }

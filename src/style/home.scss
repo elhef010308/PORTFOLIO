@@ -115,7 +115,6 @@
                 opacity: 0;
                 width: 0;
                 height: 0;
-                color: var(--color-two);
             }
 
             .slider {
@@ -167,7 +166,7 @@
 
         .part-3-title {
             color: var(--color-four);
-            font-size: 40px;
+            font-size: 50px;
             text-align: center;
             padding: 50px 0;
         }
@@ -187,7 +186,7 @@
                 top: 0;
                 bottom: 0;
                 left: 50%;
-                width: 2px;
+                width: 3px;
                 background-color: black;
                 transform: translateX(-50%);
                 z-index: 0;
@@ -223,7 +222,8 @@
         }
 
         .div-infos {
-            border: solid black 2px;
+            border: solid black 3px;
+            border-radius: 10px;
             width: 400px;
             height: 200px;
             display: flex;
@@ -234,7 +234,8 @@
 
             h3 {
                 color: var(--color-five);
-                font-size: 30px;
+                font-size: 25px;
+                padding-bottom: 15px;
             }
 
             p {
@@ -245,7 +246,8 @@
 
         .date {
             color: var(--color-thirteen);
-            font-size: 15px;
+            font-size: 18px;
+            font-weight: 900;
             width: 110px;
             text-align: center;
         }

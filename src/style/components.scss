@@ -53,6 +53,7 @@
                 padding: 0;
                 min-width: 30px;
                 display: inline-block;
+                position: static;
             }
         }
     }
@@ -87,7 +88,8 @@
 
 .about-me-title,
 .my-goals-title {
-    font-size: 48px;
+    font-size: 50px;
+    padding-bottom: 20px;
     font-weight: 600;
     color: var(--color-ten);
     text-align: center;
