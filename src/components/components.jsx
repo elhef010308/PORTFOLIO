@@ -1,7 +1,4 @@
-import avatar1 from '../images/avatar.png';
-import avatar2 from '../images/avatar-pixels.png';
 import { useEffect } from 'react';
-
 
 // COMPOSANT POUR LE TITRE PRINCIPAL DE LA PAGE D'ACCUEIL
 export default function TitleText() {

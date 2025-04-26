@@ -159,6 +159,10 @@
         height: auto;
     }
 
+    #about-me {
+        scroll-margin-top: 85px; // ajuste cette valeur à la hauteur réelle de ton header
+    }
+
     .part-3 {
         background-color: var(--color-fourteen);
         z-index: 5;
@@ -174,7 +178,7 @@
         .timeline {
             display: flex;
             flex-direction: column;
-            justify-content: center; 
+            justify-content: center;
             align-items: center;
             width: 100%;
             position: relative;
@@ -186,7 +190,7 @@
                 top: 0;
                 bottom: 0;
                 left: 50%;
-                width: 3px;
+                width: 5px;
                 background-color: black;
                 transform: translateX(-50%);
                 z-index: 0;
@@ -212,6 +216,35 @@
             align-items: flex-end;
         }
 
+        .container-1::before,
+        .container-2::before,
+        .container-3::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            border-radius: 50%;
+            z-index: 2;
+        }
+
+        .container-1::before {
+            left: 690px;
+            top: 110px;
+        }
+
+        .container-2::before {
+            left: 635px;
+            top: 320px;
+        }
+
+        .container-3::before {
+            left: 690px;
+            top: 520px;
+        }
+
         .content-top {
             display: flex;
             align-items: center;
@@ -222,7 +255,7 @@
         }
 
         .div-infos {
-            border: solid black 3px;
+            border: solid black 5px;
             border-radius: 10px;
             width: 400px;
             height: 200px;
@@ -240,7 +273,7 @@
 
             p {
                 color: var(--color-twelve);
-                font-size: 15px;
+                font-size: 18px;
             }
         }
 
@@ -252,7 +285,8 @@
             text-align: center;
         }
 
-        .date-1, .date-3 {
+        .date-1,
+        .date-3 {
             margin-right: 75px;
         }
 

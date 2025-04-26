@@ -114,7 +114,7 @@ function Home() {
                         <div className='content-top'>
                             <div className='div-infos'>
                                 <h3>Université Jean Moulin</h3>
-                                <p>Validation d'une licence de philosophie<br />
+                                <p>Validation d'une licence de philosophie
                                     précédée d'une première année en Hypokhâgne</p>
                             </div>
                             <p className='date-1'>2021-2024</p>
@@ -126,7 +126,7 @@ function Home() {
                             <p className='date-2'>2025</p>
                             <div className='div-infos'>
                                 <h3>Openclassrooms</h3>
-                                <p>Formation "Développeur Web"<br />
+                                <p>Formation "Développeur Web"
                                     délivrant un RNCP de niveau 2</p>
                             </div>
                         </div>
@@ -136,7 +136,7 @@ function Home() {
                         <div className='content-top'>
                             <div className='div-infos'>
                                 <h3>My Digital School</h3>
-                                <p>Dernière année en alternance de bachelor<br />
+                                <p>Dernière année en alternance de bachelor
                                     "Développeur web et mobile" (à venir)</p>
                             </div>
                             <p className='date-3'>2025-2026</p>

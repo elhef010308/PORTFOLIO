@@ -21,17 +21,20 @@
         position: relative;
         display: inline-block;
         top: -900px;
-        width: auto;
+        width: 3ch;
+        height: 2em;
+        overflow: visible;
         transition: top 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 
         span {
             position: absolute;
             top: 0;
-            right: 0;
+            left: 0;
             transition: ease 0.4s all;
 
             &.letter-2 {
                 color: var(--color-three);
+                z-index: 0;
             }
 
             &.letter-1 {
@@ -40,11 +43,11 @@
 
                 &:hover {
                     top: -3px;
-                    right: -3px;
+                    left: -3px;
 
                     ~.letter-2 {
                         top: 3px;
-                        right: 3px;
+                        left: 3px;
                     }
                 }
             }
@@ -121,14 +124,25 @@
     width: 805px;
     color: var(--color-five);
     line-height: 1.5;
-
 }
 
 .my-goals-list {
-    padding-left: 20px;
+    list-style: none; // On désactive les puces par défaut
+    padding-left: 50px;
 
     li {
-        list-style-type: circle;
+        position: relative;
+        padding-left: 30px; // 👈 décalage total vers la droite (puce + texte)
+        margin-bottom: 10px;
+
+        &::before {
+            content: "★"; // étoile pleine
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 17px;
+            color: var(--color-ten);
+        }
     }
 }
 
