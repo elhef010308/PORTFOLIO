@@ -6,28 +6,10 @@ import TitleText from '../components/components';
 import { AboutMe } from '../components/components';
 
 
-// importer la fonction ToogleTheme dans les parenthèses de Home
-// ajouter le déclenchement de la fonction au clic sur le bouton
 
-function Home() {
-
-    // Mode clair - Mode sombre
-    const [darkMode, setDarkMode] = useState(false);
+function Home({ darkMode, toggleTheme }) {
     const location = useLocation();
     const navigate = useNavigate();
-
-    useEffect(() => {
-        const savedMode = localStorage.getItem('mode');
-        if (savedMode === 'mode-dark') {
-            setDarkMode(true);
-            document.body.classList.add('mode-dark');
-            document.body.classList.remove('mode-white');
-        } else {
-            setDarkMode(false);
-            document.body.classList.add('mode-white');
-            document.body.classList.remove('mode-dark');
-        }
-    }, []);
 
     useEffect(() => {
         if (location.state?.scrollTo === 'about') {
@@ -44,17 +26,6 @@ function Home() {
             });
         }
     }, [location]);
-
-    const toggleTheme = () => {
-        const newMode = !darkMode;
-        setDarkMode(newMode);
-
-        const classToAdd = newMode ? 'mode-dark' : 'mode-white';
-        const classToRemove = newMode ? 'mode-white' : 'mode-dark';
-
-        document.body.classList.replace(classToRemove, classToAdd);
-        localStorage.setItem('mode', classToAdd);
-    };
 
     return (
         <div className='home-page'>

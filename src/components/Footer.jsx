@@ -39,7 +39,7 @@ function Footer() {
 
                 <div className='button-footer'>
                     <button className='link-to-certificates' onClick={handleGoToCertificates}>
-                        <i class='fa-solid fa-file-lines' id='icone-footer'></i>
+                        <i className='fa-solid fa-file-lines' id='icone-footer'></i>
                     </button>
                     <button className='link-to-top-page'>
                         <i className='fa-solid fa-arrow-up' id='icone-footer'></i>

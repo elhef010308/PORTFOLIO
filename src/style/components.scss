@@ -151,3 +151,86 @@
     text-align: justify;
     padding-bottom: 20px;
 }
+
+
+
+// COMPOSANT DES PROJETS DU CV
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+.project div {
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 0;
+}
+
+.project div h3 {
+    color: var(--color-eight-second);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.project div p {
+    color: var(--color-eight-second);
+    font-size: 18px;
+    font-style: italic;
+    margin-left: 50px;
+}
+
+.project div button {
+    border: 3px solid var(--color-eight-first);
+    border-radius: 20px;
+    background-color: var(--color-eight-second);
+    color: var(--color-eight-first);
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    width: auto;
+    height: 50px;
+    padding:0 5px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.competences {
+    color: var(--color-eight-first);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.project ul {
+    color: var(--color-eight-first);
+    font-size: 18px;
+    padding-left: 50px;
+
+    li {
+        position: relative;
+        padding-left: 30px; // 👈 décalage total vers la droite (puce + texte)
+        margin-bottom: 10px;
+
+        &::before {
+            content: "★"; // étoile pleine
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 17px;
+            color: var(--color-eight-first);
+        }
+    }
+}
+
+
+// COMPOSANT DES CERTIFICATIONS OPENCLASSROOMS
+.certification-card img {
+    width: 50px;
+    height: 100px;
+}

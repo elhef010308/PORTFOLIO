@@ -1,0 +1,67 @@
+.cv-page {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+
+    .part-cv-1 {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1440px;
+        height: auto;
+        background-color: var(--color-fourteen);
+
+        .title-cv-container {
+            gap: 250px;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            justify-content: center;
+
+            .cv-title {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                h1 {
+                    font-size: 42px;
+                    color: var(--color-four);
+                }
+            }
+
+            .cv-image {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+                padding-top: 5px;
+
+                img {
+                    margin: 15px 0;
+                    height: 300px;
+                    width: auto;
+                    border: black 3px solid;
+                    border-radius: 10px;
+                }
+
+                a {
+                    border: solid black 3px;
+                    background-color: var(--color-sixteen);
+                    border-radius: 10px;
+                    padding: 10px 15px;
+                    margin-bottom: 20px;
+                    color: black;
+                    font-size: 16px;
+                }
+
+                a:hover, a:focus {
+                    border: solid var(--color-sixteen) 3px;
+                    color: var(--color-sixteen);
+                }
+            }
+        }
+
+    }
+}

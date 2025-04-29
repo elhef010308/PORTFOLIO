@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 
+
 // COMPOSANT POUR LE TITRE PRINCIPAL DE LA PAGE D'ACCUEIL
 export default function TitleText() {
     const text = ['Développeuse', 'web et mobile'];
@@ -102,3 +103,32 @@ export function AboutMe() {
     )
 }
 
+
+// COMPOSANT DES PROJETS DU CV
+export function ProjectCard({ id, title, objectives }) {
+    return (
+        <div className='project'>
+            <div>
+                <h3>PROJET {id} :</h3>
+                <p>{title}</p>
+                <button>VOIR</button>
+            </div>
+            <p className='competences'>Compétences à développer :</p>
+            <ul>
+                {objectives.map((objective, index) => (
+                    <li key={index}>{objective}</li>
+                ))}
+            </ul>
+        </div>
+    );
+}
+
+
+// COMPOSANT DES CERTIFICATIONS OPENCLASSROOMS
+export function CertificationCard({ src, alt }) {
+    return (
+        <div className='certification-card'>
+            <img src={src} alt={alt} />
+        </div>
+    );
+}

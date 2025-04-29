@@ -30,9 +30,9 @@ function Header() {
     return (
         <header>
             <div className={`header ${showHeader ? 'show' : ''}`}>
-                <a href='#' class='logo'>
+                <a href='#' className='logo'>
                     &lt;/&gt; Lucy
-                    <span class='animate' style={{ '--i': 2 }}></span>
+                    <span className='animate' style={{ '--i': 2 }}></span>
                 </a>
                 <nav className='navbar'>
                     <ul>
