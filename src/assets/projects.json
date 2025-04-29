@@ -1,6 +1,6 @@
 [
     {
-        "id": "P1",
+        "id": 1,
         "title": "Démarrez votre formation de Développeur web",
         "objectives": [
             "Définir son objectif professionnel",
@@ -10,7 +10,7 @@
         ]
     },
     {
-        "id":"P2",
+        "id": 2,
         "title": "Créez la page d'accueil d'une agence de voyage avec HTML & CSS",
         "objectives": [
             "Implémenter une interface responsive avec HTML et CSS",
@@ -20,7 +20,7 @@
         ]
     },
     {
-        "id": "P3",
+        "id": 3,
         "title": "Créez une page web dynamique avec Javascript",
         "objectives": [
             "Récupérer les données utilisateurs dans le Javascript via des formulaires",
@@ -29,7 +29,7 @@
         ]
     },
     {
-        "id": "P4",
+        "id": 4,
         "title": "Débuggez et optimisez un site de photographe",
         "objectives": [
             "Optimiser les performances d'un site web", 
@@ -38,7 +38,7 @@
         ]
     },
     {
-        "id": "P5",
+        "id": 5,
         "title": "Créez une application web de location immobilière avec React",
         "objectives": [
             "Initialiser une application avec Create React App",
@@ -49,7 +49,7 @@
         ]
     },
     {
-        "id": "P6",
+        "id": 6,
         "title": "Développez le Backend d'un site de notation de livres",
         "objectives": [
             "Implémenter une modèle logique de données conformément à la règlementation",
@@ -58,7 +58,7 @@
         ]
     },
     {
-        "id": "P7",
+        "id": 7,
         "title": "Planifiez le déveeloppement d'un site de votre client",
         "objectives": [
             "Découper une fonctionnalité en tâche pour préparer le développement",
@@ -69,7 +69,7 @@
         ]
     },
     {
-        "id": "P8",
+        "id": 8,
         "title": "Créez et publiez votre portfolio de développeur",
         "objectives": [
             "Déployer un site statique en ligne",

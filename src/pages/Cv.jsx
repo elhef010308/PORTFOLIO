@@ -22,45 +22,51 @@ function Cv() {
                 </div>
             </section >
 
-            <div className='openclassrooms'>
-                <h2>MON PARCOURS OPENCLASSROOMS (2025)</h2>
-                <p className='formation'>Formation "Développeur Web"</p>
-                <a href='/cv.pdf' download>
-                    Voir le programme
-                </a>
-                <div className='projects-container'>
-                    {projectsDatas.map(project => (
-                        <ProjectCard
-                            key={project.id}
-                            id={project.id}
-                            title={project.title}
-                            objectives={project.objectives}
-                        />
-                    ))}
-                </div>
-            </div>
-
-            <div className='certifications'>
-                <p className='formation'>Certifications Openclassrooms</p>
-                <div className='certifications-wrapper'>
-                    <div className='round left'></div>  {/* Rond gauche fixe */}
-                    <div className='certifications-scroll'>
-                        {certifications.map((certif) => (
-                            <CertificationCard
-                                key={certif.id}
-                                src={certif.src}
-                                alt={certif.alt}
+            <section className='part-cv-2'>
+                <div className='openclassrooms'>
+                    <h2>MON PARCOURS OPENCLASSROOMS (2025)</h2>
+                    <div className='formation-title'>
+                        <p className='formation'>Formation "Développeur Web"</p>
+                        <a href='/programme-formation.pdf' download>
+                            Voir le programme
+                        </a>
+                    </div>
+                    <div className='projects-container'>
+                        {projectsDatas.map(project => (
+                            <ProjectCard
+                                key={project.id}
+                                id={project.id}
+                                title={project.title}
+                                objectives={project.objectives}
                             />
                         ))}
                     </div>
-                    <div className="round right"></div>  {/* Rond droit fixe */}
                 </div>
-            </div>
 
-            <div className='university'>
-                <h2>MON PARCOURS UNIVERSITAIRE</h2>
-                <p className='formation'>Licence de Philosophie</p>
-            </div>
+                <div className='certifications'>
+                    <p className='formation'>Certifications Openclassrooms</p>
+                    <div className='certifications-wrapper'>
+                        <div className='round left'></div>  {/* Rond gauche fixe */}
+                        <div className='certifications-scroll'>
+                            {certifications.map((certif) => (
+                                <CertificationCard
+                                    key={certif.id}
+                                    src={certif.src}
+                                    alt={certif.alt}
+                                />
+                            ))}
+                        </div>
+                        <div className="round right"></div>  {/* Rond droit fixe */}
+                    </div>
+                </div>
+            </section >
+
+            <section className='part-cv-3'>
+                <div className='university'>
+                    <h2>MON PARCOURS UNIVERSITAIRE</h2>
+                    <p className='formation'>Licence de Philosophie</p>
+                </div>
+            </section>
 
         </div >
     );

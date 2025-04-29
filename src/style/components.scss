@@ -159,45 +159,34 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0;
 }
 
-.project div {
+.projet-title-container {
+    display: flex;
+    align-items: center;
     width: 100%;
     max-width: 1440px;
-    height: auto;
-    padding: 0 20px;
-    display: flex;
     flex-direction: row;
     justify-content: start;
-    gap: 0;
-}
-
-.project div h3 {
-    color: var(--color-eight-second);
-    font-size: 20px;
-    font-weight: 800;
+    margin-bottom: 30px;
 }
 
 .project div p {
     color: var(--color-eight-second);
-    font-size: 18px;
-    font-style: italic;
-    margin-left: 50px;
+    font-size: 20px;
 }
 
 .project div button {
-    border: 3px solid var(--color-eight-first);
-    border-radius: 20px;
+    border: 2px solid var(--color-eight-first);
+    border-radius: 5px;
     background-color: var(--color-eight-second);
     color: var(--color-eight-first);
     text-align: center;
     font-size: 17px;
     font-weight: 600;
     width: auto;
-    height: 50px;
-    padding:0 5px;
-    margin-left: 50px;
+    padding: 10px 15px;
+    margin: 0 50px 0 20px;
     cursor: pointer;
 }
 

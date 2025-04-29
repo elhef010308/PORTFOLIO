@@ -108,10 +108,9 @@ export function AboutMe() {
 export function ProjectCard({ id, title, objectives }) {
     return (
         <div className='project'>
-            <div>
-                <h3>PROJET {id} :</h3>
-                <p>{title}</p>
+            <div className='projet-title-container'>
                 <button>VOIR</button>
+                <p>PROJET {id} : {title}</p>
             </div>
             <p className='competences'>Compétences à développer :</p>
             <ul>
