@@ -5,7 +5,13 @@ import { TitleCurriculum } from '../components/components.jsx';
 import projectsDatas from '../assets/projects.json';
 import certifications from '../assets/certifications.json';
 
+import { useState } from 'react';
+
 function Cv() {
+    const [selectedCertif, setSelectedCertif] = useState(null);
+    // selectCertif va contenir un objet JSON
+    // null veut dire "aucune modale n'est ouverte"
+
     return (
         <div className='cv-page'>
             <section className='part-cv-1'>
@@ -54,21 +60,28 @@ function Cv() {
                                     key={certif.id}
                                     src={certif.src}
                                     alt={certif.alt}
+                                    onClick={() => setSelectedCertif(certif)}
                                 />
                             ))}
                         </div>
                         <div className="round right"></div>  {/* Rond droit fixe */}
                     </div>
                 </div>
-            </section >
 
-            <section className='part-cv-3'>
                 <div className='university'>
                     <h2>MON PARCOURS UNIVERSITAIRE</h2>
                     <p className='formation'>Licence de Philosophie</p>
                 </div>
             </section>
 
+            {selectedCertif !== null && (
+                <div className='modal-certifications' onClick={() => setSelectedCertif(null)}>
+                    <div className='modale-image' onClick={(e) => e.stopPropagation()}>
+                        <img src={selectedCertif.src} alt={selectedCertif.alt} />
+                        <button onClick={() => setSelectedCertif(null)}>X</button>
+                    </div>
+                </div>
+            )}
         </div >
     );
 }

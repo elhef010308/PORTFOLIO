@@ -154,7 +154,7 @@
 
 
 
-// COMPOSANT TITRE PRINCIPAL DE LA PAGE d'ACCUEIL
+// COMPOSANT TITRE DE LA PAGE DE CV
 #text-curriculum {
     font-size: 42px;
     line-height: 1;
@@ -297,7 +297,7 @@
 }
 
 .competences.right {
-    margin: 0 50px 20px 0; 
+    margin: 0 50px 20px 0;
     text-align: right;
 }
 
@@ -344,7 +344,19 @@
 
 
 // COMPOSANT DES CERTIFICATIONS OPENCLASSROOMS
+.certification-card {
+    height: auto;
+    width: auto;
+}
+
 .certification-card img {
-    width: 50px;
     height: 100px;
+    width: 50px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
 }

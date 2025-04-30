@@ -110,22 +110,76 @@
                 gap: 20px;
                 margin-bottom: 30px;
             }
-
-
-            .certification-p {
-                font-size: 25px;
-                margin-bottom: 0;
-                text-align: center;
-                margin-bottom: 50px;
-            }
-
-            .certifications-wrapper {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-            }
-
         }
     }
+}
+
+.certification-p {
+    font-size: 25px;
+    margin-bottom: 0;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.certifications-wrapper {
+    position: absolute;
+    bottom: -305%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 20px;
+    width: 80%;
+    height: auto;
+}
+
+.certifications-scroll {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+    margin: 0 10px;
+
+    /* ✅ Affiche la barre de scroll (même sur Mac) */
+    scrollbar-width: thin;            /* Firefox */
+    scrollbar-color: #888 #222;   /* Couleur de la barre / fond */
+
+
+}
+/* ✅ Pour Chrome et Edge */
+.certifications-scroll::-webkit-scrollbar {
+    height: 8px; /* hauteur de la barre */
+}
+.certifications-scroll::-webkit-scrollbar-track {
+    background: transparent; /* fond de la zone de scroll */
+}
+.certifications-scroll::-webkit-scrollbar-thumb {
+    background-color: #888;     /* couleur de la barre */
+    border-radius: 4px;
+}
+
+.round {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.round.left {
+    position: absolute;
+    left: 0;
+}
+
+.round.right {
+    position: absolute;
+    right: 0;
+}
+
+.university {
+    margin-top: 200px;
 }
