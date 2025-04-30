@@ -158,22 +158,50 @@
 .project {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+
+    width: 70%;
+    padding: 15px 0;
+
+    margin-left: 20px;
 }
+
+.project.right {
+    align-items: flex-end;
+    text-align: right;
+}
+
+.project:nth-child(even) {
+    align-self: flex-end;
+    margin-right: 30px;
+}
+
 
 .projet-title-container {
     display: flex;
-    align-items: center;
-    width: 100%;
-    max-width: 1440px;
     flex-direction: row;
-    justify-content: start;
-    margin-bottom: 30px;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.projet-title-container.left {
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.projet-title-container.right {
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    text-align: right;
 }
 
 .project div p {
     color: var(--color-eight-second);
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .project div button {
@@ -181,39 +209,70 @@
     border-radius: 5px;
     background-color: var(--color-eight-second);
     color: var(--color-eight-first);
+
     text-align: center;
     font-size: 17px;
     font-weight: 600;
+
     width: auto;
     padding: 10px 15px;
     margin: 0 50px 0 20px;
+
     cursor: pointer;
 }
 
+
 .competences {
-    color: var(--color-eight-first);
-    font-size: 20px;
-    font-weight: 700;
+    color: white;
+    font-size: 16px;
+    margin: 0 0 20px 20px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid white;
+}
+
+.competences.right {
+    margin: 0 50px 20px 0; 
+    text-align: right;
 }
 
 .project ul {
-    color: var(--color-eight-first);
-    font-size: 18px;
+    color: white;
+    font-size: 14px;
     padding-left: 50px;
 
     li {
         position: relative;
-        padding-left: 30px; // 👈 décalage total vers la droite (puce + texte)
-        margin-bottom: 10px;
+        padding-left: 40px; // 👈 décalage total vers la droite (puce + texte)
+        line-height: 1.5;
+        text-align: left;
+        letter-spacing: 0.5px;
+        transform: scaleY(0.9);
+
 
         &::before {
             content: "★"; // étoile pleine
             position: absolute;
             left: 0;
             top: 0;
-            font-size: 17px;
-            color: var(--color-eight-first);
+            font-size: 15px;
+            color: white;
         }
+    }
+}
+
+.project.right ul {
+    padding-right: 50px;
+    padding-left: 0;
+}
+
+.project.right ul li {
+    padding-right: 40px;
+    padding-left: 0;
+    text-align: right;
+
+    &::before {
+        left: auto;
+        right: 0;
     }
 }
 

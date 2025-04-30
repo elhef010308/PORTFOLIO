@@ -105,14 +105,20 @@ export function AboutMe() {
 
 
 // COMPOSANT DES PROJETS DU CV
-export function ProjectCard({ id, title, objectives }) {
+export function ProjectCard({ id, title, objectives, isLeft }) {
     return (
-        <div className='project'>
-            <div className='projet-title-container'>
+        <div className={`project ${isLeft ? 'left' : 'right'}`}>
+            <div className={`projet-title-container ${isLeft ? 'left' : 'right'}`}>
                 <button>VOIR</button>
-                <p>PROJET {id} : {title}</p>
+                <p>
+                    {isLeft
+                        ? `PROJET ${id} : ${title}`
+                        : `${title} : ${id} PROJET`}
+                </p>
             </div>
-            <p className='competences'>Compétences à développer :</p>
+            <p className={`competences ${isLeft ? 'left' : 'right'}`}>
+                Compétences à développer
+            </p>
             <ul>
                 {objectives.map((objective, index) => (
                     <li key={index}>{objective}</li>

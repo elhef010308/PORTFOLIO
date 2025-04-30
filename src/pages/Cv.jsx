@@ -32,12 +32,13 @@ function Cv() {
                         </a>
                     </div>
                     <div className='projects-container'>
-                        {projectsDatas.map(project => (
+                        {projectsDatas.map((project, index) => (
                             <ProjectCard
                                 key={project.id}
                                 id={project.id}
                                 title={project.title}
                                 objectives={project.objectives}
+                                isLeft={index % 2 === 0}
                             />
                         ))}
                     </div>
