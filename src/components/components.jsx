@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 
 // COMPOSANT POUR LE TITRE PRINCIPAL DE LA PAGE D'ACCUEIL
@@ -30,7 +30,6 @@ export default function TitleText() {
             return `<div class="line">${line.map(letter => `<div class="wrapper">${letter}</div>`).join('')}</div>`;
         });
     };
-
 
     useEffect(() => {
         const outputLayers = new Promise(function (resolve) {
@@ -136,4 +135,63 @@ export function CertificationCard({ src, alt }) {
             <img src={src} alt={alt} />
         </div>
     );
+}
+
+
+// COMPOSANT POUR LE TITRE "CURRICULUM VITAE"
+export function TitleCurriculum() {
+    const text = ['Curriculum', 'vitae'];
+    const containerRef = useRef(null);
+
+    const createLetterArray = (array) => {
+        return array.map(line => line.split(''));
+    };
+
+    const createLetterLayers = (array) => {
+        return array.map(line => {
+            return line.map((letter) => {
+                let layer = '';
+                for (let i = 1; i <= 2; i++) {
+                    if (letter === ' ') {
+                        layer += `<span class="space">&nbsp;</span>`;
+                    } else {
+                        layer += `<span class="letter-${i}">${letter}</span>`;
+                    }
+                }
+                return layer;
+            });
+        });
+    };
+
+    const createLetterContainers = (array) => {
+        return array.map(line => {
+            return `<div class="line">${line.map(letter => `<div class="wrapper">${letter}</div>`).join('')}</div>`;
+        });
+    };
+
+    useEffect(() => {
+        const container = containerRef.current;
+        container.innerHTML = createLetterContainers(
+            createLetterLayers(createLetterArray(text))
+        ).join('');
+
+        const spans = Array.prototype.slice.call(container.getElementsByTagName('span'));
+
+        let time = 250;
+        spans.forEach(span => {
+            setTimeout(() => {
+                span.parentElement.style.width = span.offsetWidth + 'px';
+                span.parentElement.style.height = span.offsetHeight + 'px';
+            }, 250);
+        });
+
+        spans.forEach(span => {
+            time += 75;
+            setTimeout(() => {
+                span.parentElement.style.top = '0px';
+            }, time);
+        });
+    }, []);
+
+    return <div id="text-curriculum" ref={containerRef}></div>;
 }

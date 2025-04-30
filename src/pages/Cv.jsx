@@ -1,6 +1,7 @@
 import cvImage from '../images/cv-image.png';
 import { ProjectCard } from '../components/components.jsx';
 import { CertificationCard } from '../components/components.jsx';
+import { TitleCurriculum } from '../components/components.jsx';
 import projectsDatas from '../assets/projects.json';
 import certifications from '../assets/certifications.json';
 
@@ -10,14 +11,14 @@ function Cv() {
             <section className='part-cv-1'>
                 <div className='title-cv-container'>
                     <div className='cv-title'>
-                        <h1>Curriculum Vitae</h1>
+                        <TitleCurriculum />
+                        <a href="#" download>Télécharger</a>
                     </div>
                     <div className="cv-image">
                         <img
                             alt="cv"
                             src={cvImage}
                         />
-                        <a href="#" download>Télécharger</a>
                     </div>
                 </div>
             </section >
@@ -26,7 +27,7 @@ function Cv() {
                 <div className='openclassrooms'>
                     <h2>MON PARCOURS OPENCLASSROOMS (2025)</h2>
                     <div className='formation-title'>
-                        <p className='formation'>Formation "Développeur Web"</p>
+                        <p className='formation-p'>Formation "Développeur Web"</p>
                         <a href='/programme-formation.pdf' download>
                             Voir le programme
                         </a>
@@ -42,10 +43,9 @@ function Cv() {
                             />
                         ))}
                     </div>
-                </div>
 
-                <div className='certifications'>
-                    <p className='formation'>Certifications Openclassrooms</p>
+
+                    <p className='certification-p'>Certifications Openclassrooms</p>
                     <div className='certifications-wrapper'>
                         <div className='round left'></div>  {/* Rond gauche fixe */}
                         <div className='certifications-scroll'>
