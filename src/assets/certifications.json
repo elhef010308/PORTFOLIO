@@ -1,102 +1,122 @@
 [
     { 
         "id": 1, 
-        "src": "/images/certificat-1.jpg",
+        "preview": "/images/certif-1.png",  
+        "full": "/images/certificat-1.jpg",
         "alt": "Certification 1"
     },
     { 
         "id": 2, 
-        "src": "/images/certificat-2.jpg",
+        "preview": "/images/certif-2.png",  
+        "full": "/images/certificat-2.jpg",
         "alt": "Certification 2"
     },
     { 
         "id": 3, 
-        "src": "/images/certificat-3.jpg",
+        "preview": "/images/certif-3.png",  
+        "full": "/images/certificat-3.jpg",
         "alt": "Certification 3"
     },
     { 
         "id": 4, 
-        "src": "/images/certificat-4.jpg",
+        "preview": "/images/certif-4.png",  
+        "full": "/images/certificat-4.jpg",
         "alt": "Certification 4"
     },
     { 
         "id": 5, 
-        "src": "/images/certificat-5.jpg",
+        "preview": "/images/certif-5.png",  
+        "full": "/images/certificat-5.jpg",
         "alt": "Certification 5"
     },
     { 
         "id": 6, 
-        "src": "/images/certificat-6.jpg",
+        "preview": "/images/certif-6.png",  
+        "full": "/images/certificat-6.jpg",
         "alt": "Certification 6"
     },
     { 
         "id": 7, 
-        "src": "/images/certificat-7.jpg",
+        "preview": "/images/certif-7.png",  
+        "full": "/images/certificat-7.jpg",
         "alt": "Certification 7"
     },
     { 
         "id": 8, 
-        "src": "/images/certificat-8.jpg",
+        "preview": "/images/certif-8.png",  
+        "full": "/images/certificat-8.jpg",
         "alt": "Certification 8"
     },
     { 
         "id": 9, 
-        "src": "/images/certificat-9.jpg",
+        "preview": "/images/certif-9.png",  
+        "full": "/images/certificat-9.jpg",
         "alt": "Certification 9"
     },
     { 
         "id": 10, 
-        "src": "/images/certificat-10.jpg",
+        "preview": "/images/certif-10.png",  
+        "full": "/images/certificat-10.jpg",
         "alt": "Certification 10"
     },
     { 
         "id": 11, 
-        "src": "/images/certificat-11.jpg",
+        "preview": "/images/certif-11.png",  
+        "full": "/images/certificat-11.jpg",
         "alt": "Certification 11"
     },
     { 
         "id": 12, 
-        "src": "/images/certificat-12.jpg",
+        "preview": "/images/certif-12.png",  
+        "full": "/images/certificat-12.jpg",
         "alt": "Certification 12"
     },
     { 
         "id": 13, 
-        "src": "/images/certificat-13.jpg",
+       "preview": "/images/certif-13.png",  
+        "full": "/images/certificat-13.jpg",
         "alt": "Certification 13"
     },
     { 
         "id": 14, 
-        "src": "/images/certificat-14.jpg",
+        "preview": "/images/certif-14.png",  
+        "full": "/images/certificat-14.jpg",
         "alt": "Certification 14"
     },
     { 
         "id": 15, 
-        "src": "/images/certificat-15.jpg",
+        "preview": "/images/certif-15.png",  
+        "full": "/images/certificat-15.jpg",
         "alt": "Certification 15"
     },
     { 
         "id": 16, 
-        "src": "/images/certificat-16.jpg",
+        "preview": "/images/certif-16.png",  
+        "full": "/images/certificat-16.jpg",
         "alt": "Certification 16"
     },
     { 
         "id": 17, 
-        "src": "/images/certificat-17.jpg",
+        "preview": "/images/certif-17.png",  
+        "full": "/images/certificat-17.jpg",
         "alt": "Certification 17"
     },
     { 
         "id": 18, 
-        "src": "/images/certificat-18.jpg",
+        "preview": "/images/certif-18.png",  
+        "full": "/images/certificat-18.jpg",
         "alt": "Certification 18"
     },
     { 
         "id": 19, 
-        "src": "/images/certificat-19.jpg",
+        "preview": "/images/certif-19.png",  
+        "full": "/images/certificat-19.jpg",
         "alt": "Certification 19"
     },
     { 
         "id": 20, 
-        "src": "/images/certificat-20.jpg",
+        "preview": "/images/certif-20.png",  
+        "full": "/images/certificat-20.jpg",
         "alt": "Certification 20"
     }
 ]

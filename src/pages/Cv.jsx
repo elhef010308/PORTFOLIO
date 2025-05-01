@@ -58,7 +58,7 @@ function Cv() {
                             {certifications.map((certif) => (
                                 <CertificationCard
                                     key={certif.id}
-                                    src={certif.src}
+                                    src={certif.preview}
                                     alt={certif.alt}
                                     onClick={() => setSelectedCertif(certif)}
                                 />
@@ -74,10 +74,12 @@ function Cv() {
                 </div>
             </section>
 
+
+            {/* BOITE MODALE POUR AFFICHER LES CERTIFICATIONS */}
             {selectedCertif !== null && (
                 <div className='modal-certifications' onClick={() => setSelectedCertif(null)}>
                     <div className='modale-image' onClick={(e) => e.stopPropagation()}>
-                        <img src={selectedCertif.src} alt={selectedCertif.alt} />
+                        <img src={selectedCertif.full} alt={selectedCertif.alt} />
                         <button onClick={() => setSelectedCertif(null)}>X</button>
                     </div>
                 </div>
