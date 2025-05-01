@@ -8,17 +8,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        max-width: 1440px;
-        height: auto;
-        background-color: var(--color-fourteen);
+        width: 1440px;
+        height: 550px;
+        background-image: var(--background-image-cv);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
 
         .title-cv-container {
-            gap: 250px;
-            display: flex;
-            flex-direction: row;
             position: relative;
-            justify-content: center;
 
             .cv-title {
                 display: flex;
@@ -30,45 +28,31 @@
                 position: relative;
 
                 a {
-                    border: solid black 3px;
-                    background-color: var(--color-sixteen);
+                    border: solid 2px var(--color-sixteen);
+                    background-color: var(--color-seventeen);
+                    color: var(--color-sixteen);
                     border-radius: 10px;
                     padding: 10px 15px;
-                    color: black;
                     font-size: 16px;
                 }
 
                 a:hover,
                 a:focus {
-                    border: solid var(--color-sixteen) 3px;
-                    color: var(--color-sixteen);
-                }
-            }
-
-            .cv-image {
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-                align-items: center;
-                padding-top: 5px;
-
-                img {
-                    margin: 15px 0;
-                    height: 300px;
-                    width: auto;
-                    border: black 3px solid;
-                    border-radius: 10px;
-                    margin-bottom: 20px;
+                    border: solid 3px var(--color-seventeen);
+                    background-color: var(--color-sixteen);
+                    color: var(--color-seventeen);
                 }
             }
         }
 
     }
 
+
     .part-cv-2 {
         width: 100%;
         max-width: 1440px;
         padding: 40px 0;
+        background-color: var(--color-fourteen);
 
         .openclassrooms {
             text-align: center;
@@ -76,6 +60,7 @@
             h2 {
                 font-size: 35px;
                 margin-bottom: 15px;
+                color: var(--color-thirteen);
             }
 
             .formation-title {
@@ -90,16 +75,26 @@
                 .formation-p {
                     font-size: 25px;
                     margin-bottom: 0;
+                    color: var(--color-thirteen);
                 }
 
                 a {
                     display: inline-block;
-                    border: 2px solid;
                     border-radius: 5px;
                     font-size: 15px;
                     padding: 10px;
                     margin: 0;
                     margin-top: 4px;
+                    border: solid 2px var(--color-sixteen);
+                    background-color: var(--color-seventeen);
+                    color: var(--color-sixteen);
+                }
+
+                a:hover,
+                a:focus {
+                    border: solid 3px var(--color-seventeen);
+                    background-color: var(--color-sixteen);
+                    color: var(--color-seventeen);
                 }
             }
 
@@ -119,6 +114,7 @@
     margin-bottom: 0;
     text-align: center;
     margin-bottom: 50px;
+    color: var(--color-thirteen);
 }
 
 .certifications-wrapper {
@@ -137,8 +133,6 @@
 }
 
 
-
-
 .certifications-scroll {
     display: flex;
     flex-direction: row;
@@ -153,7 +147,7 @@
 // Apparence de la barre de scroll 
 .certifications-scroll {
     scrollbar-width: thin;
-    scrollbar-color: #f90 #111;
+    scrollbar-color: var(--color-eighteen) var(--color-eighteen);
 }
 
 .certifications-scroll::-webkit-scrollbar {
@@ -165,9 +159,9 @@
 }
 
 .certifications-scroll::-webkit-scrollbar-thumb {
-    background-color: #f90;
+    border: 2px solid var(--color-eighteen);
+    background-color: var(--color-eighteen);
     border-radius: 6px;
-    border: 2px solid #222;
 }
 
 .round {
@@ -191,7 +185,7 @@
 
 
 .university {
-    margin-top: 200px;
+    margin-top: 250px;
 }
 
 .university-title {
@@ -200,20 +194,24 @@
     h2 {
         font-size: 35px;
         margin-bottom: 15px;
+        color: var(--color-thirteen);
     }
 
     p {
         font-size: 25px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
+        color: var(--color-thirteen);
     }
 }
 
 .university-content {
-    padding-left: 70px;
+    padding-left: 150px;
 
     .first-year {
         font-size: 18px;
-        border: 2px solid;
+        border: 2px solid var(--color-eighteen);
+        background-color: var(--color-thirteen);
+        color: var(--color-eighteen);
         width: 500px;
         text-align: center;
         padding: 10px;
@@ -226,11 +224,18 @@
         width: 500px;
         text-align: center;
         padding: 10px;
-        margin: 40px 0 20px 40px;
+        margin: 50px 0 20px 40px;
+        border: 2px solid var(--color-eighteen);
+        background-color: var(--color-thirteen);
+        color: var(--color-eighteen);
     }
 
     .semestry {
         margin: 25px 0 15px 60px;
         font-weight: 700;
     }
+}
+
+.courses-university, .semestry {
+    color: var(--color-three-bis);
 }

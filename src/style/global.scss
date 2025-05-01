@@ -19,6 +19,7 @@
 
 :root {
     --background-image-url: url('../images/background-part-1-home.png');
+    --background-image-cv: url('../images/background-image-cv-dark.png');
     
     --color-one: white; // logo du header, menu du header, copyright
     --color-two: white; // titre principal (lettres visibles), texte description, texte bouton mode jour/nuit
@@ -44,11 +45,17 @@
     --color-thirteen: #B2A18A; // couleur date blocs parcours
     --color-fourteen: #2E4636; // couleur de fond part-3
     --color-sixteen: #a08f77; //couleur de fond des 3 blocs parcours
+    
+    --color-seventeen: #011e14;
+    --color-eighteen: black;
+    --color-eighteen-second: #667d6e;
+    --color-nineteen: #a08f77; 
 }
 
 .mode-white {
     --background-image-url: url('../images/background-image-mode-white.png');
-    
+    --background-image-cv: url('../images/background-image-cv-light.png');
+
     --color-one: #667D6E;
     --color-two: #06432D;
 
@@ -73,6 +80,11 @@
     --color-thirteen: black;
     --color-fourteen: #D8C9B4;
     --color-sixteen: #667D6E;
+    
+    --color-seventeen: white;
+    --color-eighteen: #667d6e;
+    --color-eighteen-second: black;
+    --color-nineteen: white;
 }
 
 #root {

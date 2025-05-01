@@ -159,7 +159,6 @@
     font-size: 42px;
     line-height: 1;
     position: relative;
-    margin-top: 50%;
     transform: translateY(-50%);
     text-align: center;
 
@@ -226,8 +225,8 @@
     flex-direction: column;
     align-items: flex-start;
 
-    border-top: 2px solid red;
-    border-bottom: 2px solid red;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
 
     width: 70%;
     padding: 15px 0;
@@ -251,49 +250,60 @@
     flex-direction: row;
     align-items: center;
     margin-bottom: 20px;
-    gap: 20px;
 }
 
 .projet-title-container.left {
     justify-content: flex-start;
     text-align: left;
+
+    button {
+        margin-right: 30px;
+    }
 }
 
 .projet-title-container.right {
     justify-content: flex-end;
     flex-direction: row-reverse;
     text-align: right;
+
+    button {
+        margin-left: 30px;
+    }
 }
 
 .project div p {
-    color: var(--color-eight-second);
+    color: var(--color-one);
     font-size: 18px;
 }
 
 .project div button {
-    border: 2px solid var(--color-eight-first);
     border-radius: 5px;
-    background-color: var(--color-eight-second);
-    color: var(--color-eight-first);
-
+    border: 2px solid var(--color-eighteen);
+    background-color: var(--color-thirteen);
+    color: var(--color-eighteen);
     text-align: center;
     font-size: 17px;
     font-weight: 600;
-
     width: auto;
     padding: 10px 15px;
     margin: 0 50px 0 20px;
-
     cursor: pointer;
+}
+
+.project div button:hover,
+.project div button:focus {
+    border: 2px solid var(--color-thirteen);
+    background-color: var(--color-seventeen);
+    color: var(--color-thirteen);
 }
 
 
 .competences {
-    color: white;
+    color: var(--color-nineteen);
     font-size: 16px;
     margin: 0 0 20px 20px;
     padding-bottom: 3px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid var(--color-nineteen);
 }
 
 .competences.right {
@@ -302,7 +312,6 @@
 }
 
 .project ul {
-    color: white;
     font-size: 14px;
     padding-left: 50px;
 
@@ -313,6 +322,7 @@
         text-align: left;
         letter-spacing: 0.5px;
         transform: scaleY(0.9);
+        color: var(--color-nineteen);
 
 
         &::before {
@@ -321,7 +331,7 @@
             left: 0;
             top: 0;
             font-size: 15px;
-            color: white;
+            color: var(--color-nineteen);
         }
     }
 }
