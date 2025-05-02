@@ -4,16 +4,3 @@
 @use "home.scss";
 @use "components.scss";
 @use "cv.scss";
-
-// arrière plan vert : 002d00
-// arrière plan anthracite : 0b0b0b ou 1b1b1b
-// appliquer un dégradé si on n'arrive pas à faire la forme ondulée
-
-
-
-
-// code pour créer des lignes 
-/*
-background-image: linear-gradient(180deg, #B2A2CD 18.75%, #5F5370 18.75%, #5F5370 29.17%, #fff 29.17%, #fff 50%, #B2A2CD 50%, #B2A2CD 68.75%, #5F5370 68.75%, #5F5370 79.17%, #fff 79.17%, #fff 100%);
-background-size: 96.00px 96.00px;
-*/

@@ -11,7 +11,6 @@
     box-sizing: border-box;
     text-decoration: none;
     border: none;
-    outline: none;
     scroll-behavior: smooth;
     font-family: 'Audiowide', sans-serif;
     height: auto;
@@ -48,8 +47,10 @@
     
     --color-seventeen: #011e14;
     --color-eighteen: black;
-    --color-eighteen-second: #667d6e;
-    --color-nineteen: #a08f77; 
+    --color-eighteen-second: #011E14;
+    --color-nineteen: #c5beb5; 
+
+    --color-twelve: #B2A18A;
 }
 
 .mode-white {
@@ -83,8 +84,10 @@
     
     --color-seventeen: white;
     --color-eighteen: #667d6e;
-    --color-eighteen-second: black;
+    --color-eighteen-second: #c5beb5;
     --color-nineteen: white;
+
+    --color-twelve: white;
 }
 
 #root {

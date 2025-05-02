@@ -108,7 +108,7 @@ export function ProjectCard({ id, title, objectives, isLeft }) {
     return (
         <div className={`project ${isLeft ? 'left' : 'right'}`}>
             <div className={`projet-title-container ${isLeft ? 'left' : 'right'}`}>
-                <button>VOIR</button>
+                <button className='button-see-project'>VOIR</button>
                 <p>
                     {isLeft
                         ? `PROJET ${id} : ${title}`
