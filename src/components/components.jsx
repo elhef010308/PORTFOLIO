@@ -129,9 +129,9 @@ export function ProjectCard({ id, title, objectives, isLeft }) {
 
 
 // COMPOSANT DES CERTIFICATIONS OPENCLASSROOMS
-export function CertificationCard({ src, alt }) {
+export function CertificationCard({ src, alt, onClick }) {
     return (
-        <div className='certification-card'>
+        <div className='certification-card' onClick={onClick}>
             <img src={src} alt={alt} />
         </div>
     );

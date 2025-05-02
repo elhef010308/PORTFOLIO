@@ -1,17 +1,28 @@
-import cvImage from '../images/cv-image.png';
 import { ProjectCard } from '../components/components.jsx';
 import { CertificationCard } from '../components/components.jsx';
 import { TitleCurriculum } from '../components/components.jsx';
 import projectsDatas from '../assets/projects.json';
 import certifications from '../assets/certifications.json';
-import backgroundImageDark from '../images/background-image-cv-dark.png';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function Cv() {
     const [selectedCertif, setSelectedCertif] = useState(null);
     // selectCertif va contenir un objet JSON
     // null veut dire "aucune modale n'est ouverte"
+
+    useEffect(() => {
+        if (selectedCertif !== null) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+
+        // Clean-up au démontage
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [selectedCertif]);
 
     return (
         <div className='cv-page'>
