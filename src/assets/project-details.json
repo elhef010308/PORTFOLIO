@@ -2,64 +2,62 @@
     {
         "id": "PROJET 1",
         "title": "Démarrez votre formation de Développeur web",
-        "src": "/images/super-projet.png",
-        "alt": "Aperçu de Mon Super Projet",
+        "src": ["", ""],
+        "alt": ["Aperçu du projet 1", "Aperçu du projet 1"],
         "github": "https://github.com/tonpseudo/super-projet",
         "description": "Cliquez pour en savoir plus."
     },
     {
         "id": "PROJET 2",
         "title": "Créez la page d'accueil d'une agence de voyage (HTML & CSS)",
-        "src": "/images/super-projet.png",
-        "alt": "Aperçu de Mon Super Projet",
+        "src": ["/images/projet-2-first.png", "/images/projet-2-second.png"],
+        "alt": ["Aperçu du projet 2", "Aperçu du projet 2"],
         "github": "https://github.com/tonpseudo/super-projet",
         "description": "Ce projet est une application web moderne utilisant React et Node.js. Elle permet de gérer des tâches de manière collaborative. Cliquez pour en savoir plus."
     },
     {
         "id": "PROJET 3",
         "title": "Créez une page web dynamique avec Javascript",
-        "src": "/images/super-projet.png",
-        "alt": "Aperçu de Mon Super Projet",
+        "src": ["/images/projet-3-first.png", "/images/projet-3-second.png"],
+        "alt": ["Aperçu du projet 3", "Aperçu du projet 3"],
         "github": "https://github.com/tonpseudo/super-projet",
         "description": "Ce projet est une application web moderne utilisant React et Node.js. Elle permet de gérer des tâches de manière collaborative. Cliquez pour en savoir plus."
     },
     {
         "id": "PROJET 4",
         "title": "Débuggez et optimisez un site de photographe",
-        "src": "/images/super-projet.png",
-        "alt": "Aperçu de Mon Super Projet",
+        "src": ["/images/projet-4-first.png", "/images/projet-4-second.png"],
+        "alt": ["Aperçu du projet 4", "Aperçu du projet 4"],
         "github": "https://github.com/tonpseudo/super-projet",
         "description": "Ce projet est une application web moderne utilisant React et Node.js. Elle permet de gérer des tâches de manière collaborative. Cliquez pour en savoir plus."
     },
     {
         "id": "PROJET 5",
         "title": "Créez une application web de location immobilière avec React",
-        "src": "/images/super-projet.png",
-        "alt": "Aperçu de Mon Super Projet",
+        "src": ["/images/projet-5-first.png", "/images/projet-5-second.png"],
+        "alt": ["Aperçu du projet 5", "Aperçu du projet 5"],
         "github": "https://github.com/tonpseudo/super-projet",
         "description": "Ce projet est une application web moderne utilisant React et Node.js. Elle permet de gérer des tâches de manière collaborative. Cliquez pour en savoir plus."
     },
     {
         "id": "PROJET 6",
-        "title": "Mon Super Projet",
-        "src": "/images/super-projet.png",
-        "alt": "Aperçu de Mon Super Projet",
+        "title": "Développez le Backend d'un site de notation de livres",
+        "src": ["/images/projet-6-first.png", "/images/projet-6-second.png"],
+        "alt": ["Aperçu du projet 6", "Aperçu du projet 6"],
         "github": "https://github.com/tonpseudo/super-projet",
         "description": "Ce projet est une application web moderne utilisant React et Node.js. Elle permet de gérer des tâches de manière collaborative. Cliquez pour en savoir plus."
     },
     {
         "id": "PROJET 7",
         "title": "Planifiez le déveeloppement d'un site de votre client",
-        "src": "/images/super-projet.png",
-        "alt": "Aperçu de Mon Super Projet",
+        "src": ["", ""],
+        "alt": ["Aperçu du projet 7", "Aperçu du projet 7"],
         "github": "https://github.com/tonpseudo/super-projet",
         "description": "Ce projet est une application web moderne utilisant React et Node.js. Elle permet de gérer des tâches de manière collaborative. Cliquez pour en savoir plus."
     },
     {
         "id": "PROJET 8",
         "title": "Créez et publiez votre portfolio de développeur",
-        "src": "/images/super-projet.png",
-        "alt": "Aperçu de Mon Super Projet",
         "github": "https://github.com/tonpseudo/super-projet",
         "description": "Ce projet est une application web moderne utilisant React et Node.js. Elle permet de gérer des tâches de manière collaborative. Cliquez pour en savoir plus."
     }
