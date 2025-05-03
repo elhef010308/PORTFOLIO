@@ -6,6 +6,7 @@ import { faSquareGithub } from '@fortawesome/free-brands-svg-icons';
 import { ProjectsPage } from '../components/projects-components.jsx';
 import { TitleProjectsPage } from '../components/projects-components.jsx';
 import projectdetail from '../assets/project-details.json';
+import { useState, useEffect } from 'react';
 
 function Projects() {
     const [selectedProject, setSelectedProject] = useState(null);

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from 'react';
 
 export function ProjectsPage({ src, alt, id, title, description, github, onClick }) {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -26,7 +26,8 @@ export function ProjectsPage({ src, alt, id, title, description, github, onClick
 
                 <button className='projet-button-right' onClick={handleNext}>→</button>
             </div>
-            <p>{id} : {title}</p>
+            <p className='p-project-card-one'>{id}</p>
+            <p className='p-project-card-two'>{title}</p>
             <button className='project-details' onClick={onClick}>Voir la description</button>
         </div>
     );

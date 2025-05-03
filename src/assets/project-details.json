@@ -2,7 +2,7 @@
     {
         "id": "PROJET 1",
         "title": "Démarrez votre formation de Développeur web",
-        "src": ["", ""],
+        "src": ["/images/projet-1-first.png", "/images/projet-3-second.png"],
         "alt": ["Aperçu du projet 1", "Aperçu du projet 1"],
         "github": "https://github.com/tonpseudo/super-projet",
         "description": "Cliquez pour en savoir plus."
@@ -52,12 +52,6 @@
         "title": "Planifiez le déveeloppement d'un site de votre client",
         "src": ["", ""],
         "alt": ["Aperçu du projet 7", "Aperçu du projet 7"],
-        "github": "https://github.com/tonpseudo/super-projet",
-        "description": "Ce projet est une application web moderne utilisant React et Node.js. Elle permet de gérer des tâches de manière collaborative. Cliquez pour en savoir plus."
-    },
-    {
-        "id": "PROJET 8",
-        "title": "Créez et publiez votre portfolio de développeur",
         "github": "https://github.com/tonpseudo/super-projet",
         "description": "Ce projet est une application web moderne utilisant React et Node.js. Elle permet de gérer des tâches de manière collaborative. Cliquez pour en savoir plus."
     }
