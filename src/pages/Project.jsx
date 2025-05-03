@@ -25,9 +25,7 @@ function Projects() {
     return (
         <div className='projects-page'>
             <section className="part-projects-1">
-                <div className="projects-title">
-                    <TitleProjectsPage />
-                </div>
+                <TitleProjectsPage />
             </section>
 
             <section className="part-projects-2">

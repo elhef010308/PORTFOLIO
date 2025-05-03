@@ -4,14 +4,83 @@
     padding-top: 50px;
     background-color: var(--color-fourteen);
 
-    
+    .part-projects-1 {
+        margin: 50px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1440px;
+        height: 550px;
+    }
+
+    .part-projects-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1440px;
+
+        .projects-carts-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            background-color: darkgrey;
+        }
+    }
 }
 
 
+//COMPOSANT CARTES DES PROJETS
+.project-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: solid 2px black;
+    width: 200px;
+    flex-direction: column;
+    height: auto;
+    padding: 5px;
+
+    .project-img-content img {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        width: 90%;
+        height: auto;
+        position: relative;
+    }
+
+    .projet-button-left {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+    }
+    .projet-button-right {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .project-details {
+        border: 1px solid black;
+        font-size: 13px;
+        border-radius: 5px;
+        padding: 5px;
+        width: auto;
+        height: 25px;
+    }
+}
 
 
 // COMPOSANT TITRE DE LA PAGE DES PROJETS
-#text-page-projets{
+#text-page-projets {
     font-size: 42px;
     line-height: 1;
     position: relative;
