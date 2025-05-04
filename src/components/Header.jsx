@@ -28,7 +28,7 @@ function Header({ isProjectsPage }) {
     };
 
     return (
-        <header className={`header ${isProjectsPage ? 'header-projects' : ''}`}>
+        <header>
             <div className={`header ${showHeader ? 'show' : ''}`}>
                 <a href='#' className='logo'>
                     &lt;/&gt; Lucy

@@ -42,7 +42,6 @@ function Projects() {
 
             <section className="part-projects-2">
                 <div className='box-projects-one'>
-                    <h2 className='title-projects-cards'>Projets réalisés avec Openclassrooms</h2>
                     <div className='projects-carts-container'>
                         {projectdetail.map((project) => (
                             <ProjectsPage
@@ -60,6 +59,7 @@ function Projects() {
                 </div>
 
                 <div className='softskills-container'>
+                    <h2 className='title-softkills-content'>Niveau de compétence</h2>
                     {data.map((item) => (
                         <div key={item.id} className='softskills'>
                             <div className='logo-softskills'>
@@ -67,7 +67,7 @@ function Projects() {
                             </div>
                             <p className='title-softskills'>{item.title}</p>
                             <div className="maitrise-softskills">
-                                <div className={`jauge jauge-${item.id}`}></div>
+                                <div className="jauge" style={{ width: item.level }}></div>
                             </div>
                         </div>
                     ))}

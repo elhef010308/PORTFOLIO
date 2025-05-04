@@ -1,82 +1,114 @@
 [
     {
-        "title": "CSS",
-        "src": "/images/logoSoftkills/logo-css.jpg",
-        "alt": "logo du CSS"
-    },
-    {
-        "title": "SASS",
-        "src": "/images/logoSoftkills/logo-sass.jng",
-        "alt": "logo du CSS"
-    },
-    {
-        "title": "NODE.JS",
-        "src": "/images/logoSoftkills/logo-nodejs.jng",
-        "alt": "logo du CSS"
-    },
-    {
-        "title": "REACT NATIVE",
-        "src": "/images/logoSoftkills/logo-react-native.jng",
-        "alt": "logo du CSS"
-    },
-    {
-        "title": "REACT",
-        "src": "/images/logoSoftkills/logo-react.jng",
-        "alt": "logo du CSS"
-    },
-    {
-        "title": "JAVASCRIPT",
-        "src": "/images/logoSoftkills/logo-js.jng",
-        "alt": "logo du CSS"
-    },
-    {
-        "title": "JSON",
-        "src": "/images/logoSoftkills/logo-json.jng",
-        "alt": "logo du CSS"
-    },
-    {
+        "id": "html",
         "title": "HTML",
         "src": "/images/logoSoftkills/logo-html.jpg",
-        "alt": "logo du CSS"
+        "alt": "logo du HTML",
+        "level": "95%"
     },
     {
-        "title": "POSTMAN",
-        "src": "/images/logoSoftkills/logo-postman.jng",
-        "alt": "logo du CSS"
+        "id": "css",
+        "title": "CSS",
+        "src": "/images/logoSoftkills/logo-css.jpg",
+        "alt": "logo du CSS",
+        "level": "95%"
     },
     {
+        "id": "sass",
+        "title": "SASS",
+        "src": "/images/logoSoftkills/logo-sass.png",
+        "alt": "logo du SASS",
+        "level": "95%"
+    },
+    {
+        "id": "javascript",
+        "title": "JAVASCRIPT",
+        "src": "/images/logoSoftkills/logo-js.png",
+        "alt": "logo du JavaScript",
+        "level": "75%"
+    },
+    {
+        "id": "json",
+        "title": "JSON",
+        "src": "/images/logoSoftkills/logo-json.png",
+        "alt": "logo du JSON",
+        "level": "65%"
+    },
+    {
+        "id": "react",
+        "title": "REACT",
+        "src": "/images/logoSoftkills/logo-react.png",
+        "alt": "logo de React",
+        "level": "65%"
+    },
+    {
+        "id": "react-native",
+        "title": "REACT NATIVE",
+        "src": "/images/logoSoftkills/logo-react-native.png",
+        "alt": "logo de React Native",
+        "level": "65%"
+    },
+    {
+        "id": "nodejs",
+        "title": "NODE.JS",
+        "src": "/images/logoSoftkills/logo-nodejs.png",
+        "alt": "logo de Node.js",
+        "level": "65%"
+    },
+    {
+        "id": "express",
         "title": "EXPRESS",
-        "src": "/images/logoSoftkills/logo-express.jng",
-        "alt": "logo du CSS"
+        "src": "/images/logoSoftkills/logo-express.png",
+        "alt": "logo d'Express",
+        "level": "60%"
     },
     {
+        "id": "eslint",
         "title": "ES LINT",
-        "src": "/images/logoSoftkills/logo-eslint.jng",
-        "alt": "logo du CSS"
+        "src": "/images/logoSoftkills/logo-eslint.png",
+        "alt": "logo de ESLint",
+        "level": "40%"
     },
     {
+        "id": "prettier",
+        "title": "PRETTIER",
+        "src": "/images/logoSoftkills/logo-prettier.png",
+        "alt": "logo de Prettier",
+        "level": "40%"
+    },
+    {
+        "id": "postman",
+        "title": "POSTMAN",
+        "src": "/images/logoSoftkills/logo-postman.png",
+        "alt": "logo de Postman",
+        "level": "60%"
+    },
+    {
+        "id": "vite",
         "title": "VITE",
         "src": "/images/logoSoftkills/logo-vite.jpg",
-        "alt": "logo du CSS"
+        "alt": "logo de Vite",
+        "level": "40%"
     },
     {
-        "title": "MONGOOSE",
-        "src": "/images/logoSoftkills/logo-mongoose.jng",
-        "alt": "logo du CSS"
-    },
-    {
-        "title": "PRETTIER",
-        "src": "/images/logoSoftkills/logo-prettier.jng",
-        "alt": "logo du CSS"
-    },
-    {
-        "title": "VS CODE",
-        "src": "/images/logoSoftkills/logo-vscode.jng",
-        "alt": "logo du CSS"
-    },
-    {
+        "id": "mongodb",
         "title": "MONGO DB",
-        "src": "/images/logoSoftkills/logo-mongodb.jng",
-        "alt": "logo du CSS"
+        "src": "/images/logoSoftkills/logo-mongodb.png",
+        "alt": "logo de MongoDB",
+        "level": "60%"
+    },
+    {
+        "id": "mongoose",
+        "title": "MONGOOSE",
+        "src": "/images/logoSoftkills/logo-mongoose.png",
+        "alt": "logo de Mongoose",
+        "level": "60%"
+    },
+    {
+        "id": "vscode",
+        "title": "VS CODE",
+        "src": "/images/logoSoftkills/logo-vscode.png",
+        "alt": "logo de VS Code",
+        "level": "90%"
     }
 ]

@@ -22,6 +22,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         width: 100%;
         max-width: 1440px;
         height: auto;
@@ -29,16 +30,30 @@
         padding-top: 50px;
         background-color: var(--color-ten);
 
-        .projects-carts-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); // 3 colonnes adaptables
-            gap: 30px;
-            padding: 30px;
-            width: 90%;
+        .box-projects-one {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
             max-width: 1440px;
-            box-sizing: border-box;
-            background-color: var(--color-fourteen);
-            border-radius: 10px;
+            height: auto;
+
+            .title-projects-cards {
+                font-size: 25px;
+                font-weight: 700;
+            }
+
+            .projects-carts-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); // 3 colonnes adaptables
+                gap: 30px;
+                padding: 30px;
+                width: 90%;
+                max-width: 1440px;
+                box-sizing: border-box;
+                background-color: var(--color-fourteen);
+                border-radius: 10px;
+            }
         }
     }
 }
@@ -173,6 +188,71 @@
                 min-width: 30px;
                 display: inline-block;
                 position: static;
+            }
+        }
+    }
+}
+
+
+// COMPOSANT DES SOFTKILLS
+.softskills-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    margin-bottom: 50px;
+    padding: 50px;
+
+    .title-softkills-content {
+        font-size: 25px;
+        font-weight: 700;
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    .softskills {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        max-width: 1440px;
+        height: auto;
+        margin-bottom: 20px;
+        padding-left: 15px;
+
+        .logo-softskills {
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .title-softskills {
+                font-size: 17px;
+                color: white;
+            }
+
+            .maitrise-softskills {
+                width: 200px;
+                height: 80px;
+                padding: 5px;
+                display: flex;
+                justify-content: flex-start;
+                border: 2px solid white;
+
+                .jauge {
+                    height: 70px;
+                    background-color: white;
+                }
             }
         }
     }
