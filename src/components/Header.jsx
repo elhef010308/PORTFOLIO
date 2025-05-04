@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 
-function Header() {
+function Header({ isProjectsPage }) {
     const navigate = useNavigate();
     const location = useLocation();
     const [showHeader, setShowHeader] = useState(false);
@@ -28,7 +28,7 @@ function Header() {
     };
 
     return (
-        <header>
+        <header className={`header ${isProjectsPage ? 'header-projects' : ''}`}>
             <div className={`header ${showHeader ? 'show' : ''}`}>
                 <a href='#' className='logo'>
                     &lt;/&gt; Lucy

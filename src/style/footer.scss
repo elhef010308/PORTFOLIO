@@ -85,9 +85,7 @@
         }
 
         .link-to-certificates:hover,
-        .link-to-top-page:hover,
-        .link-to-certificates:focus,
-        .link-to-top-page:focus {
+        .link-to-top-page:hover {
             background-color: var(--color-five-bis);
         }
     }
@@ -98,7 +96,6 @@
     font-size: 20px;
 }
 
-#icone-footer:hover,
-#icone-footer:focus {
+#icone-footer:hover {
     color: var(--color-three-bis);
 }

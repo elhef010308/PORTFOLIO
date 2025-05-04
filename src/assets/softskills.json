@@ -1,0 +1,82 @@
+[
+    {
+        "title": "CSS",
+        "src": "/images/logoSoftkills/logo-css.jpg",
+        "alt": "logo du CSS"
+    },
+    {
+        "title": "SASS",
+        "src": "/images/logoSoftkills/logo-sass.jng",
+        "alt": "logo du CSS"
+    },
+    {
+        "title": "NODE.JS",
+        "src": "/images/logoSoftkills/logo-nodejs.jng",
+        "alt": "logo du CSS"
+    },
+    {
+        "title": "REACT NATIVE",
+        "src": "/images/logoSoftkills/logo-react-native.jng",
+        "alt": "logo du CSS"
+    },
+    {
+        "title": "REACT",
+        "src": "/images/logoSoftkills/logo-react.jng",
+        "alt": "logo du CSS"
+    },
+    {
+        "title": "JAVASCRIPT",
+        "src": "/images/logoSoftkills/logo-js.jng",
+        "alt": "logo du CSS"
+    },
+    {
+        "title": "JSON",
+        "src": "/images/logoSoftkills/logo-json.jng",
+        "alt": "logo du CSS"
+    },
+    {
+        "title": "HTML",
+        "src": "/images/logoSoftkills/logo-html.jpg",
+        "alt": "logo du CSS"
+    },
+    {
+        "title": "POSTMAN",
+        "src": "/images/logoSoftkills/logo-postman.jng",
+        "alt": "logo du CSS"
+    },
+    {
+        "title": "EXPRESS",
+        "src": "/images/logoSoftkills/logo-express.jng",
+        "alt": "logo du CSS"
+    },
+    {
+        "title": "ES LINT",
+        "src": "/images/logoSoftkills/logo-eslint.jng",
+        "alt": "logo du CSS"
+    },
+    {
+        "title": "VITE",
+        "src": "/images/logoSoftkills/logo-vite.jpg",
+        "alt": "logo du CSS"
+    },
+    {
+        "title": "MONGOOSE",
+        "src": "/images/logoSoftkills/logo-mongoose.jng",
+        "alt": "logo du CSS"
+    },
+    {
+        "title": "PRETTIER",
+        "src": "/images/logoSoftkills/logo-prettier.jng",
+        "alt": "logo du CSS"
+    },
+    {
+        "title": "VS CODE",
+        "src": "/images/logoSoftkills/logo-vscode.jng",
+        "alt": "logo du CSS"
+    },
+    {
+        "title": "MONGO DB",
+        "src": "/images/logoSoftkills/logo-mongodb.jng",
+        "alt": "logo du CSS"
+    }
+]

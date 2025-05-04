@@ -1,23 +1,14 @@
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 // créer une fonction pour remonter en haut de la page
 // activer cette fonction via ONCLICK dans le bouton
 
-function Footer() {
+function Footer({ isProjectsPage }) {
     const navigate = useNavigate();
-    const location = useLocation();
 
-    const handleGoToCertificates = () => {
-        if (location.pathname == ! '/cv') {
-            navigate('/cv', { state: { scrollTo: 'certificates' } });
-        } else {
-            const aboutSection = document.getElementById('certificates');
-            if (aboutSection) {
-                aboutSection.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-
+    const handleGoToProjects = () => {
+        navigate('/projects');
     };
 
     return (
@@ -38,7 +29,7 @@ function Footer() {
                 </div>
 
                 <div className='button-footer'>
-                    <button className='link-to-certificates' onClick={handleGoToCertificates}>
+                    <button className='link-to-certificates' onClick={handleGoToProjects}>
                         <i className='fa-solid fa-file-lines' id='icone-footer'></i>
                     </button>
                     <button className='link-to-top-page'>
