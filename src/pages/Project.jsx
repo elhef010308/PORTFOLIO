@@ -41,6 +41,7 @@ function Projects() {
 
 
             <section className="part-projects-2">
+                <h2 className='title-projects-content'>Mes projets openclassrooms</h2>
                 <div className='box-projects-one'>
                     <div className='projects-carts-container'>
                         {projectdetail.map((project) => (
@@ -63,7 +64,9 @@ function Projects() {
                     {data.map((item) => (
                         <div key={item.id} className='softskills'>
                             <div className='logo-softskills'>
-                                <img src={item.src} alt={item.alt} />
+                                {item.src && (
+                                    <img src={item.src} alt={item.alt || item.title} />
+                                )}
                             </div>
                             <p className='title-softskills'>{item.title}</p>
                             <div className="maitrise-softskills">

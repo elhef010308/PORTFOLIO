@@ -67,14 +67,14 @@
         "title": "ES LINT",
         "src": "/images/logoSoftkills/logo-eslint.png",
         "alt": "logo de ESLint",
-        "level": "40%"
+        "level": "100%"
     },
     {
         "id": "prettier",
         "title": "PRETTIER",
         "src": "/images/logoSoftkills/logo-prettier.png",
         "alt": "logo de Prettier",
-        "level": "40%"
+        "level": "100%"
     },
     {
         "id": "postman",
@@ -88,7 +88,7 @@
         "title": "VITE",
         "src": "/images/logoSoftkills/logo-vite.jpg",
         "alt": "logo de Vite",
-        "level": "40%"
+        "level": "100%"
     },
     {
         "id": "mongodb",
@@ -102,7 +102,7 @@
         "title": "MONGOOSE",
         "src": "/images/logoSoftkills/logo-mongoose.png",
         "alt": "logo de Mongoose",
-        "level": "60%"
+        "level": "70%"
     },
     {
         "id": "vscode",

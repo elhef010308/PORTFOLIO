@@ -28,7 +28,13 @@
         height: auto;
         margin-bottom: 50px;
         padding-top: 50px;
-        background-color: var(--color-ten);
+
+        .title-projects-content {
+            font-size: 30px;
+            font-weight: 700;
+            margin: 30px 0;
+        }
+
 
         .box-projects-one {
             display: flex;
@@ -51,7 +57,6 @@
                 width: 90%;
                 max-width: 1440px;
                 box-sizing: border-box;
-                background-color: var(--color-fourteen);
                 border-radius: 10px;
             }
         }
@@ -76,6 +81,7 @@
         height: 180px;
         overflow: hidden;
         margin-bottom: 15px;
+        position: relative;
 
         img {
             display: block; // ← évite les marges inline
@@ -86,20 +92,28 @@
             border-top-right-radius: 5px;
             border: 2px solid black;
         }
-    }
 
-    .projet-button-left {
-        position: absolute;
-        top: 50%;
-        left: 10px;
-        display: none;
-    }
+        .projet-button-left {
+            top: 50%;
+            left: 10px;
+            font-size: 12px;
+            width: 20px;
+            height: 15px;
+            position: absolute;
+            background: black;
+            color: white;
+        }
 
-    .projet-button-right {
-        position: absolute;
-        top: 50%;
-        right: 10px;
-        display: none;
+        .projet-button-right {
+            top: 50%;
+            right: 10px;
+            font-size: 12px;
+            width: 20px;
+            height: 15px;
+            position: absolute;
+            background: black;
+            color: white;
+        }
     }
 
     .p-project-card-one {
@@ -205,7 +219,7 @@
     padding: 50px;
 
     .title-softkills-content {
-        font-size: 25px;
+        font-size: 30px;
         font-weight: 700;
         margin: 30px 0;
         text-align: center;
@@ -235,24 +249,24 @@
                 width: 60px;
                 height: 60px;
             }
+        }
 
-            .title-softskills {
-                font-size: 17px;
-                color: white;
-            }
+        .title-softskills {
+            font-size: 17px;
+            color: white;
+        }
 
-            .maitrise-softskills {
-                width: 200px;
-                height: 80px;
-                padding: 5px;
-                display: flex;
-                justify-content: flex-start;
-                border: 2px solid white;
+        .maitrise-softskills {
+            width: 200px;
+            height: 30px;
+            padding: 2px;
+            display: flex;
+            justify-content: flex-start;
+            border: 2px solid white;
 
-                .jauge {
-                    height: 70px;
-                    background-color: white;
-                }
+            .jauge {
+                height: auto;
+                background-color: white;
             }
         }
     }
