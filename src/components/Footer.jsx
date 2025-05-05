@@ -1,9 +1,5 @@
 import { useNavigate } from 'react-router-dom';
 
-
-// créer une fonction pour remonter en haut de la page
-// activer cette fonction via ONCLICK dans le bouton
-
 function Footer() {
     const navigate = useNavigate();
 

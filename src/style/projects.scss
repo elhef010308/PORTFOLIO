@@ -340,3 +340,83 @@
         }
     }
 }
+
+
+
+// BOITE MODALE PROJET
+.modal-projects-details {
+    position: fixed;
+    top: 50px; // hauteur du header
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 50px);
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+
+    .modale-image {
+        position: relative;
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+        width: 40vw; // ➤ un peu plus petit
+        max-height: 75vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center; // ✅ centre l'image horizontalement
+        justify-content: center;
+        overflow: hidden;
+
+        h2 {
+            color: black;
+            font-size: 20px;
+            margin: 40px 10px 10px 10px;
+            text-align: justify;
+        }
+
+        p {
+            color: black;
+            font-size: 15px;
+            margin: 10px;
+            text-align: justify;
+        }
+
+        a {
+            background-color: var(--color-fourteen);
+            border: black 2px solid;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 25px;
+            color: var(--color-eleven);
+            width: 40px;
+            height: 40px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        a:hover {
+            background-color: var(--color-eleven);
+            color: var(--color-fourteen);
+            transform: scale(1.2);
+        }
+
+        button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: var(--color-fourteen);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: var(--color-thirteen);
+        }
+    }
+}

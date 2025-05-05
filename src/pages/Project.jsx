@@ -1,20 +1,28 @@
-// page des projets (mes projets - portfolio)
-// ajouter les compétences (Mes softskills)
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareGithub } from '@fortawesome/free-brands-svg-icons';
-import { ProjectsPage } from '../components/projects-components.jsx';
-import { TitleProjectsPage } from '../components/projects-components.jsx';
+
+import { ProjectsPage } from '../components/project-component.jsx';
+import { TitleProjectsPage } from '../components/project-component.jsx';
+
 import projectdetail from '../assets/project-details.json';
-import { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
 import data from '../assets/softskills.json';
+
+import { useState, useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 
 
 
 function Projects() {
+    const locationS = useLocation();
+    const incomingProjectId = locationS.state?.projectId;
+
+    // Trouve l'index du projet à afficher en premier (si transmis depuis la page CV)
+    const initialIndex = incomingProjectId
+        ? projectdetail.findIndex(p => p.id === `PROJET ${incomingProjectId}`)
+        : 0;
+
     const [selectedProject, setSelectedProject] = useState(null);
-    const [currentIndex, setCurrentIndex] = useState(0);
+    const [currentIndex, setCurrentIndex] = useState(initialIndex);
     const total = projectdetail.length;
 
     const prevIndex = (currentIndex - 1 + total) % total;
@@ -25,6 +33,19 @@ function Projects() {
         projectdetail[currentIndex],
         projectdetail[nextIndex]
     ];
+
+    const partProjects2Ref = useRef(null);
+
+    // Scroll vers la section du carrousel si projetId est fourni
+    useEffect(() => {
+        if (incomingProjectId && partProjects2Ref.current) {
+            setTimeout(() => {
+                partProjects2Ref.current.scrollIntoView({ behavior: 'smooth' });
+            }, 300); // petit délai pour que la page ait le temps de s'afficher
+        } else {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    }, [incomingProjectId]);
 
     const locations = useLocation();
 
@@ -57,7 +78,7 @@ function Projects() {
             </section>
 
 
-            <section className="part-projects-2">
+            <section className="part-projects-2" ref={partProjects2Ref}>
                 <h2 className='title-projects-content'>Mes projets Openclassrooms</h2>
                 <div className='box-projects-one'>
                     <button className='carousel-button left' onClick={() => setCurrentIndex(prev => (prev - 1 + total) % total)}>←</button>

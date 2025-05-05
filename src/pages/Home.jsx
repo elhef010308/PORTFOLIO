@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
-import TitleText from '../components/components';
-import { AboutMe } from '../components/components';
+import TitleText from '../components/home-component.jsx';
+import { AboutMe } from '../components/home-component.jsx';
 
 
 

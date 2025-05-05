@@ -1,15 +1,13 @@
-import { ProjectCard } from '../components/components.jsx';
-import { CertificationCard } from '../components/components.jsx';
-import { TitleCurriculum } from '../components/components.jsx';
+import { ProjectCard, CertificationCard, TitleCurriculum } from '../components/cv-component.jsx';
+
 import projectsDatas from '../assets/projects.json';
 import certifications from '../assets/certifications.json';
 
 import { useState, useEffect } from 'react';
 
+//cv-component.jsx
 function Cv() {
     const [selectedCertif, setSelectedCertif] = useState(null);
-    // selectCertif va contenir un objet JSON
-    // null veut dire "aucune modale n'est ouverte"
 
     useEffect(() => {
         if (selectedCertif !== null) {
