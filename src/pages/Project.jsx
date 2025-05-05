@@ -78,7 +78,9 @@ function Projects() {
                     </div>
                     <button className='carousel-button right' onClick={() => setCurrentIndex(prev => (prev + 1) % total)}>→</button>
                 </div>
+            </section>
 
+            <section className="part-projects-3">
                 <div className='softskills-container'>
                     <h2 className='title-softkills-content'>Niveau de compétence</h2>
                     {data.map((item) => (
@@ -98,19 +100,21 @@ function Projects() {
             </section>
 
             {/* BOITE MODALE POUR AFFICHER LE DETAIL DES PROJETS */}
-            {selectedProject !== null && (
-                <div className='modal-projects-details' onClick={() => setSelectedProject(null)}>
-                    <div className='modale-image' onClick={(e) => e.stopPropagation()}>
-                        <h2>{selectedProject.id} : {selectedProject.title}</h2>
-                        <p>{selectedProject.description}</p>
-                        <a href={selectedProject.github} target="_blank" rel="noopener noreferrer" className="github-link">
-                            <FontAwesomeIcon icon={faSquareGithub} />
-                        </a>
-                        <button onClick={() => setSelectedProject(null)}>X</button>
+            {
+                selectedProject !== null && (
+                    <div className='modal-projects-details' onClick={() => setSelectedProject(null)}>
+                        <div className='modale-image' onClick={(e) => e.stopPropagation()}>
+                            <h2>{selectedProject.id} : {selectedProject.title}</h2>
+                            <p>{selectedProject.description}</p>
+                            <a href={selectedProject.github} target="_blank" rel="noopener noreferrer" className="github-link">
+                                <FontAwesomeIcon icon={faSquareGithub} />
+                            </a>
+                            <button onClick={() => setSelectedProject(null)}>X</button>
+                        </div>
                     </div>
-                </div>
-            )}
-        </div>
+                )
+            }
+        </div >
     )
 }
 
