@@ -14,6 +14,23 @@ import data from '../assets/softskills.json';
 
 function Projects() {
     const [selectedProject, setSelectedProject] = useState(null);
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const total = projectdetail.length;
+
+    const prevIndex = (currentIndex - 1 + total) % total;
+    const nextIndex = (currentIndex + 1) % total;
+
+    const visibleProjects = [
+        projectdetail[prevIndex],
+        projectdetail[currentIndex],
+        projectdetail[nextIndex]
+    ];
+
+    const locations = useLocation();
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, [locations]);
 
     useEffect(() => {
         if (selectedProject !== null) {
@@ -43,8 +60,9 @@ function Projects() {
             <section className="part-projects-2">
                 <h2 className='title-projects-content'>Mes projets openclassrooms</h2>
                 <div className='box-projects-one'>
+                    <button className='carousel-button left' onClick={() => setCurrentIndex(prev => (prev - 1 + total) % total)}>←</button>
                     <div className='projects-carts-container'>
-                        {projectdetail.map((project) => (
+                        {visibleProjects.map((project, i) => (
                             <ProjectsPage
                                 key={project.id}
                                 id={project.id}
@@ -54,9 +72,11 @@ function Projects() {
                                 description={project.description}
                                 github={project.github}
                                 onClick={() => setSelectedProject(project)}
+                                size={i === 1 ? 'center' : 'side'}
                             />
                         ))}
                     </div>
+                    <button className='carousel-button right' onClick={() => setCurrentIndex(prev => (prev + 1) % total)}>→</button>
                 </div>
 
                 <div className='softskills-container'>

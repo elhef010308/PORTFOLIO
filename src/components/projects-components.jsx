@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 
-export function ProjectsPage({ src, alt, id, title, description, github, onClick }) {
+export function ProjectsPage({ src, alt, id, title, description, github, onClick, size = 'center' }) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const handlePrev = () => {
@@ -15,7 +15,7 @@ export function ProjectsPage({ src, alt, id, title, description, github, onClick
     };
 
     return (
-        <div className='project-card'>
+        <div className={`project-card ${size}`}>
             <div className='project-img-content'>
                 <button className='projet-button-left' onClick={handlePrev}>←</button>
 
