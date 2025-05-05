@@ -30,7 +30,7 @@ function Cv() {
                 <div className="title-cv-container">
                     <div className="cv-title">
                         <TitleCurriculum />
-                        <a href="#" download>Télécharger</a>
+                        <a href='/cv.pdf' download>Télécharger</a>
                     </div>
                 </div>
             </section>
@@ -40,7 +40,7 @@ function Cv() {
                     <h2>MON PARCOURS OPENCLASSROOMS (2025)</h2>
                     <div className='formation-title'>
                         <p className='formation-p'>Formation "Développeur Web"</p>
-                        <a href='/programme-formation.pdf' download>
+                        <a href='/programme-openclassrooms.pdf' download>
                             Voir le programme
                         </a>
                     </div>

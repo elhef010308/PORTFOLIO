@@ -4,21 +4,25 @@ import { useNavigate } from 'react-router-dom';
 // créer une fonction pour remonter en haut de la page
 // activer cette fonction via ONCLICK dans le bouton
 
-function Footer({ isProjectsPage }) {
+function Footer() {
     const navigate = useNavigate();
 
     const handleGoToProjects = () => {
         navigate('/projects');
     };
 
+    const handleScrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
     return (
         <footer>
             <div className='footer'>
                 <div className='link-footer'>
-                    <a className='link-to-github' href='' target='_blank' rel='noopener noreferrer'>
+                    <a className='link-to-github' href='https://github.com/elhef010308' target='_blank' rel='noopener noreferrer'>
                         <i className='fa-brands fa-github' id='icone-footer'></i>
                     </a>
-                    <a className='link-to-linkedin' href='' target='_blank' rel='noopener noreferrer'>
+                    <a className='link-to-linkedin' href='https://www.linkedin.com/in/lucy-fougerard-6a126632a/' target='_blank' rel='noopener noreferrer'>
                         <i className='fa-brands fa-linkedin-in' id='icone-footer'></i>
                     </a>
                 </div>
@@ -32,7 +36,7 @@ function Footer({ isProjectsPage }) {
                     <button className='link-to-certificates' onClick={handleGoToProjects}>
                         <i className='fa-solid fa-file-lines' id='icone-footer'></i>
                     </button>
-                    <button className='link-to-top-page'>
+                    <button className='link-to-top-page' onClick={handleScrollToTop}>
                         <i className='fa-solid fa-arrow-up' id='icone-footer'></i>
                     </button>
                 </div>
