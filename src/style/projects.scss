@@ -298,7 +298,10 @@
             gap: 40px;
             width: 650px;
             height: auto;
-            margin: 0 0 20px 60px;
+            margin: 0 0 20px 0;
+            border: 3px black solid;
+            padding: 10px;
+            background-color: var(--color-fourteen);
 
             .logo-softskills {
                 width: 80px;
@@ -317,7 +320,7 @@
 
             .title-softskills {
                 font-size: 17px;
-                color: black;
+                color: var(--color-one);
             }
 
             .maitrise-softskills {
@@ -327,10 +330,11 @@
                 display: flex;
                 justify-content: flex-start;
                 border: 2px solid black;
+                background-color: white;
 
                 .jauge {
                     height: auto;
-                    background-color: black;
+                    background: black;
                 }
             }
         }

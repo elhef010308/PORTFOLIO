@@ -58,7 +58,7 @@ function Projects() {
 
 
             <section className="part-projects-2">
-                <h2 className='title-projects-content'>Mes projets openclassrooms</h2>
+                <h2 className='title-projects-content'>Mes projets Openclassrooms</h2>
                 <div className='box-projects-one'>
                     <button className='carousel-button left' onClick={() => setCurrentIndex(prev => (prev - 1 + total) % total)}>←</button>
                     <div className='projects-carts-container'>
