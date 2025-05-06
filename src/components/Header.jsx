@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 
-function Header({ isProjectsPage }) {
+function Header() {
     const navigate = useNavigate();
     const location = useLocation();
     const [showHeader, setShowHeader] = useState(false);

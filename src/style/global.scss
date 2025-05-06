@@ -36,6 +36,8 @@
     --color-seven: #B2A18A; // focus menu du header
     --color-eight-first: #2E4636; // boutons raccourcis part-1 (texte + contour)
     --color-eight-second: #cdbba2; // boutons raccourcis part-1 (couleur de fond)
+    --color-eight-second-bis: #cdbba2;
+    
     --color-nine-first: #B2A181; // focus boutons raccourcis part-1 (texte + contour)
     --color-nine-second: #2E4636; // focus boutons raccourcis part-1 (couleur de fond) 
 
@@ -57,6 +59,7 @@
 .mode-white {
     --background-image-url: url('../images/background-image-mode-white.png');
     --background-image-cv: url('../images/background-image-cv-light.png');
+    --background-image-projet: url('../images/background-projet-light.png');
 
     --color-one: #667D6E;
     --color-two: #06432D;
@@ -73,6 +76,8 @@
     --color-seven: #011E14; 
     --color-eight-first: black;
     --color-eight-second: #667D6E;
+    --color-eight-second-bis: #8ead99;
+
     --color-nine-first: black;
     --color-nine-second: #B2A18A;
 

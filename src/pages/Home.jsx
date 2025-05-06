@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
-import TitleText from '../components/home-component.jsx';
-import { AboutMe } from '../components/home-component.jsx';
+import TitleText from '../components/HomeComponents.jsx';
+import { AboutMe } from '../components/HomeComponents.jsx';
 
 
 
@@ -26,6 +26,10 @@ function Home({ darkMode, toggleTheme }) {
             });
         }
     }, [location]);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <div className='home-page'>

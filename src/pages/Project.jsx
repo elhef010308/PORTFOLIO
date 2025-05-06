@@ -1,10 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareGithub } from '@fortawesome/free-brands-svg-icons';
 
-import { ProjectsPage } from '../components/project-component.jsx';
-import { TitleProjectsPage } from '../components/project-component.jsx';
+import { ProjectsPage } from '../components/ProjectComponents.jsx';
+import { TitleProjectsPage } from '../components/ProjectComponents.jsx';
 
-import projectdetail from '../assets/project-details.json';
+import projectdetail from '../assets/projects-details.json';
 import data from '../assets/softskills.json';
 
 import { useState, useEffect, useRef } from 'react';

@@ -1,11 +1,12 @@
-import { ProjectCard, CertificationCard, TitleCurriculum } from '../components/cv-component.jsx';
+import { ProjectCard, CertificationCard, TitleCurriculum } from '../components/CvComponents.jsx';
 
 import projectsDatas from '../assets/projects.json';
 import certifications from '../assets/certifications.json';
 
+
+
 import { useState, useEffect } from 'react';
 
-//cv-component.jsx
 function Cv() {
     const [selectedCertif, setSelectedCertif] = useState(null);
 
@@ -28,7 +29,7 @@ function Cv() {
                 <div className="title-cv-container">
                     <div className="cv-title">
                         <TitleCurriculum />
-                        <a href='/cv.pdf' download>Télécharger</a>
+                        <a href='/files/cv.pdf' download>Télécharger</a>
                     </div>
                 </div>
             </section>
@@ -38,7 +39,7 @@ function Cv() {
                     <h2>MON PARCOURS OPENCLASSROOMS (2025)</h2>
                     <div className='formation-title'>
                         <p className='formation-p'>Formation "Développeur Web"</p>
-                        <a href='/programme-openclassrooms.pdf' download>
+                        <a href='/files/programme-openclassrooms.pdf' download>
                             Voir le programme
                         </a>
                     </div>
