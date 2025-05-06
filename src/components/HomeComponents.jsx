@@ -10,14 +10,14 @@ export default function TitleText() {
 // COMPOSANTS A PROPOS DE MOI
 export function AboutMe() {
     return (
-        <div className='about-me-component'>
-            <div className='about-me-img'>
+        <div className='home__about-container'>
+            <div className='home__about-image'>
             </div>
-            <div className='about-me'>
-                <h2 className='about-me-title'>
+            <div className='home__about-content'>
+                <h2>
                     A propos de moi
                 </h2>
-                <p className='about-me-txt'>
+                <p className='home__about-me'>
                     A 21 ans, je suis actuellement en reconversion pour travailler dans le domaine
                     du web. Après une licence de philosophie, où j'ai pu acquérir culture générale,
                     capacité de réflexion, et qualité rédactionnelle, j'ai entrepris une reconversion
@@ -26,16 +26,16 @@ export function AboutMe() {
                     School de Lyon, pour acquérir de l'expérience avant de me lancer pleinement dans le monde
                     du travail.
                 </p>
-                <h2 className='my-goals-title'>
+                <h2>
                     Mes objectifs
                 </h2>
-                <ul className='my-goals-list'>
-                    <li className='li-1'>Approfondir ma maîtrise du React</li>
-                    <li className='li-2'>Monter en compétences en logique Javascript</li>
-                    <li className='li-3'>Approfondir ma maîtrise du Node.js</li>
-                    <li className='li-4'>Appronfondir mes connaissances en tests, débogages et référencement SEO</li>
-                    <li className='li-5'>Me familiariser davantage avec la méthode agile/Scrum</li>
-                    <li className='li-6'>Découvrir le MySQL (à titre de culture générale)</li>
+                <ul className='home__about-goals'>
+                    <li>Approfondir ma maîtrise du React</li>
+                    <li>Monter en compétences en logique Javascript</li>
+                    <li>Approfondir ma maîtrise du Node.js</li>
+                    <li>Appronfondir mes connaissances en tests, débogages et référencement SEO</li>
+                    <li>Me familiariser davantage avec la méthode agile/Scrum</li>
+                    <li>Découvrir le MySQL (à titre de culture générale)</li>
                 </ul>
             </div>
         </div>

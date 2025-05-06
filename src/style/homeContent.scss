@@ -1,0 +1,230 @@
+.home {
+    .home__about {
+        width: 100%;
+        max-width: 1440px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--color-eleven);
+        height: auto;
+        scroll-margin-top: 85px;
+
+        // composant "à propos de moi" (AboutMe)
+        .home__about-container {
+            width: 95%;
+            max-width: 1440px;
+            padding: 20px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: auto;
+            gap: 50px;
+
+            .home__about-image {
+                width: 300px;
+                height: 315px;
+                border: solid 1px greenyellow;
+            }
+
+            .home__about-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h2 {
+                    font-size: 50px;
+                    padding-bottom: 20px;
+                    font-weight: 600;
+                    color: var(--color-ten);
+                    text-align: center;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    width: 0;
+                    animation: typing 3s steps(30, end) forwards, hide-caret 0s forwards;
+                    animation-delay: 0s, 3s; // le "hide-caret" commence à 3s
+                }
+
+                .home__about-me {
+                    text-align: justify;
+                    padding-bottom: 20px;
+                    width: 805px;
+                    color: var(--color-five);
+                    line-height: 1.5;
+                }
+
+                .home__about-goals {
+                    list-style: none; // On désactive les puces par défaut
+                    padding-left: 50px;
+                    width: 805px;
+                    color: var(--color-five);
+                    line-height: 1.5;
+
+                    li {
+                        position: relative;
+                        padding-left: 30px; // 👈 décalage total vers la droite (puce + texte)
+                        margin-bottom: 10px;
+
+                        &::before {
+                            content: "★"; // étoile pleine
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            font-size: 17px;
+                            color: var(--color-ten);
+                        }
+                    }
+                }
+            }
+        }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+        }
+
+        @keyframes hide-caret {
+            to {
+                border-right: none;
+            }
+        }
+    }
+
+
+    .home__school {
+        background-color: var(--color-fourteen);
+        z-index: 5;
+        padding-bottom: 50px;
+
+        h2 {
+            color: var(--color-four);
+            font-size: 50px;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .home__school-timeline {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            position: relative;
+            height: 660px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 50%;
+                width: 5px;
+                background-color: black;
+                transform: translateX(-50%);
+                z-index: 0;
+            }
+        }
+
+        .container {
+            height: 200px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .container-1 {
+            align-self: flex-end;
+            align-items: flex-start;
+        }
+        .container-2 {
+            align-self: flex-start;
+            align-items: flex-end;
+        }
+        .container-3 {
+            align-self: flex-end;
+            align-items: flex-start;
+        }
+
+        .container-1::before,
+        .container-2::before,
+        .container-3::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            border-radius: 50%;
+            z-index: 2;
+        }
+
+        .container-1::before {
+            left: 690px;
+            top: 110px;
+        }
+        .container-2::before {
+            left: 635px;
+            top: 320px;
+        }
+        .container-3::before {
+            left: 690px;
+            top: 520px;
+        }
+
+        .home__school-content {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+            position: relative;
+            z-index: 1;
+
+            .home__school__content-infos {
+                border: solid black 5px;
+                border-radius: 10px;
+                width: 400px;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background-color: var(--color-sixteen);
+                padding: 0 10px;
+
+                h3 {
+                    color: var(--color-five);
+                    font-size: 25px;
+                    padding-bottom: 15px;
+                }
+
+                p {
+                    color: var(--color-twelve);
+                    font-size: 18px;
+                }
+            }
+
+            .date {
+                color: var(--color-thirteen);
+                font-size: 18px;
+                font-weight: 900;
+                width: 110px;
+                text-align: center;
+            }
+
+            .date-1,
+            .date-3 {
+                margin-right: 75px;
+            }
+            .date-2 {
+                margin-left: 130px;
+            }
+        }
+    }
+}

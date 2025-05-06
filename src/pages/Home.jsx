@@ -32,15 +32,15 @@ function Home({ darkMode, toggleTheme }) {
     }, []);
 
     return (
-        <div className='home-page'>
-            <section className='part-1'>
-                <div className='part-1-left'>
-                    <div className='title-container'>
-                        <div className='main-title'>
+        <div className='home'>
+            <section className='home__intro'>
+                <div className='home__intro-title'>
+                    <div className='home__title-container'>
+                        <div className='home__title'>
                             <TitleText />
                         </div>
-                        <p className='title-list'>Motivée &nbsp; • &nbsp; Créative &nbsp; • &nbsp; Sérieuse</p>
-                        <p className='title-description-p'>
+                        <p className='home__title-list'>Motivée &nbsp; • &nbsp; Créative &nbsp; • &nbsp; Sérieuse</p>
+                        <p className='home__title-description'>
                             Je suis jeune, et encore débutante en développement Web mais pour le moins compétente.
                             Bien qu'ayant une préférence pour le backend, mon profil reste encore plutôt fullstack,
                             n'ayant pas encore eu l'opportunité de pleinement me spécialiser. C'est pourquoi, qu'il
@@ -50,26 +50,26 @@ function Home({ darkMode, toggleTheme }) {
                         </p>
                     </div>
 
-                    <div className='title-button'>
-                        <Link className='title-button-cv' to='/cv'>
+                    <div className='home__title-buttons'>
+                        <Link className='title__button-cv' to='/cv'>
                             Voir le CV
                         </Link>
-                        <Link className='title-button-contact' to='/contact'>
+                        <Link className='title__button-message' to='/contact'>
                             Échangeons
                         </Link>
                     </div>
                 </div>
 
-                <div className='part-1-right'>
-                    <label className="btToggle">
-                        <div className="btn">
+                <div className='home__intro-darkMode'>
+                    <label className="home__darkMode-container">
+                        <div className="home__darkMode-button">
                             <input
                                 type="checkbox"
                                 checked={darkMode}
                                 onChange={toggleTheme}
                                 name="theme-mode"
                             />
-                            <span className="slider"></span>
+                            <span className=" slider"></span>
                         </div>
                         <div className="label" style={{ color: 'var(--color-two)' }}>{darkMode ? "Dark mode" : "White mode"}</div>
                     </label>
@@ -77,17 +77,17 @@ function Home({ darkMode, toggleTheme }) {
             </section>
 
 
-            <section className='part-2' id='about-me'>
+            <section className='home__about' id='about-me'>
                 <AboutMe />
             </section>
 
 
-            <section className='part-3'>
-                <h2 className='part-3-title'>Mon parcours</h2>
-                <div className="timeline">
+            <section className='home__school'>
+                <h2>Mon parcours</h2>
+                <div className="home__school-timeline ">
                     <div className="container-1">
-                        <div className='content-top'>
-                            <div className='div-infos'>
+                        <div className='home__school-content'>
+                            <div className='home__school__content-infos'>
                                 <h3>Université Jean Moulin</h3>
                                 <p>Validation d'une licence de philosophie
                                     précédée d'une première année en Hypokhâgne</p>
@@ -97,9 +97,9 @@ function Home({ darkMode, toggleTheme }) {
                     </div>
 
                     <div className="container-2">
-                        <div className='content-top'>
+                        <div className='home__school-content'>
                             <p className='date-2'>2025</p>
-                            <div className='div-infos'>
+                            <div className='home__school__content-infos'>
                                 <h3>Openclassrooms</h3>
                                 <p>Formation "Développeur Web"
                                     délivrant un RNCP de niveau 2</p>
@@ -108,8 +108,8 @@ function Home({ darkMode, toggleTheme }) {
                     </div>
 
                     <div className="container-3">
-                        <div className='content-top'>
-                            <div className='div-infos'>
+                        <div className='home__school-content'>
+                            <div className='home__school__content-infos'>
                                 <h3>My Digital School</h3>
                                 <p>Dernière année en alternance de bachelor
                                     "Développeur web et mobile" (à venir)</p>
