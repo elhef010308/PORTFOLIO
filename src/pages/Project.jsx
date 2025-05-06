@@ -4,7 +4,7 @@ import { faSquareGithub } from '@fortawesome/free-brands-svg-icons';
 import { ProjectsPage } from '../components/ProjectComponents.jsx';
 import { TitleProjectsPage } from '../components/ProjectComponents.jsx';
 
-import projectdetail from '../assets/projects-details.json';
+import projectsDatas from '../assets/projectsData.json';
 import data from '../assets/softskills.json';
 
 import { useState, useEffect, useRef } from 'react';
@@ -18,20 +18,20 @@ function Projects() {
 
     // Trouve l'index du projet à afficher en premier (si transmis depuis la page CV)
     const initialIndex = incomingProjectId
-        ? projectdetail.findIndex(p => p.id === `PROJET ${incomingProjectId}`)
+        ? projectsDatas.findIndex(p => p.id === incomingProjectId)
         : 0;
 
     const [selectedProject, setSelectedProject] = useState(null);
     const [currentIndex, setCurrentIndex] = useState(initialIndex);
-    const total = projectdetail.length;
+    const total = projectsDatas.length;
 
     const prevIndex = (currentIndex - 1 + total) % total;
     const nextIndex = (currentIndex + 1) % total;
 
     const visibleProjects = [
-        projectdetail[prevIndex],
-        projectdetail[currentIndex],
-        projectdetail[nextIndex]
+        projectsDatas[prevIndex],
+        projectsDatas[currentIndex],
+        projectsDatas[nextIndex]
     ];
 
     const partProjects2Ref = useRef(null);

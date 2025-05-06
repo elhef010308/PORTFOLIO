@@ -1,6 +1,6 @@
 import { ProjectCard, CertificationCard, TitleCurriculum } from '../components/CvComponents.jsx';
 
-import projectsDatas from '../assets/projects.json';
+import projectsDatas from '../assets/projectsData.json';
 import certifications from '../assets/certifications.json';
 
 
