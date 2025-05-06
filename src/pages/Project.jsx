@@ -1,8 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareGithub } from '@fortawesome/free-brands-svg-icons';
 
-import { ProjectsPage } from '../components/ProjectComponents.jsx';
-import { TitleProjectsPage } from '../components/ProjectComponents.jsx';
+import { ProjectsPage, TitleProjectsPage } from '../components/ProjectComponents.jsx';
 
 import projectsDatas from '../assets/projectsData.json';
 import data from '../assets/softskills.json';
@@ -72,17 +71,17 @@ function Projects() {
     }, [location]);
 
     return (
-        <div className='projects-page'>
-            <section className="part-projects-1">
+        <div className='projects'>
+            <section className="projects__intro">
                 <TitleProjectsPage />
             </section>
 
 
-            <section className="part-projects-2" ref={partProjects2Ref}>
-                <h2 className='title-projects-content'>Mes projets Openclassrooms</h2>
-                <div className='box-projects-one'>
-                    <button className='carousel-button left' onClick={() => setCurrentIndex(prev => (prev - 1 + total) % total)}>←</button>
-                    <div className='projects-carts-container'>
+            <section className="projects__carousel" ref={partProjects2Ref}>
+                <h2 className='projects__carousel-title'>Mes projets Openclassrooms</h2>
+                <div className='projects__carousel-wrapper'>
+                    <button className='projects__carousel-button left' onClick={() => setCurrentIndex(prev => (prev - 1 + total) % total)}>←</button>
+                    <div className='projects__cards-container'>
                         {visibleProjects.map((project, i) => (
                             <ProjectsPage
                                 key={project.id}
@@ -97,23 +96,23 @@ function Projects() {
                             />
                         ))}
                     </div>
-                    <button className='carousel-button right' onClick={() => setCurrentIndex(prev => (prev + 1) % total)}>→</button>
+                    <button className='projects__carousel-button right' onClick={() => setCurrentIndex(prev => (prev + 1) % total)}>→</button>
                 </div>
             </section>
 
-            <section className="part-projects-3">
-                <div className='softskills-container'>
-                    <h2 className='title-softkills-content'>Niveau de compétence</h2>
+            <section className="projects__skills">
+                <div className='projects__skills-container'>
+                    <h2 className='projects__skills-title'>Niveau de compétence</h2>
                     {data.map((item) => (
-                        <div key={item.id} className='softskills'>
-                            <div className='logo-softskills'>
+                        <div key={item.id} className='projects-skills__list'>
+                            <div className='projects-skills__images'>
                                 {item.src && (
                                     <img src={item.src} alt={item.alt || item.title} />
                                 )}
                             </div>
-                            <p className='title-softskills'>{item.title}</p>
-                            <div className="maitrise-softskills">
-                                <div className="jauge" style={{ width: item.level }}></div>
+                            <p className='projects-skills__title'>{item.title}</p>
+                            <div className="projects-skills__level">
+                                <div style={{ width: item.level }}></div>
                             </div>
                         </div>
                     ))}
@@ -123,9 +122,9 @@ function Projects() {
             {/* BOITE MODALE POUR AFFICHER LE DETAIL DES PROJETS */}
             {
                 selectedProject !== null && (
-                    <div className='modal-projects-details' onClick={() => setSelectedProject(null)}>
-                        <div className='modale-image' onClick={(e) => e.stopPropagation()}>
-                            <h2>{selectedProject.id} : {selectedProject.title}</h2>
+                    <div className='projects-modal__container' onClick={() => setSelectedProject(null)}>
+                        <div className='projects-modal__content' onClick={(e) => e.stopPropagation()}>
+                            <h2>PROJET {selectedProject.id} : {selectedProject.title}</h2>
                             <p>{selectedProject.description}</p>
                             <a href={selectedProject.github} target="_blank" rel="noopener noreferrer" className="github-link">
                                 <FontAwesomeIcon icon={faSquareGithub} />

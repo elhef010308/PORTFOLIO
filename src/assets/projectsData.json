@@ -91,7 +91,7 @@
             "Rédiger les spécifications techniques d'un projet web à partir de besoins fonctionnels",
             "Suivre le déroulement du projet grâce à un outil de gestion de projet"
         ],
-        "src": ["/images/webP/projet-7-first.webp", "/images/webP/projet-7-second.webp", "/images/projet-7-third.webp", "/images/projet-7-fourth.webp", "/images/projet-7-fiveth.webp"],
+        "src": ["/images/webP/projet-7-first.webp", "/images/webP/projet-7-second.webp", "/images/webP/projet-7-third.webp", "/images/webP/projet-7-fourth.webp", "/images/webP/projet-7-fiveth.webp"],
         "alt": ["Aperçu du projet 7", "Aperçu du projet 7", "Aperçu du projet 7", "Aperçu du projet 7", "Aperçu du projet 7"],
         "github": "https://github.com/tonpseudo/super-projet",
         "description": "Ce projet consiste en la planification du développement d’un site client, sans intervenir directement dans le codage. La maquette, les spécifications fonctionnelles et es Users Stories du site sont partagées comme documents de support. Une veille technologique doit être réalisée pour rester informer des dernières tendance et technologies pertinentes pour le projet. Un document de spécifications techniques doit être rédigé, un tableau Kanban est à créer sur un outil de gestion de projet comme Notion (en n’oubliant pas les attributaires et la complexité des tâches), et un support Power Point réutilisable pour la présentation finale au client."
