@@ -76,7 +76,6 @@ function Projects() {
                 <TitleProjectsPage />
             </section>
 
-
             <section className="projects__carousel" ref={partProjects2Ref}>
                 <h2 className='projects__carousel-title'>Mes projets Openclassrooms</h2>
                 <div className='projects__carousel-wrapper'>

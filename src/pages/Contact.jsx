@@ -1,6 +1,6 @@
 function Contact() {
     return (
-        <div className='page-contact'>
+        <div className='contact'>
             <h2>Page en cours de création...</h2>
         </div>
     )
