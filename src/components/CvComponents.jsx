@@ -11,16 +11,16 @@ export function ProjectCard({ id, title, objectives, isLeft }) {
 
 
     return (
-        <div className={`project ${isLeft ? 'left' : 'right'}`}>
-            <div className={`projet-title-container ${isLeft ? 'left' : 'right'}`}>
-                <button className='button-see-project' onClick={handleViewClick}>VOIR</button>
+        <div className={`cv-openclassrooms__projects ${isLeft ? 'left' : 'right'}`}>
+            <div className={`cv-openclassrooms__projects-title ${isLeft ? 'left' : 'right'}`}>
+                <button onClick={handleViewClick}>VOIR</button>
                 <p>
                     {isLeft
                         ? `PROJET ${id} : ${title}`
                         : `${title} : ${id} PROJET`}
                 </p>
             </div>
-            <p className={`competences ${isLeft ? 'left' : 'right'}`}>
+            <p className={`cv-openclassrooms__projects-competences ${isLeft ? 'left' : 'right'}`}>
                 Compétences à développer
             </p>
             <ul>
@@ -35,7 +35,7 @@ export function ProjectCard({ id, title, objectives, isLeft }) {
 // COMPOSANT DES CERTIFICATIONS OPENCLASSROOMS
 export function CertificationCard({ src, alt, onClick }) {
     return (
-        <div className='certification-card' onClick={onClick}>
+        <div className='cv-certification__card' onClick={onClick}>
             <img src={src} alt={alt} loading="lazy"/>
         </div>
     );

@@ -119,6 +119,7 @@ function Projects() {
                 </div>
             </section>
 
+
             {/* BOITE MODALE POUR AFFICHER LE DETAIL DES PROJETS */}
             {
                 selectedProject !== null && (
