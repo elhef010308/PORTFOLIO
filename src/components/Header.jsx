@@ -36,11 +36,36 @@ function Header() {
                 </a>
                 <nav className='navbar'>
                     <ul>
-                        <li><Link to="/">Accueil</Link></li>
-                        <li><button onClick={handleGoToAbout}>À propos</button></li>
-                        <li><Link to="/cv">CV</Link></li>
-                        <li><Link to="/projects">Projets</Link></li>
-                        <li><Link to="/contact">Contact</Link></li>
+                        <li>
+                            <Link to="/">
+                                <i className="fa-solid fa-house nav-icon"></i>
+                                <span className="nav-text">Accueil</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <button onClick={handleGoToAbout}>
+                                <i className="fa-solid fa-user nav-icon"></i>
+                                <span className="nav-text">À propos</span>
+                            </button>
+                        </li>
+                        <li>
+                            <Link to="/cv">
+                                <i className="fa-solid fa-file-lines nav-icon"></i>
+                                <span className="nav-text">CV</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/projects">
+                                <i className="fa-solid fa-diagram-project nav-icon"></i>
+                                <span className="nav-text">Projets</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/contact">
+                                <i className="fa-solid fa-envelope nav-icon"></i>
+                                <span className="nav-text">Contact</span>
+                            </Link>
+                        </li>
                     </ul>
                 </nav>
             </div>

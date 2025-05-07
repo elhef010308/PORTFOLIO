@@ -1,17 +1,20 @@
 header {
     background-color: var(--color-six);
     position: fixed;
-    padding: 20px 8%;
+    top: 0;
+    left: 0;
     width: 100%;
-    max-width: 1440px;
     z-index: 20;
-    margin: 0 auto;
+
 
     .header {
         display: flex;
         justify-content: space-between;
+        max-width: 1440px;
         align-items: center;
         flex-direction: row;
+        margin: 0 auto;
+        padding: 20px 8%;
 
         // Animation d'entrée
         opacity: 0;
@@ -30,15 +33,14 @@ header {
         }
 
         .navbar {
-            display: flex;
-            align-items: center;
-
             ul {
                 display: flex;
                 gap: 25px;
 
                 a,
                 button {
+                    display: flex; // peut être à enlever
+                    align-items: center; // peut être à enlever
                     color: var(--color-one);
                     font-size: 15px;
                     border: none;
@@ -46,6 +48,17 @@ header {
                     padding: 0;
                     background-color: transparent;
                     text-decoration: none;
+
+                    // icône masquée par défaut
+                    .nav-icon {
+                        display: none;
+                        padding-left: 10px;
+                    }
+
+                    // texte visible par défaut
+                    .nav-text {
+                        display: inline;
+                    }
 
                     &:hover {
                         transition: scale(1.05);
@@ -65,10 +78,98 @@ header {
 }
 
 // Petits mobiles (jusqu'à 480px)
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    header {
+        .header {
+            padding: 10px 5%;
+
+            .logo {
+                font-size: 24px;
+            }
+
+            .navbar ul {
+                gap: 12px;
+
+                a,
+                button {
+                    font-size: 0;
+
+                    .nav-icon {
+                        display: inline;
+                        font-size: 18px;
+                    }
+
+                    .nav-text {
+                        display: none;
+                    }
+
+                    &:hover {
+                        transform: scale(1.1);
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+}
 
 // Mobiles larges à tablettes petites (481px - 769px)
-@media (min-width: 481px) and (max-width: 769px) {}
+@media (min-width: 481px) and (max-width: 769px) {
+    header {
+        .header {
+            padding: 15px 6%;
+
+            .logo {
+                font-size: 28px;
+            }
+
+            .navbar ul {
+                gap: 16px;
+
+                a,
+                button {
+                    font-size: 0;
+
+                    .nav-icon {
+                        display: inline;
+                        font-size: 20px;
+                    }
+
+                    .nav-text {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
 
 // Tablettes standard à petits laptops (770px - 1025px)
-@media (min-width: 770px) and (max-width: 1025px) {}
+@media (min-width: 770px) and (max-width: 1025px) {
+    header {
+        .header {
+            padding: 18px 7%;
+
+            .logo {
+                font-size: 32px;
+            }
+
+            .navbar ul {
+                gap: 20px;
+
+                a,
+                button {
+                    font-size: 15px;
+
+                    .nav-icon {
+                        display: none;
+                    }
+
+                    .nav-text {
+                        display: inline;
+                    }
+                }
+            }
+        }
+    }
+}
