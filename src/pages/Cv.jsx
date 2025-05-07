@@ -73,7 +73,7 @@ function Cv() {
                                 />
                             ))}
                         </div>
-                        <div className="round right"></div>  {/* Rond droit fixe */}
+                        <div className="certifications-wrapper-round right"></div>  {/* Rond droit fixe */}
                     </div>
                 </div>
 
