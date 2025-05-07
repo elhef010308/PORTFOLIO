@@ -12,10 +12,11 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        max-width: 1440px;
         height: 550px;
         background-image: var(--background-image-projet);
+        background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
     }
 
     // SECTION 2 (le carrousel des projets)
@@ -25,8 +26,6 @@
         align-items: center;
         flex-direction: column;
         width: 100%;
-        max-width: 1440px;
-        height: auto;
         padding: 50px 0;
         background-color: var(--color-fourteen);
 
@@ -42,7 +41,6 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            max-width: 1440px;
             height: auto;
 
             .projects__carousel-button {
@@ -65,7 +63,6 @@
                 gap: 20px;
                 padding: 30px;
                 width: 90%;
-                max-width: 1440px;
                 box-sizing: border-box;
                 border-radius: 10px;
 
@@ -92,12 +89,15 @@
                         .projects-card__button {
                             top: 50%;
                             font-size: 12px;
-                            width: 20px;
-                            height: 20px;
+                            width: 25px;
+                            height: 15px;
                             position: absolute;
                             background: var(--color-nine-second);
                             color: white;
                             cursor: pointer;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
 
                             &:hover {
                                 transform: scale(1.1);
@@ -106,7 +106,6 @@
                             &.left {
                                 left: 10px;
                             }
-
                             &.right {
                                 right: 10px;
                             }
@@ -116,7 +115,7 @@
                             display: block;
                             width: 100%;
                             height: 100%;
-                            object-fit: fill;
+                            object-fit: fill; // A LAISSER 
                             border-top-left-radius: 5px;
                             border-top-right-radius: 5px;
                             border: 3px solid black;
@@ -126,9 +125,7 @@
                     .projects-card__id {
                         font-size: 18px;
                         font-weight: 600;
-                        text-align: center;
                         margin-bottom: 10px;
-                        padding: 0 10px;
                         text-decoration: underline;
                         color: var(--color-twelve);
                     }
@@ -143,15 +140,15 @@
 
                     .projects-card__details-button {
                         border: 2px solid var(--color-eight-first);
-                        font-size: 15px;
                         background-color: var(--color-eight-second-bis);
+                        color: var(--color-eight-first);
+                        font-size: 15px;
                         border-radius: 5px;
                         padding: 10px;
                         width: auto;
                         height: 30px;
                         display: flex;
                         align-items: center;
-                        color: var(--color-eight-first);
                         cursor: pointer;
 
                         &:hover {
@@ -169,7 +166,6 @@
                     z-index: 2;
                     transition: transform 0.3s ease, opacity 0.3s ease;
                 }
-
                 .projects__cards-card.side {
                     transform: scale(0.85);
                     opacity: 0.6;
@@ -190,8 +186,6 @@
             align-items: center;
             justify-content: center;
             width: 100%;
-            max-width: 1440px;
-            height: auto;
             margin-bottom: 50px;
             padding: 50px;
 
@@ -199,7 +193,6 @@
                 font-size: 40px;
                 font-weight: 700;
                 margin: 20px 0 50px 0;
-                text-align: center;
                 color: var(--color-ten);
             }
 
@@ -210,8 +203,7 @@
                 align-items: center;
                 gap: 40px;
                 width: 650px;
-                height: auto;
-                margin: 0 0 20px 0;
+                margin-bottom: 20px;
                 border: 3px black solid;
                 padding: 10px;
                 background-color: var(--color-fourteen);

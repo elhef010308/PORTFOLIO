@@ -410,6 +410,7 @@
 .cv-modal__container {
     position: fixed;
     top: 50px; 
+    left:0;
     width: 100vw;
     height: calc(100vh - 50px);
     background-color: rgba(0, 0, 0, 0.7);
