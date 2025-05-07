@@ -1,8 +1,9 @@
 .contact {
-    height: 530px;
+    height: 100%;
+    min-height: 530px;
     width: 100%;
     max-width: 1440px;
-    padding-top: 50px;
+    padding-top: clamp(30px, 5vw, 50px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,10 +17,34 @@
 }
 
 // Petits mobiles (jusqu'à 480px)
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    .contact {
+        min-height: 400px;
+
+        h2 {
+            font-size: 14px;
+        }
+    }
+}
 
 // Mobiles larges à tablettes petites (481px - 769px)
-@media (min-width: 481px) and (max-width: 769px) {}
+@media (min-width: 481px) and (max-width: 769px) {
+    .contact {
+        min-height: 450px;
+
+        h2 {
+            font-size: 17px;
+        }
+    }
+}
 
 // Tablettes standard à petits laptops (770px - 1025px)
-@media (min-width: 770px) and (max-width: 1025px) {}
+@media (min-width: 770px) and (max-width: 1025px) {
+    .contact {
+        min-height: 500px;
+
+        h2 {
+            font-size: 19px;
+        }
+    }
+}
