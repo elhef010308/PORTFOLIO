@@ -19,7 +19,6 @@
             flex-direction: column;
             align-items: center;
             flex: 1;
-            gap: 0;
 
             .home__title-container {
                 display: flex;
@@ -28,9 +27,7 @@
 
                 .home__title {
                     width: 100%;
-                    height: auto;
-                    padding-top: 40px;
-                    padding-bottom: 20px;
+                    padding: 40px 0 20px 0;
                 }
 
                 .home__title-list {
@@ -60,11 +57,11 @@
                 .title__button-cv,
                 .title__button-message {
                     border: 3px solid var(--color-eight-first);
-                    border-radius: 20px;
+                    color: var(--color-eight-first);
                     background-color: var(--color-eight-second);
+                    border-radius: 20px;
                     text-align: center;
                     padding-top: 11px;
-                    color: var(--color-eight-first);
                     font-size: 17px;
                     font-weight: 600;
                     width: 150px;
@@ -112,10 +109,7 @@
 
                     .slider {
                         position: absolute;
-                        top: 0;
-                        left: 0;
-                        right: 0;
-                        bottom: 0;
+                        inset: 0;   // = top, left, right, bottom : 0
                         background-color: #06432D;
                         border-radius: 34px;
                     }

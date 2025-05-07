@@ -14,12 +14,10 @@
         // composant "à propos de moi" (AboutMe)
         .home__about-container {
             width: 95%;
-            max-width: 1440px;
             padding: 20px 50px;
             display: flex;
             align-items: center;
             justify-content: center;
-            height: auto;
             gap: 50px;
 
             .home__about-image {
@@ -41,9 +39,8 @@
                     text-align: center;
                     overflow: hidden;
                     white-space: nowrap;
-                    width: 0;
                     animation: typing 3s steps(30, end) forwards, hide-caret 0s forwards;
-                    animation-delay: 0s, 3s; // le "hide-caret" commence à 3s
+                    animation-delay: 0s, 3s; 
                 }
 
                 .home__about-me {
@@ -55,7 +52,7 @@
                 }
 
                 .home__about-goals {
-                    list-style: none; // On désactive les puces par défaut
+                    list-style: none; 
                     padding-left: 50px;
                     width: 805px;
                     color: var(--color-five);
@@ -63,11 +60,11 @@
 
                     li {
                         position: relative;
-                        padding-left: 30px; // 👈 décalage total vers la droite (puce + texte)
+                        padding-left: 30px; 
                         margin-bottom: 10px;
 
                         &::before {
-                            content: "★"; // étoile pleine
+                            content: "★"; 
                             position: absolute;
                             left: 0;
                             top: 0;
@@ -99,7 +96,6 @@
 
     .home__school {
         background-color: var(--color-fourteen);
-        z-index: 5;
         padding-bottom: 50px;
 
         h2 {
@@ -127,7 +123,6 @@
                 width: 5px;
                 background-color: black;
                 transform: translateX(-50%);
-                z-index: 0;
             }
         }
 
@@ -163,7 +158,6 @@
             height: 20px;
             background-color: black;
             border-radius: 50%;
-            z-index: 2;
         }
 
         .container-1::before {
@@ -185,7 +179,6 @@
             text-align: center;
             gap: 20px;
             position: relative;
-            z-index: 1;
 
             .home__school__content-infos {
                 border: solid black 5px;
