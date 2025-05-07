@@ -454,3 +454,12 @@
         }
     }
 }
+
+// Petits mobiles (jusqu'à 480px)
+@media (max-width: 480px) {}
+
+// Mobiles larges à tablettes petites (481px - 769px)
+@media (min-width: 481px) and (max-width: 769px) {}
+
+// Tablettes standard à petits laptops (770px - 1025px)
+@media (min-width: 770px) and (max-width: 1025px) {}
