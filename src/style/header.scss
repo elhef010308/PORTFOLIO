@@ -1,9 +1,6 @@
 header {
     background-color: var(--color-six);
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;    // pour éviter les débordements
     padding: 20px 8%;
     width: 100%;
     max-width: 1440px;
@@ -30,7 +27,6 @@ header {
             color: var(--color-one);
             font-size: 40px;
             font-weight: 600;
-            white-space: nowrap;
         }
 
         .navbar {
@@ -40,34 +36,28 @@ header {
             ul {
                 display: flex;
                 gap: 25px;
-                margin: 0;
-                padding: 0;
 
                 a,
                 button {
                     color: var(--color-one);
                     font-size: 15px;
                     border: none;
-                    background-color: none;
                     cursor: pointer;
                     padding: 0;
-                    margin: 0;
                     background-color: transparent;
                     text-decoration: none;
-                }
 
-                a:hover,
-                button:hover {
-                    transition: scale(1.05);
-                    font-weight: 600;
-                    border-bottom: 2px solid var(--color-seven) ;
-                }
+                    &:hover {
+                        transition: scale(1.05);
+                        font-weight: 600;
+                        border-bottom: 2px solid var(--color-seven);
+                    }
 
-                a:focus,
-                button:focus {
-                    border-bottom: 2px solid var(--color-seven);
-                    font-weight: 600;
-                    color: var(--color-seven);
+                    &:focus {
+                        border-bottom: 2px solid var(--color-seven);
+                        font-weight: 600;
+                        color: var(--color-seven);
+                    }
                 }
             }
         }
