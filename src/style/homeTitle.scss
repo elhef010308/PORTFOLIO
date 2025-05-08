@@ -207,6 +207,7 @@
 // Petits mobiles (jusqu'à 480px)
 @media (max-width: 480px) {
     .home {
+        padding-top: 15px;
         width: 100%;
         max-width: 480px;
 
@@ -254,7 +255,8 @@
         }
     }
 
-
+    
+    // TITRE PRINCIPAL
     #text {
         font-size: 22px;
         text-align: center; // optionnel si tu veux recentrer sur petits écrans
@@ -273,6 +275,7 @@
 // Mobiles larges à tablettes petites (481px - 769px)
 @media (min-width: 481px) and (max-width: 769px) {
     .home {
+        padding-top: 25px;
         .home__intro {
             flex-direction: column;
             height: auto;
@@ -318,6 +321,7 @@
     }
 
 
+    // TITRE PRINCIPAL
     #text {
         font-size: 28px;
 
@@ -370,6 +374,7 @@
     }
 
 
+    // TITRE PRINCIPAL
     #text {
         font-size: 34px;
 

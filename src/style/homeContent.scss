@@ -429,7 +429,8 @@
             padding: 40px;
 
             .home__about-container {
-                gap: 40px;
+                flex-direction: column;
+                gap: 50px;
                 padding: 20px;
 
                 .home__about-image {
@@ -460,6 +461,12 @@
         }
 
         .home__school {
+
+            h2 {
+                text-align: left;
+                margin-left: 50px;
+            }
+            
             .home__school-timeline {
                 height: auto;
 
