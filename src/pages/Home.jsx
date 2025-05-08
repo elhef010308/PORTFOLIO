@@ -86,7 +86,7 @@ function Home({ darkMode, toggleTheme }) {
                 <h2>Mon parcours</h2>
                 <div className="home__school-timeline ">
                     <div className="container-1">
-                        <div className='home__school-content'>
+                        <div className='home__school-content one'>
                             <div className='home__school__content-infos'>
                                 <h3>Université Jean Moulin</h3>
                                 <p>Validation d'une licence de philosophie
@@ -97,7 +97,7 @@ function Home({ darkMode, toggleTheme }) {
                     </div>
 
                     <div className="container-2">
-                        <div className='home__school-content'>
+                        <div className='home__school-content two'>
                             <p className='date-2'>2025</p>
                             <div className='home__school__content-infos'>
                                 <h3>Openclassrooms</h3>
@@ -108,7 +108,7 @@ function Home({ darkMode, toggleTheme }) {
                     </div>
 
                     <div className="container-3">
-                        <div className='home__school-content'>
+                        <div className='home__school-content three'>
                             <div className='home__school__content-infos'>
                                 <h3>My Digital School</h3>
                                 <p>Dernière année en alternance de bachelor

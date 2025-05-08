@@ -40,7 +40,7 @@
                     overflow: hidden;
                     white-space: nowrap;
                     animation: typing 3s steps(30, end) forwards, hide-caret 0s forwards;
-                    animation-delay: 0s, 3s; 
+                    animation-delay: 0s, 3s;
                 }
 
                 .home__about-me {
@@ -52,7 +52,7 @@
                 }
 
                 .home__about-goals {
-                    list-style: none; 
+                    list-style: none;
                     padding-left: 50px;
                     width: 805px;
                     color: var(--color-five);
@@ -60,11 +60,11 @@
 
                     li {
                         position: relative;
-                        padding-left: 30px; 
+                        padding-left: 30px;
                         margin-bottom: 10px;
 
                         &::before {
-                            content: "★"; 
+                            content: "★";
                             position: absolute;
                             left: 0;
                             top: 0;
@@ -138,10 +138,12 @@
             align-self: flex-end;
             align-items: flex-start;
         }
+
         .container-2 {
             align-self: flex-start;
             align-items: flex-end;
         }
+
         .container-3 {
             align-self: flex-end;
             align-items: flex-start;
@@ -164,10 +166,12 @@
             left: 690px;
             top: 110px;
         }
+
         .container-2::before {
             left: 635px;
             top: 320px;
         }
+
         .container-3::before {
             left: 690px;
             top: 520px;
@@ -215,6 +219,7 @@
             .date-3 {
                 margin-right: 75px;
             }
+
             .date-2 {
                 margin-left: 130px;
             }
@@ -222,11 +227,302 @@
     }
 }
 
+
+
 // Petits mobiles (jusqu'à 480px)
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    .home {
+        .home__about {
+            padding: 20px 10px;
+
+            .home__about-container {
+                flex-direction: column;
+                gap: 30px;
+                padding: 20px;
+
+                .home__about-image {
+                    width: 220px;
+                    height: 240px;
+                }
+
+                .home__about-content {
+                    h2 {
+                        font-size: 28px;
+                    }
+
+                    .home__about-me,
+                    .home__about-goals {
+                        width: 100%;
+                        font-size: 14px;
+                        padding-left: 0;
+
+                        li {
+                            padding-left: 24px;
+
+                            &::before {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .home__school {
+            h2 {
+                font-size: 28px;
+                padding: 30px 0;
+            }
+
+            .home__school-timeline {
+                height: auto;
+
+                &::before {
+                    display: none;
+                }
+
+                .container-1,
+                .container-2,
+                .container-3 {
+                    align-self: center;
+                    width: 95%;
+                    margin-bottom: 30px;
+                    position: relative;
+
+                    &::before {
+                        display: none;
+                    }
+                }
+
+                .home__school-content {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap:0;
+
+                    &.two {
+                        display: flex;
+                        flex-direction: column-reverse;
+                        justify-content: flex-end;
+                    }
+
+                    .home__school__content-infos {
+                        width: 80%;
+                        height: 130px;
+                        padding: 0;
+
+                        h3 {
+                            font-size: 20px;
+                        }
+
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .date-1,
+                    .date-2,
+                    .date-3 {
+                        margin: 10px 0;
+                        font-size: 14px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
 
 // Mobiles larges à tablettes petites (481px - 769px)
-@media (min-width: 481px) and (max-width: 769px) {}
+@media (min-width: 481px) and (max-width: 769px) {
+    .home {
+        .home__about {
+            padding: 30px;
+
+            .home__about-container {
+                flex-direction: column;
+                gap: 40px;
+
+                .home__about-image {
+                    width: 250px;
+                    height: 260px;
+                }
+
+                .home__about-content {
+                    h2 {
+                        font-size: 32px;
+                    }
+
+                    .home__about-me,
+                    .home__about-goals {
+                        width: 100%;
+                        font-size: 15px;
+
+                        li {
+                            padding-left: 26px;
+
+                            &::before {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .home__school {
+            .home__school-timeline {
+                height: auto;
+
+                &::before {
+                    display: none;
+                }
+
+                .container-1,
+                .container-2,
+                .container-3 {
+                    align-self: center;
+                    width: 90%;
+                    margin-bottom: 40px;
+                    position: relative;
+
+                    &::before {
+                        display: none;
+                    }
+                }
+
+                .home__school-content {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap:0;
+
+                    &.two {
+                        display: flex;
+                        flex-direction: column-reverse;
+                        justify-content: flex-end;
+                    }
+
+                    .home__school__content-infos {
+                        width: 80%;
+                        height: 125px;
+                        padding: 0;
+                    }
+
+                    .date-1,
+                    .date-2,
+                    .date-3 {
+                        margin: 20px 0;
+                        font-size: 15px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
 
 // Tablettes standard à petits laptops (770px - 1025px)
-@media (min-width: 770px) and (max-width: 1025px) {}
+@media (min-width: 770px) and (max-width: 1025px) {
+    .home {
+        .home__about {
+            padding: 40px;
+
+            .home__about-container {
+                gap: 40px;
+                padding: 20px;
+
+                .home__about-image {
+                    width: 260px;
+                    height: 280px;
+                }
+
+                .home__about-content {
+                    h2 {
+                        font-size: 36px;
+                    }
+
+                    .home__about-me,
+                    .home__about-goals {
+                        width: 90%;
+                        font-size: 15px;
+
+                        li {
+                            padding-left: 28px;
+
+                            &::before {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .home__school {
+            .home__school-timeline {
+                height: auto;
+
+                &::before {
+                    left: 20%;
+                }
+
+                .container-1,
+                .container-2,
+                .container-3 {
+                    align-self: flex-start;
+                    width: 100%;
+                    margin-bottom: 50px;
+                    position: relative;
+                    padding-left: 28%;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 25%;
+                        top: 40%;
+                        transform: translateY(-50%);
+                        width: 14px;
+                        height: 14px;
+                        background-color: black;
+                        border-radius: 50%;
+                    }
+                }
+
+                .home__school-content {
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 20px;
+                    padding-left: 30px;
+
+                    &.two {
+                        display: flex;
+                        flex-direction: row-reverse;
+                        justify-content: flex-end;
+                    }
+
+                    .home__school__content-infos {
+                        width: 400px;
+                        height: auto;
+                    }
+
+                    .date-1,
+                    .date-2,
+                    .date-3 {
+                        margin-left: auto;
+                        font-size: 16px;
+                        white-space: nowrap;
+                    }
+
+                    // Supprimer marges héritées du format desktop
+                    .date-1,
+                    .date-2,
+                    .date-3 {
+                        margin-right: 0;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -313,6 +313,7 @@
                 .university__first-year {
                     margin: 0 0 20px 40px;
                 }
+
                 .university__second-year,
                 .university__third-year {
                     margin: 50px 0 20px 40px;
@@ -325,10 +326,11 @@
                     color: var(--color-eleven);
                 }
 
-                
+
                 .university__courses-list {
                     color: black;
                 }
+
                 .arrow-university {
                     padding-left: 50px;
                     color: var(--color-eleven);
@@ -409,8 +411,8 @@
 // BOITE MODALE POUR AFFICHER LE DÉTAIL DES CERTIFICATIONS
 .cv-modal__container {
     position: fixed;
-    top: 50px; 
-    left:0;
+    top: 50px;
+    left: 0;
     width: 100vw;
     height: calc(100vh - 50px);
     background-color: rgba(0, 0, 0, 0.7);
@@ -424,7 +426,7 @@
         background-color: white;
         padding: 10px;
         border-radius: 10px;
-        width: 575px; 
+        width: 575px;
         max-height: 675px;
         display: flex;
         flex-direction: column;
@@ -455,11 +457,53 @@
     }
 }
 
+
 // Petits mobiles (jusqu'à 480px)
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+
+    #text-curriculum {
+        font-size: 22px;
+        text-align: center; // optionnel si tu veux recentrer sur petits écrans
+
+        .wrapper {
+            width: 2.5ch;
+            height: 1.8em;
+        }
+
+        .space {
+            min-width: 16px;
+        }
+    }
+}
 
 // Mobiles larges à tablettes petites (481px - 769px)
-@media (min-width: 481px) and (max-width: 769px) {}
+@media (min-width: 481px) and (max-width: 769px) {
+    #text-curriculum {
+        font-size: 28px;
+
+        .wrapper {
+            width: 2.7ch;
+            height: 1.9em;
+        }
+
+        .space {
+            min-width: 20px;
+        }
+    }
+}
 
 // Tablettes standard à petits laptops (770px - 1025px)
-@media (min-width: 770px) and (max-width: 1025px) {}
+@media (min-width: 770px) and (max-width: 1025px) {
+    #text-curriculum {
+        font-size: 34px;
+
+        .wrapper {
+            width: 2.8ch;
+            height: 2em;
+        }
+
+        .space {
+            min-width: 24px;
+        }
+    }
+}

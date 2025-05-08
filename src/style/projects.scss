@@ -106,6 +106,7 @@
                             &.left {
                                 left: 10px;
                             }
+
                             &.right {
                                 right: 10px;
                             }
@@ -166,6 +167,7 @@
                     z-index: 2;
                     transition: transform 0.3s ease, opacity 0.3s ease;
                 }
+
                 .projects__cards-card.side {
                     transform: scale(0.85);
                     opacity: 0.6;
@@ -393,10 +395,51 @@
 }
 
 // Petits mobiles (jusqu'à 480px)
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+
+    #text-page-projets {
+        font-size: 22px;
+        text-align: center; // optionnel si tu veux recentrer sur petits écrans
+
+        .wrapper {
+            width: 2.5ch;
+            height: 1.8em;
+        }
+
+        .space {
+            min-width: 16px;
+        }
+    }
+}
 
 // Mobiles larges à tablettes petites (481px - 769px)
-@media (min-width: 481px) and (max-width: 769px) {}
+@media (min-width: 481px) and (max-width: 769px) {
+    #text-page-projets {
+        font-size: 28px;
+
+        .wrapper {
+            width: 2.7ch;
+            height: 1.9em;
+        }
+
+        .space {
+            min-width: 20px;
+        }
+    }
+}
 
 // Tablettes standard à petits laptops (770px - 1025px)
-@media (min-width: 770px) and (max-width: 1025px) {}
+@media (min-width: 770px) and (max-width: 1025px) {
+    #text-page-projets {
+        font-size: 34px;
+
+        .wrapper {
+            width: 2.8ch;
+            height: 2em;
+        }
+
+        .space {
+            min-width: 24px;
+        }
+    }
+}

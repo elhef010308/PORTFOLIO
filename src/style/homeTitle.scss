@@ -111,7 +111,7 @@
 
                     .slider {
                         position: absolute;
-                        inset: 0;   // = top, left, right, bottom : 0
+                        inset: 0; // = top, left, right, bottom : 0
                         background-color: #06432D;
                         border-radius: 34px;
                     }
@@ -205,11 +205,181 @@
 }
 
 // Petits mobiles (jusqu'à 480px)
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    .home {
+        width: 100%;
+        max-width: 480px;
+
+        .home__intro {
+            flex-direction: column;
+            height: auto;
+            padding: 30px 7%;
+
+            .home__intro-title {
+                align-items: center;
+
+                .home__title-container {
+                    padding-left: 0;
+
+                    .home__title-list {
+                        font-size: 18px;
+                        text-align: center;
+                        padding: 15px 0;
+                    }
+
+                    .home__title-description {
+                        font-size: 15px;
+                        text-align: justify;
+                        margin: 15px 0;
+                    }
+                }
+
+                .home__title-buttons {
+                    flex-direction: row;
+                    gap: 30px;
+                    flex-wrap: wrap;
+
+                    .title__button-cv,
+                    .title__button-message {
+                        font-size: 16px;
+                        width: 130px;
+                        height: 45px;
+                    }
+                }
+            }
+
+            .home__intro-darkMode {
+                padding-top: 60px;
+            }
+        }
+    }
+
+
+    #text {
+        font-size: 22px;
+        text-align: center; // optionnel si tu veux recentrer sur petits écrans
+
+        .wrapper {
+            width: 2.5ch;
+            height: 1.8em;
+        }
+
+        .space {
+            min-width: 16px;
+        }
+    }
+}
 
 // Mobiles larges à tablettes petites (481px - 769px)
-@media (min-width: 481px) and (max-width: 769px) {}
+@media (min-width: 481px) and (max-width: 769px) {
+    .home {
+        .home__intro {
+            flex-direction: column;
+            height: auto;
+            padding: 30px 7%;
+
+            .home__intro-title {
+                align-items: center;
+
+                .home__title-container {
+                    padding-left: 0;
+
+                    .home__title-list {
+                        font-size: 18px;
+                        text-align: center;
+                        padding: 15px 0;
+                    }
+
+                    .home__title-description {
+                        font-size: 15px;
+                        text-align: justify;
+                        margin: 15px 0;
+                    }
+                }
+
+                .home__title-buttons {
+                    flex-direction: row;
+                    gap: 30px;
+                    flex-wrap: wrap;
+
+                    .title__button-cv,
+                    .title__button-message {
+                        font-size: 16px;
+                        width: 130px;
+                        height: 45px;
+                    }
+                }
+            }
+
+            .home__intro-darkMode {
+                padding-top: 60px;
+            }
+        }
+    }
+
+
+    #text {
+        font-size: 28px;
+
+        .wrapper {
+            width: 2.7ch;
+            height: 1.9em;
+        }
+
+        .space {
+            min-width: 20px;
+        }
+    }
+}
 
 // Tablettes standard à petits laptops (770px - 1025px)
-@media (min-width: 770px) and (max-width: 1025px) {}
+@media (min-width: 770px) and (max-width: 1025px) {
+    .home {
+        .home__intro {
+            height: auto;
+            padding: 40px 8%;
 
+            .home__intro-title {
+                .home__title-container {
+                    padding-left: 20px;
+
+                    .home__title-list {
+                        font-size: 18px;
+                    }
+
+                    .home__title-description {
+                        font-size: 15px;
+                    }
+                }
+
+                .home__title-buttons {
+                    gap: 50px;
+
+                    .title__button-cv,
+                    .title__button-message {
+                        width: 140px;
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .home__intro-darkMode {
+                padding-top: 100px;
+            }
+        }
+    }
+
+
+    #text {
+        font-size: 34px;
+
+        .wrapper {
+            width: 2.8ch;
+            height: 2em;
+        }
+
+        .space {
+            min-width: 24px;
+        }
+    }
+}
