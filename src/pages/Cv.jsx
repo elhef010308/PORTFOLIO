@@ -86,64 +86,64 @@ function Cv() {
                     <div className='cv__university-years'>
                         <h3 className='university__first-year'>2021-2022 : Première année d'Hypokhâgne<br /> (en école préparatoire)</h3>
                         <ul>
-                            <li className='university__courses-list'>════════════════════► Histoire</li>
-                            <li className='university__courses-list'><span className='arrow-university'>════════════════════► Géographie</span></li>
-                            <li className='university__courses-list'>════════════════════► Français</li>
-                            <li className='university__courses-list'><span className='arrow-university'>════════════════════► Littérature</span></li>
-                            <li className='university__courses-list'>════════════════════► Latin (en LV2)</li>
-                            <li className='university__courses-list'><span className='arrow-university'>════════════════════► Anglais et Espagnol (en LV3)</span></li>
+                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Histoire</li>
+                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Géographie</span></li>
+                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Français</li>
+                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Littérature</span></li>
+                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Latin (en LV2)</li>
+                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Anglais et Espagnol (en LV3)</span></li>
                         </ul>
 
                         <h3 className='university__second-year'>2022-2023 : Deuxième année de licence Philosophie (en faculté)</h3>
                         <p className='university__semestry'>SEMESTRE 1</p>
                         <ul>
-                            <li className='university__courses-list'>════════════════════► Esthétique</li>
-                            <li className='university__courses-list'><span className='arrow-university'>════════════════════► Métaphysique</span></li>
-                            <li className='university__courses-list'>════════════════════► Philosophie contemporaine</li>
-                            <li className='university__courses-list'><span className='arrow-university'>════════════════════► Philosophie des sciences et épistémologiue</span></li>
-                            <li className='university__courses-list'>════════════════════► Philosophie moderne</li>
-                            <li className='university__courses-list'><span className='arrow-university'>════════════════════► Philosophie morale et politique</span></li>
-                            <li className='university__courses-list'>════════════════════► Latin (en option)</li>
-                            <li className='university__courses-list'><span className='arrow-university'>════════════════════► Anglais (en LV2) et Espagnol (en LV3)</span></li>
+                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Esthétique</li>
+                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Métaphysique</span></li>
+                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Philosophie contemporaine</li>
+                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Philosophie des sciences et épistémologiue</span></li>
+                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Philosophie moderne</li>
+                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Philosophie morale et politique</span></li>
+                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Latin (en option)</li>
+                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Anglais (en LV2) et Espagnol (en LV3)</span></li>
                         </ul>
 
                         <p className='university__semestry'>SEMESTRE 2</p>
                         <ul>
-                            <li className='university__courses-list'>════════════════════► Philosophie du droit</li>
-                            <li className='university__courses-list'><span className='arrow-university'>════════════════════► Métaphysique</span></li>
-                            <li className='university__courses-list'>════════════════════► Philosophie des sciences humaines et sociales</li>
-                            <li className='university__courses-list'><span className='arrow-university'>════════════════════► Philosophie des sciences et épistémologiue</span></li>
-                            <li className='university__courses-list'>════════════════════► Philosophie moderne</li>
-                            <li className='university__courses-list'><span className='arrow-university'>════════════════════► Logique</span></li>
-                            <li className='university__courses-list'>════════════════════► Latin (en option)</li>
-                            <li className='university__courses-list'><span className='arrow-university'>════════════════════► Anglais (en LV2) et Espagnol (en LV3)</span></li>
+                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Philosophie du droit</li>
+                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Métaphysique</span></li>
+                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Philosophie des sciences humaines et sociales</li>
+                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Philosophie des sciences et épistémologiue</span></li>
+                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Philosophie moderne</li>
+                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Logique</span></li>
+                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Latin (en option)</li>
+                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Anglais (en LV2) et Espagnol (en LV3)</span></li>
                         </ul>
 
                         <h3 className='university__third-year'>2023-2024 : Troisième année de licence Philosophie (en faculté)</h3>
                         <p className='university__semestry'>SEMESTRE 1</p>
                         <ul>
-                            <li className='university__courses-list'>════════════════════► Logique</li>
-                            <li className='university__courses-list'><span className='arrow-university'>════════════════════► Métaphysique</span></li>
-                            <li className='university__courses-list'>════════════════════► Philosophie moderne et contemporaine</li>
-                            <li className='university__courses-list'><span className='arrow-university'>════════════════════► Philosophie des sciences et épistémologiue</span></li>
-                            <li className='university__courses-list'>════════════════════► Philosophie morale et politique</li>
-                            <li className='university__courses-list'><span className='arrow-university'>════════════════════► Philosophie ancienn</span></li>
-                            <li className='university__courses-list'>════════════════════► Latin (en option)</li>
-                            <li className='university__courses-list'><span className='arrow-university'>════════════════════► Anglais (en LV2) et Espagnol (en LV3)</span></li>
+                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Logique</li>
+                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Métaphysique</span></li>
+                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Philosophie moderne et contemporaine</li>
+                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Philosophie des sciences et épistémologiue</span></li>
+                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Philosophie morale et politique</li>
+                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Philosophie ancienn</span></li>
+                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Latin (en option)</li>
+                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Anglais (en LV2) et Espagnol (en LV3)</span></li>
                         </ul>
 
                         <p className='university__semestry'>SEMESTRE 2</p>
                         <ul>
-                            <li className='university__courses-list'>════════════════════► Logique</li>
-                            <li className='university__courses-list'><span className='arrow-university'>════════════════════► Métaphysique</span></li>
-                            <li className='university__courses-list'>════════════════════► Philosophie ancienne et médiévale</li>
-                            <li className='university__courses-list'><span className='arrow-university'>════════════════════► Philosophie contemporaine</span></li>
-                            <li className='university__courses-list'>════════════════════► Philosophie moderne et contemporaine</li>
-                            <li className='university__courses-list'><span className='arrow-university'>════════════════════► Philosophie de l'art</span></li>
-                            <li className='university__courses-list'>════════════════════► Philosophie des sciences et épistémologiue</li>
-                            <li className='university__courses-list'><span className='arrow-university'>════════════════════► Philosophie politique</span></li>
-                            <li className='university__courses-list'>════════════════════► Latin (en option)</li>
-                            <li className='university__courses-list'><span className='arrow-university'>════════════════════► Anglais (en LV2) et Espagnol (en LV3)</span></li>
+                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Logique</li>
+                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Métaphysique</span></li>
+                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Philosophie ancienne et médiévale</li>
+                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Philosophie contemporaine</span></li>
+                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Philosophie moderne et contemporaine</li>
+                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Philosophie de l'art</span></li>
+                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Philosophie des sciences et épistémologiue</li>
+                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Philosophie politique</span></li>
+                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Latin (en option)</li>
+                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Anglais (en LV2) et Espagnol (en LV3)</span></li>
                         </ul>
                     </div>
                 </div>
