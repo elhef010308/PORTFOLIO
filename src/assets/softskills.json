@@ -105,10 +105,45 @@
         "level": "70%"
     },
     {
+        "id": "figma",
+        "title": "FIGMA",
+        "src": "/images/logoSoftkills/logo-figma.png",
+        "alt": "logo de figma",
+        "level": "65%"
+    },
+    {
         "id": "vscode",
         "title": "VS CODE",
         "src": "/images/logoSoftkills/logo-vscode.png",
         "alt": "logo de VS Code",
         "level": "90%"
+    },
+    {
+        "id": "responsif design",
+        "title": "RESPONSIF",
+        "src": "/images/logoSoftkills/logo-responsif.png",
+        "alt": "logo du responsif design",
+        "level": "90%"
+    },
+    {
+        "id": "référencement SEO",
+        "title": "SEO",
+        "src": "/images/logoSoftkills/logo-seo.png",
+        "alt": "logo du référencement SEO",
+        "level": "60%"
+    },
+    {
+        "id": "méthode agile/scrum",
+        "title": "SCRUM",
+        "src": "/images/logoSoftkills/logo-agile.png",
+        "alt": "logo de la méthode agile",
+        "level": "80%"
+    },
+    {
+        "id": "pack office",
+        "title": "PACK OFFICE",
+        "src": "/images/logoSoftkills/logo-office.png",
+        "alt": "logo du pack office",
+        "level": "100%"
     }
 ]
