@@ -138,6 +138,17 @@ function Projects() {
                     </div>
                 )
             }
+
+            {showMore && selectedProject && (
+                <div className='projects-modal__container second-layer' onClick={() => setShowMore(false)}>
+                    <div className='projects-modal__content second-layer' onClick={(e) => e.stopPropagation()}>
+                        <h2>PROJET {selectedProject.id} : {selectedProject.title}</h2>
+                        <p>{selectedProject.difficultes}</p>
+                        <p>{selectedProject.competences}</p>
+                        <button className="close-button" onClick={() => setShowMore(false)}>X</button>
+                    </div>
+                </div>
+            )}
         </div >
     )
 }

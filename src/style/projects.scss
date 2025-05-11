@@ -421,6 +421,23 @@
     }
 }
 
+
+.projects-modal__container.second-layer {
+    z-index: 20;
+    width: 100vw;
+
+    .projects-modal__content.second-layer {
+        width: 40vw;
+        max-height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+
+
+
 // Petits mobiles (jusqu'à 480px)
 @media (max-width: 480px) {
     .projects {
@@ -513,6 +530,7 @@
                     height: 30px;
                     font-size: 15px;
                 }
+
                 .see-more {
                     width: auto;
                     height: 30px;
@@ -521,6 +539,7 @@
             }
         }
     }
+
 
 
     // TITRE PRINCIPAL
