@@ -8,10 +8,19 @@
             "Discuter les dates cibles de fin visée par projet",
             "Confirmer les outils de collaboration avec son mentor"
         ],
-        "src": ["/images/webP/projet-1-first.webp", "/images/webP/projet-1-second.webp", "/images/webP/projet-1-third.webp"],
-        "alt": ["Aperçu du projet 1", "Aperçu du projet 1" , "Aperçu du projet 1"],
-        "github": "https://github.com/tonpseudo/super-projet",
-        "description": "Ce projet marque le début du parcours de formation. Quelques vidéos de bienvenue sont proposées ainsi qu’un cours sur l’Intelligence Artificielle. L’objectif consiste à compléter une fiche de début de formation permettant d’assurer que le fonctionnement de la formation est clair, de définir ses objectifs professionnels et les dates cibles de validation des projets, ainsi que le choix des outils de collaboration avec son mentor. A l’issus de ce projet, une session de bilan est organisée avec le mentor pour vérifier que tout est bien clair avant de commencer le deuxième projet."
+        "src": [
+            "/images/webP/projet-1-first.webp",
+            "/images/webP/projet-1-second.webp",
+            "/images/webP/projet-1-third.webp"
+        ],
+        "alt": [
+            "Aperçu du projet 1",
+            "Aperçu du projet 1",
+            "Aperçu du projet 1"
+        ],
+        "github": "https://github.com/elhef010308",
+        "description": "Ce projet marque le début du parcours de formation. Quelques vidéos de bienvenue sont proposées ainsi qu’un cours sur l’Intelligence Artificielle. L’objectif consiste à compléter une fiche de début de formation permettant d’assurer que le fonctionnement de la formation est clair, de définir ses objectifs professionnels et les dates cibles de validation des projets, ainsi que le choix des outils de collaboration avec son mentor. A l’issus de ce projet, une session de bilan est organisée avec le mentor pour vérifier que tout est bien clair avant de commencer le deuxième projet.",
+        "competences": "Aucune réelle difficulté n'a été rencontrée dans ce projet. L'objectif était simplement de définir des bases de départ pour démarrer sa formation sereinement : définir ses objectifs, un planning prévisionnel, rencontrer son mentor... Le plus 'difficile', éventuellement, serait le fait de trouver la date de fin des projets, et de s'y tenir dans la pratique."
     },
     {
         "id": 2,
@@ -22,10 +31,18 @@
             "Versionner son projet avec Git et GitHub",
             "Installer un environnement de développement Frontend"
         ],
-        "src": ["/images/webP/projet-2-first.webp", "/images/webP/projet-2-second.webp"],
-        "alt": ["Aperçu du projet 2", "Aperçu du projet 2"],
-        "github": "https://github.com/tonpseudo/super-projet",
-        "description": "Ce projet consiste en la réalisation d’une page d’accueil d’une agence de voyage en utilisant HTML et CSS. La mission principale est d’intégrer l’interface responsive du site, en s’appuyant sur des maquettes Figma fournies ainsi qu’une note de synthèse sur les spécificités du projet. La capacité à créer des interfaces web responsives est cruciale dans le développement web moderne. En apprenant à intégrer des maquettes avec précisions en utilisant HTML et CSS, et en configurant un environnement de développement efficace, on pose les bases nécessaires pour devenir un développeur frontend compétent."
+        "src": [
+            "/images/webP/projet-2-first.webp",
+            "/images/webP/projet-2-second.webp"
+        ],
+        "alt": [
+            "Aperçu du projet 2",
+            "Aperçu du projet 2"
+        ],
+        "github": "https://github.com/elhef010308/PROJET_2_Booki.git",
+        "description": "Ce projet consiste en la réalisation d’une page d’accueil d’une agence de voyage en utilisant HTML et CSS. La mission principale est d’intégrer l’interface responsive du site, en s’appuyant sur des maquettes Figma fournies ainsi qu’une note de synthèse sur les spécificités du projet. La capacité à créer des interfaces web responsives est cruciale dans le développement web moderne. En apprenant à intégrer des maquettes avec précisions en utilisant HTML et CSS, et en configurant un environnement de développement efficace, on pose les bases nécessaires pour devenir un développeur frontend compétent.",
+        "difficultes": "Le premier obstacle rencontré a été de respecter fidèlement la maquette fournie. Il fallait réussir à traduire le design en HTML et CSS tout en respectant les proportions, les espacements et les polices. La véritable difficulté du projet a été la mise en place du responsive design. Adapter l'interface pour qu'elle soit aussi claire et fonctionnelle sur tous les types d'écrans (mobile, tablette, desktop) a demandé plusieurs ajustements techniques et une bonne compréhension du fonctionnement des media queries.",
+        "competences": "Ce projet a permis d’acquérir les bases essentielles en HTML et CSS, ainsi que de découvir Figma et de se familiariser avec l’environnement de développement VS Code."
     },
     {
         "id": 3,
@@ -35,10 +52,18 @@
             "Gérer les évènements utilisateurs avec Javascript",
             "Manipuler les éléments du DOM avec Javascript"
         ],
-        "src": ["/images/webP/projet-3-first.webp", "/images/webP/projet-3-second.webp"],
-        "alt": ["Aperçu du projet 3", "Aperçu du projet 3"],
-        "github": "https://github.com/tonpseudo/super-projet",
-        "description": "Ce projet consiste en la réalisation d’une page web dynamique pour le site internet d’une architecte d’intérieur en utilisant Javascript et en communiquant avec une API. Seule la partie frontend est à travailler, avec le développement de la page de présentation des travaux de l’architecte à partir d’un HTML fourni. Cela implique la gestion des évènements utilisateurs et la manipulation des éléments du DOM avec Javascript. Une page de connexion et une modale permettant d’uploader de nouveaux médias sont également à créer."
+        "src": [
+            "/images/webP/projet-3-first.webp",
+            "/images/webP/projet-3-second.webp"
+        ],
+        "alt": [
+            "Aperçu du projet 3",
+            "Aperçu du projet 3"
+        ],
+        "github": "https://github.com/elhef010308/PROJET_3_Sophie_Bluel.git",
+        "description": "Ce projet consiste en la réalisation d’une page web dynamique pour le site internet d’une architecte d’intérieur en utilisant Javascript et en communiquant avec une API. Seule la partie frontend est à travailler, avec le développement de la page de présentation des travaux de l’architecte à partir d’un HTML fourni. Cela implique la gestion des évènements utilisateurs et la manipulation des éléments du DOM avec Javascript. Une page de connexion et une modale permettant d’uploader de nouveaux médias sont également à créer.",
+        "difficultes": "La principale difficulté a été de comprendre la logique des fonctions JavaScript et d’apprendre à relier efficacement le code JavaScript avec le HTML existant.",
+        "competences": "Ce projet a permis de découvrir les bases du JavaScript, notamment la manipulation du DOM et la logique de programmation."
     },
     {
         "id": 4,
@@ -48,10 +73,17 @@
             "Débugger un site web grâce aux Chrome DevTools",
             "Rédiger un cahier de recette pour tester un site"
         ],
-        "src": ["/images/webP/projet-4-first.webp", "/images/webP/projet-4-second.webp"],
-        "alt": ["Aperçu du projet 4", "Aperçu du projet 4"],
-        "github": "https://github.com/tonpseudo/super-projet",
-        "description": "Ce projet consiste en l’optimisation du référencement d’un site, en améliorant sa performance et son accessibilité. La première tâche est d’identifier les problèmes de chargement et de référencement en utilisant des outils tels que Lighthouse et Wave pour évaluer les performances actuelles du site et son accessibilité. Des recommandations pour améliorer la vitesse de chargement, la structure du code et le référencement devront être proposées puis appliquées en modifiant le code du site. Pour finir, un rapport illustrant les résultats avant et après les modifications est à rédiger."
+        "src": [
+            "/images/webP/projet-4-first.webp",
+            "/images/webP/projet-4-second.webp"
+        ],
+        "alt": [
+            "Aperçu du projet 4",
+            "Aperçu du projet 4"
+        ],
+        "github": "https://github.com/elhef010308/PROJET_4_Nina_Carducci.git",
+        "difficultes": "Les principales difficultés ont été de comprendre le fonctionnement du fichier Bootstrap existant, d'identifier les erreurs dans le code JavaScript, et d'apprendre à utiliser les outils de débogage comme les points d’arrêt dans les Chrome DevTools.",
+        "competences": "Ce projet a permis d’approfondir plusieurs aspects essentiels d’un site web : le référencement (ajout de balises meta et rich snippets), l’accessibilité (correction des contrastes), et l’amélioration des performances (conversion des images en WebP, chargement différé des ressources, etc.)."
     },
     {
         "id": 5,
@@ -63,10 +95,17 @@
             "Mettre en oeuvre des animations CSS",
             "Développer une interface web avec Sass"
         ],
-        "src": ["/images/webP/projet-5-first.webp", "/images/webP/projet-5-second.webp"],
-        "alt": ["Aperçu du projet 5", "Aperçu du projet 5"],
-        "github": "https://github.com/tonpseudo/super-projet",
-        "description": "Ce projet consiste en l’implémentation du frontend d’une application (initialisé avec Vite) en utilisant React et React Router pour créer une expérience utilisateur moderne et réactive. Le travail porte sur la logique de présentation des données et les composants React, et une bibliothèque Javascript pour la création d’interface utilisateur.  React Router permet de configurer la navigation entre les pages de l’applications. Le projet se concentre exclusivement sur le développement frontend, en se basant sur des maquettes fournies et en utilisant des données simulées extraites d’un fichier JSON."
+        "src": [
+            "/images/webP/projet-5-first.webp",
+            "/images/webP/projet-5-second.webp"
+        ],
+        "alt": [
+            "Aperçu du projet 5",
+            "Aperçu du projet 5"
+        ],
+        "github": "https://github.com/elhef010308/PROJET_5_Kasa.git",
+        "difficultes": "La principale difficulté a été de comprendre le fonctionnement de React Router pour gérer la navigation entre les pages. Il a également fallu apprendre à utiliser les boucles `.map()` pour afficher dynamiquement des composants React dans différents fichiers JSX.",
+        "competences": "Ce projet a permis d’approfondir l’utilisation de React, React Router, JSX et Sass, ainsi que de se familiariser avec la structuration de composants dynamiques."
     },
     {
         "id": 6,
@@ -76,10 +115,17 @@
             "Mettre en oeuvre des opérations CRUD de manière sécurisée",
             "Stocker des données de manière sécurisée"
         ],
-        "src": ["/images/webP/projet-6-first.webp", "/images/webP/projet-6-second.webp"],
-        "alt": ["Aperçu du projet 6", "Aperçu du projet 6"],
-        "github": "https://github.com/tonpseudo/super-projet",
-        "description": "Ce projet consiste en la création du backend d’un site de notation de livre, en créant un serveur Express, et en le connectant avec la base de données MongoDB. Cela implique la mise en place de la structure serveur et la gestion de la communication entre le serveur et la base de données. Les modèles de données sont à développer, et les opérations CRUD à implémenter pour la gestion des livres et des notations. Il faut également implémenter un système d’authentification sécurisé pour les utilisateurs du site, et gérer la gestion du téléchargement et de l’optimisation des images. Mongoose devra être utilisé pour modéliser les données MongoDB, et l’architecture MVC pour la structuration de l’application."
+        "src": [
+            "/images/webP/projet-6-first.webp",
+            "/images/webP/projet-6-second.webp"
+        ],
+        "alt": [
+            "Aperçu du projet 6",
+            "Aperçu du projet 6"
+        ],
+        "github": "https://github.com/elhef010308/PROJET_6_Mon_Vieux_Grimoire.git",
+        "difficultes": "La plus grande difficulté a été la création et la connexion de la base de données sur MongoDB Atlas, qui présentait des bugs fréquents. Il a également fallu comprendre comment structurer les schémas de données avec Mongoose, ce qui a demandé un vrai travail de logique.",
+        "competences": "Ce projet a permis d'acquérir des compétences solides en développement backend avec Node.js et JavaScript, en manipulation de bases de données MongoDB via Mongoose, ainsi qu’en utilisation de Postman pour tester les routes de l’API."
     },
     {
         "id": 7,
@@ -91,10 +137,23 @@
             "Rédiger les spécifications techniques d'un projet web à partir de besoins fonctionnels",
             "Suivre le déroulement du projet grâce à un outil de gestion de projet"
         ],
-        "src": ["/images/webP/projet-7-first.webp", "/images/webP/projet-7-second.webp", "/images/webP/projet-7-third.webp", "/images/webP/projet-7-fourth.webp", "/images/webP/projet-7-fiveth.webp"],
-        "alt": ["Aperçu du projet 7", "Aperçu du projet 7", "Aperçu du projet 7", "Aperçu du projet 7", "Aperçu du projet 7"],
-        "github": "https://github.com/tonpseudo/super-projet",
-        "description": "Ce projet consiste en la planification du développement d’un site client, sans intervenir directement dans le codage. La maquette, les spécifications fonctionnelles et es Users Stories du site sont partagées comme documents de support. Une veille technologique doit être réalisée pour rester informer des dernières tendance et technologies pertinentes pour le projet. Un document de spécifications techniques doit être rédigé, un tableau Kanban est à créer sur un outil de gestion de projet comme Notion (en n’oubliant pas les attributaires et la complexité des tâches), et un support Power Point réutilisable pour la présentation finale au client."
+        "src": [
+            "/images/webP/projet-7-first.webp",
+            "/images/webP/projet-7-second.webp",
+            "/images/webP/projet-7-third.webp",
+            "/images/webP/projet-7-fourth.webp",
+            "/images/webP/projet-7-fiveth.webp"
+        ],
+        "alt": [
+            "Aperçu du projet 7",
+            "Aperçu du projet 7",
+            "Aperçu du projet 7",
+            "Aperçu du projet 7",
+            "Aperçu du projet 7"
+        ],
+        "github": "https://github.com/elhef010308/PROJET_7_Menu_Maker.git",
+        "difficultes": "Aucune difficulté majeure n’a été rencontrée sur ce projet, si ce n’est la recherche de sources fiables pour la veille technologique, ainsi que la prise en main de Feedly, notamment pour la création de tableaux thématiques, qui n’est pas très intuitive.",
+        "competences": "Ce projet a permis de se familiariser avec la veille technologique, les outils de gestion de projet (Kanban), la découverte de Notion et Feedly, les méthodes agiles et Scrum, ainsi que la rédaction d’un document de spécifications techniques."
     },
     {
         "id": 8,
@@ -104,9 +163,14 @@
             "Faire un bilan de ses compétences",
             "Clarifier son objectif d'embauche"
         ],
-        "src": ["/images/webP/projet-8-first.webp"],
-        "alt": ["Aperçu du projet 8"],
+        "src": [
+            "/images/webP/projet-8-first.webp"
+        ],
+        "alt": [
+            "Aperçu du projet 8"
+        ],
         "github": "https://github.com/elhef010308",
-        "description": "Ce projet consiste en la création et la publication en ligne de son portfolio de développeur, qui doit permettre de présenter son parcours, ses compétences et les projets réalisés. Il doit être responsif, inclure au moins deux projets présentés clairement. Pour finir, il faudra également débugger et optimiser la performance du code et du référencement SEO."
+        "difficultes": "La première difficulté a été de trouver de l’inspiration pour créer un portfolio à mon image. J’ai ensuite rencontré quelques obstacles techniques lors de l’implémentation du mode jour/nuit, que j’ai voulu ajouter moi-même. Malgré cela, ce fut un projet très agréable à réaliser, car il m’a permis de partir de zéro et de concevoir un site qui reflète mes goûts et ma progression.",
+        "competences": "Ce projet a permis de consolider l’utilisation de React, React Router, Sass, et le responsive design. Il a aussi été l’occasion de travailler sur l’optimisation du référencement grâce aux balises Open Graph, aux Twitter Cards, aux balises script personnalisées et à l’utilisation d’images au format WebP."
     }
 ]

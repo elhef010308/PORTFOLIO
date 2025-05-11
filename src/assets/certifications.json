@@ -118,5 +118,17 @@
         "preview": "/images/certif-20.png",  
         "full": "/images/webP/certificat-20.webp",
         "alt": "Certification 20"
+    },
+    { 
+        "id": 21, 
+        "preview": "/images/certif-21.png",  
+        "full": "/images/webP/certificat-21.webp",
+        "alt": "Certification 21"
+    },
+    { 
+        "id": 22, 
+        "preview": "/images/certif-22.png",  
+        "full": "/images/webP/certificat-22.webp",
+        "alt": "Certification 22"
     }
 ]

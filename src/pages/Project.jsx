@@ -12,6 +12,7 @@ import { useLocation } from 'react-router-dom';
 
 
 function Projects() {
+    const [showMore, setShowMore] = useState(false);
     const locationS = useLocation();
     const incomingProjectId = locationS.state?.projectId;
 
@@ -126,10 +127,13 @@ function Projects() {
                         <div className='projects-modal__content' onClick={(e) => e.stopPropagation()}>
                             <h2>PROJET {selectedProject.id} : {selectedProject.title}</h2>
                             <p>{selectedProject.description}</p>
-                            <a href={selectedProject.github} target="_blank" rel="noopener noreferrer" className="github-link">
-                                <FontAwesomeIcon icon={faSquareGithub} />
-                            </a>
-                            <button onClick={() => setSelectedProject(null)}>X</button>
+                            <div className='modal-project-button'>
+                                <a href={selectedProject.github} target="_blank" rel="noopener noreferrer" className="github-link">
+                                    <FontAwesomeIcon icon={faSquareGithub} />
+                                </a>
+                                <button className='see-more' onClick={() => setShowMore(true)}>Voir plus</button>
+                            </div>
+                            <button className="close-button" onClick={() => setSelectedProject(null)}>X</button>
                         </div>
                     </div>
                 )
