@@ -23,7 +23,20 @@
             .home__about-image {
                 width: 300px;
                 height: 315px;
-                border: solid 1px greenyellow;
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: opacity 0.5s ease-in-out;
+                    border: solid 3px black;
+                }
             }
 
             .home__about-content {
@@ -241,8 +254,11 @@
                 padding: 20px;
 
                 .home__about-image {
-                    width: 220px;
-                    height: 240px;
+                    width: 180px;
+                    height: 200px;
+                    margin-top: 0;
+                    flex-direction: row;
+                    gap: 10px;
                 }
 
                 .home__about-content {
@@ -298,7 +314,7 @@
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
-                    gap:0;
+                    gap: 0;
 
                     &.two {
                         display: flex;
@@ -346,6 +362,9 @@
                 .home__about-image {
                     width: 250px;
                     height: 260px;
+                    margin-top: 0;
+                    flex-direction: row;
+                    gap: 20px;
                 }
 
                 .home__about-content {
@@ -395,7 +414,7 @@
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
-                    gap:0;
+                    gap: 0;
 
                     &.two {
                         display: flex;
@@ -436,6 +455,9 @@
                 .home__about-image {
                     width: 260px;
                     height: 280px;
+                    margin-top: 5px;
+                    flex-direction: row;
+                    gap: 30px
                 }
 
                 .home__about-content {
@@ -466,7 +488,7 @@
                 text-align: left;
                 margin-left: 50px;
             }
-            
+
             .home__school-timeline {
                 height: auto;
 

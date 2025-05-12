@@ -1,4 +1,5 @@
 import AnimatedTitle from './AnimatedTitle.jsx';
+import { useState, useEffect } from 'react';
 
 
 // COMPOSANT POUR LE TITRE PRINCIPAL DE LA PAGE D'ACCUEIL
@@ -9,22 +10,69 @@ export default function TitleText() {
 
 // COMPOSANTS A PROPOS DE MOI
 export function AboutMe() {
+
+    const musicImages = [
+        '/images/webP/image-profil_1.webp',
+        '/images/webP/image-profil_2.webp',
+        '/images/webP/image-profil_3.webp',
+        '/images/webP/image-profil_4.webp',
+        '/images/webP/image-profil_5.webp'
+    ];
+
+    const devImages = [
+        '/images/webP/carousel-profil_1.webp',
+        '/images/webP/carousel-profil_2.webp',
+        '/images/webP/carousel-profil_3.webp',
+        '/images/webP/carousel-profil_4.webp',
+        '/images/webP/carousel-profil_5.webp',
+        '/images/webP/carousel-profil_6.webp',
+        '/images/webP/carousel-profil_7.webp'
+    ];
+
+    const [index, setIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setIndex(prev => (prev + 1) % Math.max(musicImages.length, devImages.length));
+        }, 4000);
+
+        return () => clearInterval(interval);
+    }, []);
+
+    const musicImage = musicImages[index % musicImages.length];
+    const devImage = devImages[index % devImages.length];
+
     return (
         <div className='home__about-container'>
             <div className='home__about-image'>
+                <img className='pictures_profil_music'
+                    src={`${import.meta.env.BASE_URL}${musicImage}`}
+                    alt='Photos de profils'
+                    aria-label='Photos de profil'
+                />
+                <img className='pictures_profil_dev'
+                    src={`${import.meta.env.BASE_URL}${devImage}`}
+                    alt='Photos de profils'
+                    aria-label='Photos de profil'
+                />
             </div>
             <div className='home__about-content'>
                 <h2>
                     A propos de moi
                 </h2>
                 <p className='home__about-me'>
-                    A 21 ans, je suis actuellement en reconversion pour travailler dans le domaine
-                    du web. Après une licence de philosophie, où j'ai pu acquérir culture générale,
-                    capacité de réflexion, et qualité rédactionnelle, j'ai entrepris une reconversion
-                    au sein de l'organisme Openclassrooms. Actuellement en fin de formation "Développeur web",
-                    j'envisage une 3ème année de bachelor "Développeur web et mobile" en alternance à la Digital
-                    School de Lyon, pour acquérir de l'expérience avant de me lancer pleinement dans le monde
-                    du travail.
+                    À 21 ans, je suis actuellement en reconversion professionnelle dans le domaine du développement web.
+                    Après une licence de philosophie, qui m’a permis de développer une solide culture générale, une rigueur
+                    de réflexion et des qualités rédactionnelles, j’ai choisi de me tourner vers un domaine qui me
+                    passionne : la programmation. <br /><br />
+
+                    Parallèlement à ce parcours, je nourris une passion de longue date pour la musique, qui occupe une place
+                    importante dans ma vie. Elle m’a appris la persévérance, l’écoute, et le goût du travail créatif —
+                    des qualités que je retrouve pleinement dans le développement web. <br /><br />
+
+                    Actuellement en fin de formation “Développeur web” avec OpenClassrooms, je souhaite poursuivre sur
+                    une troisième année de bachelor “Développeur web et mobile” en alternance à la Digital School de Lyon.
+                    Mon objectif : enrichir mon expérience en entreprise avant de me lancer pleinement dans le monde professionnel.
                 </p>
                 <h2>
                     Mes objectifs
