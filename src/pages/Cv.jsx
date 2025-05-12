@@ -43,7 +43,7 @@ function Cv() {
                     <h2>MON PARCOURS OPENCLASSROOMS (2025)</h2>
                     <div className='cv__openclassrooms-title'>
                         <p>Formation "Développeur Web"</p>
-                        <a href={`${import.meta.env.BASE_URL}/files/programme-openclassrooms.pdf`} download>
+                        <a href={`${import.meta.env.BASE_URL}files/programme-openclassrooms.pdf`} download>
                             Voir le programme
                         </a>
                     </div>
