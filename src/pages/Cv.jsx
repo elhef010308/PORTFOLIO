@@ -33,7 +33,7 @@ function Cv() {
                 <div className="cv__intro__">
                     <div className="cv__intro-title">
                         <TitleCurriculum />
-                        <a href='/files/cv.pdf' download>Télécharger</a>
+                        <a href={`${import.meta.env.BASE_URL}files/cv.pdf`} download>Télécharger</a>
                     </div>
                 </div>
             </section>
@@ -43,7 +43,7 @@ function Cv() {
                     <h2>MON PARCOURS OPENCLASSROOMS (2025)</h2>
                     <div className='cv__openclassrooms-title'>
                         <p>Formation "Développeur Web"</p>
-                        <a href='/files/programme-openclassrooms.pdf' download>
+                        <a href={`${import.meta.env.BASE_URL}/files/programme-openclassrooms.pdf`} download>
                             Voir le programme
                         </a>
                     </div>
