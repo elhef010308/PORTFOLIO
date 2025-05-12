@@ -67,7 +67,7 @@ function Cv() {
                             {certifications.map((certif) => (
                                 <CertificationCard
                                     key={certif.id}
-                                    src={certif.preview}
+                                    src={`${import.meta.env.BASE_URL}${certif.preview}`}
                                     alt={certif.alt}
                                     onClick={() => setSelectedCertif(certif)}
                                 />
@@ -154,7 +154,7 @@ function Cv() {
             {selectedCertif !== null && (
                 <div className='cv-modal__container' onClick={() => setSelectedCertif(null)}>
                     <div className='cv-modal__content' onClick={(e) => e.stopPropagation()}>
-                        <img src={selectedCertif.full} alt={selectedCertif.alt} />
+                        <img src={`${import.meta.env.BASE_URL}${selectedCertif.full}`} alt={selectedCertif.alt} />
                         <button onClick={() => setSelectedCertif(null)}>X</button>
                     </div>
                 </div>

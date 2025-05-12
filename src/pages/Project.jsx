@@ -87,7 +87,7 @@ function Projects() {
                                 key={project.id}
                                 id={project.id}
                                 title={project.title}
-                                src={project.src}
+                                src={project.src.map((img) => `${import.meta.env.BASE_URL}${img}`)}
                                 alt={project.alt}
                                 description={project.description}
                                 github={project.github}
@@ -107,7 +107,7 @@ function Projects() {
                         <div key={item.id} className='projects-skills__list'>
                             <div className='projects-skills__images'>
                                 {item.src && (
-                                    <img src={item.src} alt={item.alt || item.title} />
+                                    <img src={`${import.meta.env.BASE_URL}${item.src}`} alt={item.alt || item.title} />
                                 )}
                             </div>
                             <p className='projects-skills__title'>{item.title}</p>
