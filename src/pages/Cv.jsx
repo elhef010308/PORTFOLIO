@@ -3,9 +3,8 @@ import { ProjectCard, CertificationCard, TitleCurriculum } from '../components/C
 import projectsDatas from '../assets/projectsData.json';
 import certifications from '../assets/certifications.json';
 
-
-
 import { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 
 function Cv() {
     const [selectedCertif, setSelectedCertif] = useState(null);
@@ -29,11 +28,17 @@ function Cv() {
 
     return (
         <div className='cv'>
+
+            <Helmet>
+                <title>Page du CV – Portfolio</title>
+                <meta name="description" content="Bienvenue sur ma page CV. Vous y trouverez en détails les formations que j'ai suivies, résumant ainsi mon parcours universitaire..." />
+            </Helmet>
+
             <section className="cv__intro">
                 <div className="cv__intro__">
                     <div className="cv__intro-title">
                         <TitleCurriculum />
-                        <a href={`${import.meta.env.BASE_URL}files/cv.pdf`} download>Télécharger</a>
+                        <a aria-label='Lien pour télécharger mon CV' href={`${import.meta.env.BASE_URL}files/cv.pdf`} download>Télécharger</a>
                     </div>
                 </div>
             </section>
@@ -43,7 +48,7 @@ function Cv() {
                     <h2>MON PARCOURS OPENCLASSROOMS (2025)</h2>
                     <div className='cv__openclassrooms-title'>
                         <p>Formation "Développeur Web"</p>
-                        <a href={`${import.meta.env.BASE_URL}files/programme-openclassrooms.pdf`} download>
+                        <a aria-label='Lien pour télécharger le programme de la formation Openclassrooms Développeur Web' href={`${import.meta.env.BASE_URL}files/programme-openclassrooms.pdf`} download>
                             Voir le programme
                         </a>
                     </div>
@@ -154,8 +159,8 @@ function Cv() {
             {selectedCertif !== null && (
                 <div className='cv-modal__container' onClick={() => setSelectedCertif(null)}>
                     <div className='cv-modal__content' onClick={(e) => e.stopPropagation()}>
-                        <img src={`${import.meta.env.BASE_URL}${selectedCertif.full}`} alt={selectedCertif.alt} />
-                        <button onClick={() => setSelectedCertif(null)}>X</button>
+                        <img aria-label='Image de ma certification obtenue' src={`${import.meta.env.BASE_URL}${selectedCertif.full}`} alt={selectedCertif.alt} />
+                        <button aria-label='Bouton pour fermer la boite modale' onClick={() => setSelectedCertif(null)}>X</button>
                     </div>
                 </div>
             )}

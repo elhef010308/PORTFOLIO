@@ -8,6 +8,7 @@ import data from '../assets/softskills.json';
 
 import { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 
 
@@ -73,6 +74,12 @@ function Projects() {
 
     return (
         <div className='projects'>
+
+            <Helmet>
+                <title>Page des projets – Portfolio</title>
+                <meta name="description" content="Bienvenue sur ma page des projets. Vous y trouverez en détails les projets réalisés au cours de ma formation Openclassrooms, et le niveau des softkills acquises..." />
+            </Helmet>
+
             <section className="projects__intro">
                 <TitleProjectsPage />
             </section>
@@ -80,7 +87,7 @@ function Projects() {
             <section className="projects__carousel" ref={partProjects2Ref}>
                 <h2 className='projects__carousel-title'>Mes projets Openclassrooms</h2>
                 <div className='projects__carousel-wrapper'>
-                    <button className='projects__carousel-button left' onClick={() => setCurrentIndex(prev => (prev - 1 + total) % total)}>←</button>
+                    <button aria-label='Bouton de navigation à gauche dans le carrousel' className='projects__carousel-button left' onClick={() => setCurrentIndex(prev => (prev - 1 + total) % total)}>←</button>
                     <div className='projects__cards-container'>
                         {visibleProjects.map((project, i) => (
                             <ProjectsPage
@@ -96,7 +103,7 @@ function Projects() {
                             />
                         ))}
                     </div>
-                    <button className='projects__carousel-button right' onClick={() => setCurrentIndex(prev => (prev + 1) % total)}>→</button>
+                    <button aria-label='Bouton de navigation à droite dans le carrousel' className='projects__carousel-button right' onClick={() => setCurrentIndex(prev => (prev + 1) % total)}>→</button>
                 </div>
             </section>
 
@@ -107,7 +114,7 @@ function Projects() {
                         <div key={item.id} className='projects-skills__list'>
                             <div className='projects-skills__images'>
                                 {item.src && (
-                                    <img src={`${import.meta.env.BASE_URL}${item.src}`} alt={item.alt || item.title} />
+                                    <img aria-label='Logo du softkills mentionné' src={`${import.meta.env.BASE_URL}${item.src}`} alt={item.alt || item.title} />
                                 )}
                             </div>
                             <p className='projects-skills__title'>{item.title}</p>
@@ -128,12 +135,12 @@ function Projects() {
                             <h2>PROJET {selectedProject.id} : {selectedProject.title}</h2>
                             <p>{selectedProject.description}</p>
                             <div className='modal-project-button'>
-                                <a href={selectedProject.github} target="_blank" rel="noopener noreferrer" className="github-link">
+                                <a aria-label='Lien vers le repository GitHub du projet' href={selectedProject.github} target="_blank" rel="noopener noreferrer" className="github-link">
                                     <FontAwesomeIcon icon={faSquareGithub} />
                                 </a>
-                                <button className='see-more' onClick={() => setShowMore(true)}>Voir plus</button>
+                                <button aria-label='Bouton pour voir plus de détails sur le projet' className='see-more' onClick={() => setShowMore(true)}>Voir plus</button>
                             </div>
-                            <button className="close-button" onClick={() => setSelectedProject(null)}>X</button>
+                            <button aria-label='Bouton pour fermer la boite modale' className="close-button" onClick={() => setSelectedProject(null)}>X</button>
                         </div>
                     </div>
                 )

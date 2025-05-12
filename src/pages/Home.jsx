@@ -2,6 +2,8 @@ import { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
+import { Helmet } from 'react-helmet';
+
 import TitleText from '../components/HomeComponents.jsx';
 import { AboutMe } from '../components/HomeComponents.jsx';
 
@@ -33,6 +35,12 @@ function Home({ darkMode, toggleTheme }) {
 
     return (
         <div className='home'>
+
+            <Helmet>
+                <title>Page d'accueil - Portfolio</title>
+                <meta name="description" content="Bienvenue sur la page d'accueil de mon premier portfolio de développeur..." />
+            </Helmet>
+
             <section className='home__intro'>
                 <div className='home__intro-title'>
                     <div className='home__title-container'>
@@ -51,10 +59,10 @@ function Home({ darkMode, toggleTheme }) {
                     </div>
 
                     <div className='home__title-buttons'>
-                        <Link className='title__button-cv' to='/cv'>
+                        <Link aria-label='Lien vers la page CV' className='title__button-cv' to='/cv'>
                             Voir le CV
                         </Link>
-                        <Link className='title__button-message' to='/contact'>
+                        <Link aria-label='Lien vers la page Contact' className='title__button-message' to='/contact'>
                             Échangeons
                         </Link>
                     </div>
