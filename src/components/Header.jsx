@@ -7,7 +7,6 @@ function Header() {
     const [showHeader, setShowHeader] = useState(false);
 
     useEffect(() => {
-        // Lance l'animation 50ms après le montage
         const timeout = setTimeout(() => {
             setShowHeader(true);
         }, 50);
@@ -24,7 +23,6 @@ function Header() {
                 aboutSection.scrollIntoView({ behavior: 'smooth' });
             }
         }
-
     };
 
     return (

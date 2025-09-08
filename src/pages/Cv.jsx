@@ -6,6 +6,7 @@ import certifications from '../assets/certifications.json';
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 
+
 function Cv() {
     const [selectedCertif, setSelectedCertif] = useState(null);
 
@@ -16,7 +17,6 @@ function Cv() {
             document.body.style.overflow = 'auto';
         }
 
-        // Clean-up au démontage
         return () => {
             document.body.style.overflow = 'auto';
         };
@@ -31,12 +31,12 @@ function Cv() {
 
             <Helmet>
                 <title>Page du CV – Portfolio</title>
-                <meta name="description" content="Bienvenue sur ma page CV. Vous y trouverez en détails les formations que j'ai suivies, résumant ainsi mon parcours universitaire..." />
+                <meta name='description' content="Bienvenue sur ma page CV. Vous y trouverez en détails les formations que j'ai suivies, résumant ainsi mon parcours universitaire..." />
             </Helmet>
 
-            <section className="cv__intro">
-                <div className="cv__intro__">
-                    <div className="cv__intro-title">
+            <section className='cv__intro'>
+                <div className='cv__intro__'>
+                    <div className='cv__intro-title'>
                         <TitleCurriculum />
                         <a aria-label='Lien pour télécharger mon CV' href={`${import.meta.env.BASE_URL}files/cv.pdf`} download>Télécharger</a>
                     </div>
@@ -44,30 +44,45 @@ function Cv() {
             </section>
 
             <section className='cv__school'>
+                <div className='cv__school__university-and-job'>
+                    <div className='cv__school-university'>
+                        <h2>MON PARCOURS ACADÉMIQUE</h2>
+                        <p><span style={{ fontWeight: '900' }}>2022-2024 : </span>Université Jean Moulin (Lyon 3) <br /> ••• Validation d'une Licence de Philosophie</p>
+                        <p><span style={{ fontWeight: '900' }}>2021-2022 : </span>Lycée Édouard Hérriot (Lyon 6) <br /> ••• Première année de prépa littéraire (Hypokhâgne)</p>
+                        <p><span style={{ fontWeight: '900' }}>2021 : </span>Lycée Jérémie de la Rue (Charlieu) <br /> ••• Obtention du Bacalauréat avec options Maths et HGGSP</p>              
+                    </div>
+                    <div className='cv__school-jobs'>
+                        <h2>MES EXPÉRIENCES PROFESSIONNELLES</h2>
+                        <p>Service, ménage et plonge dans une auberge (depuis 2021)</p>
+                        <p>Travail dans la commune de mon village : <br /> 
+                            <span style={{ color: 'transparent' }}>.... ....</span>- Au service espaces verts <br />
+                            <span style={{ color: 'transparent' }}>.... ....</span>- Au service administratif de la Mairie <br />
+                            <span style={{ color: 'transparent' }}>.... ....</span>- Dans une résidance autonomie pour séniors </p>
+                        <p>Représenations musicales lors de diverses manifestations</p>
+                    </div>
+                </div>
+
                 <div className='cv__school-openclassrooms'>
                     <h2>MON PARCOURS OPENCLASSROOMS (2025)</h2>
                     <div className='cv__openclassrooms-title'>
-                        <p>Formation "Développeur Web"</p>
+                        <p>FORMATION "Développeur Web"</p>
                         <a aria-label='Lien pour télécharger le programme de la formation Openclassrooms Développeur Web' href={`${import.meta.env.BASE_URL}files/programme-openclassrooms.pdf`} download>
                             Voir le programme
                         </a>
                     </div>
-                    <div className='cv__openclassrooms-projects'>
-                        {projectsDatas.map((project, index) => (
-                            <ProjectCard
-                                key={project.id}
-                                id={project.id}
-                                title={project.title}
-                                objectives={project.objectives}
-                                isLeft={index % 2 === 0}
-                            />
-                        ))}
-                    </div>
 
+                    <p className='cv__openclassrooms-justification'>
+                        J’ai découvert le développement web pendant ma deuxième année de licence de philosophie, à un moment où je cherchais une voie plus concrète, technique et stimulante. 
+                        J’ai commencé par apprendre le HTML et le CSS en autodidacte, en suivant des tutoriels en ligne, et j’ai tout de suite accroché à cette logique de création, 
+                        mêlant rigueur et autonomie. Après avoir exploré plusieurs pistes et assisté à des salons étudiants, j’ai choisi la formation accélérée d’OpenClassrooms, parfaitement adaptée à mon rythme 
+                        de travail et à ma capacité à apprendre de façon autonome. Cette réorientation n’a rien d’un hasard : c’est le résultat d’un cheminement construit, guidé par l’envie d’exercer un métier concret, 
+                        évolutif et porteur de sens.
+                    </p>
 
                     <p className='cv__openclassrooms-certifications'>Certifications Openclassrooms</p>
                     <div className='cv__certifications-wrapper'>
                         <div className='certifications-wrapper-round left'></div>  {/* Rond gauche fixe */}
+                        
                         <div className='certifications-scroll'>
                             {certifications.map((certif) => (
                                 <CertificationCard
@@ -78,78 +93,20 @@ function Cv() {
                                 />
                             ))}
                         </div>
+                        
                         <div className="certifications-wrapper-round right"></div>  {/* Rond droit fixe */}
                     </div>
-                </div>
 
-                <div className='cv__school-university'>
-                    <div className='cv__university-title'>
-                        <h2>MON PARCOURS UNIVERSITAIRE</h2>
-                        <p>Licence de Philosophie</p>
-                    </div>
-
-                    <div className='cv__university-years'>
-                        <h3 className='university__first-year'>2021-2022 : Première année d'Hypokhâgne<br /> (en école préparatoire)</h3>
-                        <ul>
-                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Histoire</li>
-                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Géographie</span></li>
-                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Français</li>
-                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Littérature</span></li>
-                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Latin (en LV2)</li>
-                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Anglais et Espagnol (en LV3)</span></li>
-                        </ul>
-
-                        <h3 className='university__second-year'>2022-2023 : Deuxième année de licence Philosophie (en faculté)</h3>
-                        <p className='university__semestry'>SEMESTRE 1</p>
-                        <ul>
-                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Esthétique</li>
-                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Métaphysique</span></li>
-                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Philosophie contemporaine</li>
-                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Philosophie des sciences et épistémologiue</span></li>
-                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Philosophie moderne</li>
-                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Philosophie morale et politique</span></li>
-                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Latin (en option)</li>
-                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Anglais (en LV2) et Espagnol (en LV3)</span></li>
-                        </ul>
-
-                        <p className='university__semestry'>SEMESTRE 2</p>
-                        <ul>
-                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Philosophie du droit</li>
-                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Métaphysique</span></li>
-                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Philosophie des sciences humaines et sociales</li>
-                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Philosophie des sciences et épistémologiue</span></li>
-                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Philosophie moderne</li>
-                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Logique</span></li>
-                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Latin (en option)</li>
-                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Anglais (en LV2) et Espagnol (en LV3)</span></li>
-                        </ul>
-
-                        <h3 className='university__third-year'>2023-2024 : Troisième année de licence Philosophie (en faculté)</h3>
-                        <p className='university__semestry'>SEMESTRE 1</p>
-                        <ul>
-                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Logique</li>
-                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Métaphysique</span></li>
-                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Philosophie moderne et contemporaine</li>
-                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Philosophie des sciences et épistémologiue</span></li>
-                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Philosophie morale et politique</li>
-                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Philosophie ancienn</span></li>
-                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Latin (en option)</li>
-                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Anglais (en LV2) et Espagnol (en LV3)</span></li>
-                        </ul>
-
-                        <p className='university__semestry'>SEMESTRE 2</p>
-                        <ul>
-                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Logique</li>
-                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Métaphysique</span></li>
-                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Philosophie ancienne et médiévale</li>
-                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Philosophie contemporaine</span></li>
-                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Philosophie moderne et contemporaine</li>
-                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Philosophie de l'art</span></li>
-                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Philosophie des sciences et épistémologiue</li>
-                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Philosophie politique</span></li>
-                            <li className='university__courses-list'><span className='arrow-university-none'>════════════════════►</span> Latin (en option)</li>
-                            <li className='university__courses-list'><span className='arrow-university'><span className='arrow-university-none'>════════════════════►</span> Anglais (en LV2) et Espagnol (en LV3)</span></li>
-                        </ul>
+                    <p className='cv__openclassrooms-projects'>Projets Openclassrooms</p>
+                    <div className='cv__openclassrooms-projects-infos'>
+                        {projectsDatas.map((project) => (
+                            <ProjectCard
+                                key={project.id}
+                                id={project.id}
+                                title={project.title}
+                                objectives={project.objectives}
+                            />
+                        ))}
                     </div>
                 </div>
             </section>
@@ -164,7 +121,7 @@ function Cv() {
                     </div>
                 </div>
             )}
-        </div >
+        </div>
     );
 }
 

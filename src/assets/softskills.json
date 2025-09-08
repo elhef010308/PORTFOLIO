@@ -2,147 +2,150 @@
     {
         "id": "html",
         "title": "HTML",
-        "src": "/images/logoSoftkills/logo-html.jpg",
+        "src": "images/logoSoftkills/logo-html.jpg",
         "alt": "logo du HTML",
-        "level": "95%"
+        "level": "85%"
     },
     {
         "id": "css",
         "title": "CSS",
-        "src": "/images/logoSoftkills/logo-css.jpg",
+        "src": "images/logoSoftkills/logo-css.jpg",
         "alt": "logo du CSS",
-        "level": "95%"
+        "level": "80%"
     },
     {
         "id": "sass",
         "title": "SASS",
-        "src": "/images/logoSoftkills/logo-sass.png",
+        "src": "images/logoSoftkills/logo-sass.png",
         "alt": "logo du SASS",
-        "level": "95%"
+        "level": "100%"
     },
     {
         "id": "javascript",
         "title": "JAVASCRIPT",
-        "src": "/images/logoSoftkills/logo-js.png",
+        "src": "images/logoSoftkills/logo-js.png",
         "alt": "logo du JavaScript",
-        "level": "75%"
+        "level": "40%"
     },
     {
         "id": "json",
         "title": "JSON",
-        "src": "/images/logoSoftkills/logo-json.png",
+        "src": "images/logoSoftkills/logo-json.png",
         "alt": "logo du JSON",
-        "level": "65%"
+        "level": "60%"
     },
     {
         "id": "react",
         "title": "REACT",
-        "src": "/images/logoSoftkills/logo-react.png",
+        "src": "images/logoSoftkills/logo-react.png",
         "alt": "logo de React",
         "level": "65%"
     },
     {
         "id": "react-native",
         "title": "REACT NATIVE",
-        "src": "/images/logoSoftkills/logo-react-native.png",
+        "src": "images/logoSoftkills/logo-react-native.png",
         "alt": "logo de React Native",
         "level": "65%"
     },
     {
         "id": "nodejs",
         "title": "NODE.JS",
-        "src": "/images/logoSoftkills/logo-nodejs.png",
+        "src": "images/logoSoftkills/logo-nodejs.png",
         "alt": "logo de Node.js",
-        "level": "65%"
+        "level": "30%"
     },
     {
         "id": "express",
         "title": "EXPRESS",
-        "src": "/images/logoSoftkills/logo-express.png",
+        "src": "images/logoSoftkills/logo-express.png",
         "alt": "logo d'Express",
-        "level": "60%"
+        "level": "40%",
+        "enabled": false
     },
     {
         "id": "eslint",
         "title": "ES LINT",
-        "src": "/images/logoSoftkills/logo-eslint.png",
+        "src": "images/logoSoftkills/logo-eslint.png",
         "alt": "logo de ESLint",
-        "level": "100%"
+        "level": "80%",
+        "enabled": false
     },
     {
         "id": "prettier",
         "title": "PRETTIER",
-        "src": "/images/logoSoftkills/logo-prettier.png",
+        "src": "images/logoSoftkills/logo-prettier.png",
         "alt": "logo de Prettier",
-        "level": "100%"
+        "level": "100%",
+        "enabled": false
     },
     {
         "id": "postman",
         "title": "POSTMAN",
-        "src": "/images/logoSoftkills/logo-postman.png",
+        "src": "images/logoSoftkills/logo-postman.png",
         "alt": "logo de Postman",
-        "level": "60%"
+        "level": "70%"
     },
     {
         "id": "vite",
         "title": "VITE",
-        "src": "/images/logoSoftkills/logo-vite.jpg",
+        "src": "images/logoSoftkills/logo-vite.jpg",
         "alt": "logo de Vite",
-        "level": "100%"
+        "level": "70%"
     },
     {
         "id": "mongodb",
         "title": "MONGO DB",
-        "src": "/images/logoSoftkills/logo-mongodb.png",
+        "src": "images/logoSoftkills/logo-mongodb.png",
         "alt": "logo de MongoDB",
-        "level": "60%"
+        "level": "40%"
     },
     {
         "id": "mongoose",
         "title": "MONGOOSE",
-        "src": "/images/logoSoftkills/logo-mongoose.png",
+        "src": "images/logoSoftkills/logo-mongoose.png",
         "alt": "logo de Mongoose",
-        "level": "70%"
+        "level": "40%"
     },
     {
         "id": "figma",
         "title": "FIGMA",
-        "src": "/images/logoSoftkills/logo-figma.png",
+        "src": "images/logoSoftkills/logo-figma.png",
         "alt": "logo de figma",
-        "level": "65%"
+        "level": "50%"
     },
     {
         "id": "vscode",
         "title": "VS CODE",
-        "src": "/images/logoSoftkills/logo-vscode.png",
+        "src": "images/logoSoftkills/logo-vscode.png",
         "alt": "logo de VS Code",
         "level": "90%"
     },
     {
         "id": "responsif design",
         "title": "RESPONSIF",
-        "src": "/images/logoSoftkills/logo-responsif.png",
+        "src": "images/logoSoftkills/logo-responsif.png",
         "alt": "logo du responsif design",
-        "level": "90%"
+        "level": "80%"
     },
     {
         "id": "référencement SEO",
         "title": "SEO",
-        "src": "/images/logoSoftkills/logo-seo.png",
+        "src": "images/logoSoftkills/logo-seo.png",
         "alt": "logo du référencement SEO",
-        "level": "60%"
+        "level": "50%"
     },
     {
         "id": "méthode agile/scrum",
         "title": "SCRUM",
-        "src": "/images/logoSoftkills/logo-agile.png",
+        "src": "images/logoSoftkills/logo-agile.png",
         "alt": "logo de la méthode agile",
-        "level": "80%"
+        "level": "70%"
     },
     {
         "id": "pack office",
         "title": "PACK OFFICE",
-        "src": "/images/logoSoftkills/logo-office.png",
+        "src": "images/logoSoftkills/logo-office.png",
         "alt": "logo du pack office",
         "level": "100%"
     }

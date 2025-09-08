@@ -1,17 +1,30 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 import { Helmet } from 'react-helmet';
 
 import TitleText from '../components/HomeComponents.jsx';
-import { AboutMe } from '../components/HomeComponents.jsx';
-
-
+import { AboutMe, ModalHome } from '../components/HomeComponents.jsx';
 
 function Home({ darkMode, toggleTheme }) {
     const location = useLocation();
     const navigate = useNavigate();
+
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+
+    useEffect(() => {
+        const hasSeenModal = sessionStorage.getItem('hasSeenModal');
+
+        if (!hasSeenModal) {
+            setModalIsOpen(true);
+            sessionStorage.setItem('hasSeenModal', 'true');
+        }
+    }, []);
+
+    const handleModalClose = () => {
+        setModalIsOpen(false);
+    };
 
     useEffect(() => {
         if (location.state?.scrollTo === 'about') {
@@ -20,8 +33,6 @@ function Home({ darkMode, toggleTheme }) {
                     const target = document.getElementById('about-me');
                     if (target) {
                         target.scrollIntoView({ behavior: 'smooth' });
-
-                        // Nettoyer le state pour ne pas re-scroller après
                         navigate(location.pathname, { replace: true, state: {} });
                     }
                 }, 0);
@@ -40,6 +51,8 @@ function Home({ darkMode, toggleTheme }) {
                 <title>Page d'accueil - Portfolio</title>
                 <meta name="description" content="Bienvenue sur la page d'accueil de mon premier portfolio de développeur..." />
             </Helmet>
+
+            {modalIsOpen && <ModalHome onClose={handleModalClose} />}
 
             <section className='home__intro'>
                 <div className='home__intro-title'>

@@ -1,134 +1,134 @@
 [
     { 
         "id": 1, 
-        "preview": "/images/certif-1.png",  
-        "full": "/images/webP/certificat-1.webp",
+        "preview": "images/certif-1.png",  
+        "full": "images/webP/certificat-1.webp",
         "alt": "Certification 1"
     },
     { 
         "id": 2, 
-        "preview": "/images/certif-2.png",  
-        "full": "/images/webP/certificat-2.webp",
+        "preview": "images/certif-2.png",  
+        "full": "images/webP/certificat-2.webp",
         "alt": "Certification 2"
     },
     { 
         "id": 3, 
-        "preview": "/images/certif-3.png",  
-        "full": "/images/webP/certificat-3.webp",
+        "preview": "images/certif-3.png",  
+        "full": "images/webP/certificat-3.webp",
         "alt": "Certification 3"
     },
     { 
         "id": 4, 
-        "preview": "/images/certif-4.png",  
-        "full": "/images/webP/certificat-4.webp",
+        "preview": "images/certif-4.png",  
+        "full": "images/webP/certificat-4.webp",
         "alt": "Certification 4"
     },
     { 
         "id": 5, 
-        "preview": "/images/certif-5.png",  
-        "full": "/images/webP/certificat-5.webp",
+        "preview": "images/certif-5.png",  
+        "full": "images/webP/certificat-5.webp",
         "alt": "Certification 5"
     },
     { 
         "id": 6, 
-        "preview": "/images/certif-6.png",  
-        "full": "/images/webP/certificat-6.webp",
+        "preview": "images/certif-6.png",  
+        "full": "images/webP/certificat-6.webp",
         "alt": "Certification 6"
     },
     { 
         "id": 7, 
-        "preview": "/images/certif-7.png",  
-        "full": "/images/webP/certificat-7.webp",
+        "preview": "images/certif-7.png",  
+        "full": "images/webP/certificat-7.webp",
         "alt": "Certification 7"
     },
     { 
         "id": 8, 
-        "preview": "/images/certif-8.png",  
-        "full": "/images/webP/certificat-8.webp",
+        "preview": "images/certif-8.png",  
+        "full": "images/webP/certificat-8.webp",
         "alt": "Certification 8"
     },
     { 
         "id": 9, 
-        "preview": "/images/certif-9.png",  
-        "full": "/images/webP/certificat-9.webp",
+        "preview": "images/certif-9.png",  
+        "full": "images/webP/certificat-9.webp",
         "alt": "Certification 9"
     },
     { 
         "id": 10, 
-        "preview": "/images/certif-10.png",  
-        "full": "/images/webP/certificat-10.webp",
+        "preview": "images/certif-10.png",  
+        "full": "images/webP/certificat-10.webp",
         "alt": "Certification 10"
     },
     { 
         "id": 11, 
-        "preview": "/images/certif-11.png",  
-        "full": "/images/webP/certificat-11.webp",
+        "preview": "images/certif-11.png",  
+        "full": "images/webP/certificat-11.webp",
         "alt": "Certification 11"
     },
     { 
         "id": 12, 
-        "preview": "/images/certif-12.png",  
-        "full": "/images/webP/certificat-12.webp",
+        "preview": "images/certif-12.png",  
+        "full": "images/webP/certificat-12.webp",
         "alt": "Certification 12"
     },
     { 
         "id": 13, 
-       "preview": "/images/certif-13.png",  
-        "full": "/images/webP/certificat-13.webp",
+       "preview": "images/certif-13.png",  
+        "full": "images/webP/certificat-13.webp",
         "alt": "Certification 13"
     },
     { 
         "id": 14, 
-        "preview": "/images/certif-14.png",  
-        "full": "/images/webP/certificat-14.webp",
+        "preview": "images/certif-14.png",  
+        "full": "images/webP/certificat-14.webp",
         "alt": "Certification 14"
     },
     { 
         "id": 15, 
-        "preview": "/images/certif-15.png",  
-        "full": "/images/webP/certificat-15.webp",
+        "preview": "images/certif-15.png",  
+        "full": "images/webP/certificat-15.webp",
         "alt": "Certification 15"
     },
     { 
         "id": 16, 
-        "preview": "/images/certif-16.png",  
-        "full": "/images/webP/certificat-16.webp",
+        "preview": "images/certif-16.png",  
+        "full": "images/webP/certificat-16.webp",
         "alt": "Certification 16"
     },
     { 
         "id": 17, 
-        "preview": "/images/certif-17.png",  
-        "full": "/images/webP/certificat-17.webp",
+        "preview": "images/certif-17.png",  
+        "full": "images/webP/certificat-17.webp",
         "alt": "Certification 17"
     },
     { 
         "id": 18, 
-        "preview": "/images/certif-18.png",  
-        "full": "/images/webP/certificat-18.webp",
+        "preview": "images/certif-18.png",  
+        "full": "images/webP/certificat-18.webp",
         "alt": "Certification 18"
     },
     { 
         "id": 19, 
-        "preview": "/images/certif-19.png",  
-        "full": "/images/webP/certificat-19.webp",
+        "preview": "images/certif-19.png",  
+        "full": "images/webP/certificat-19.webp",
         "alt": "Certification 19"
     },
     { 
         "id": 20, 
-        "preview": "/images/certif-20.png",  
-        "full": "/images/webP/certificat-20.webp",
+        "preview": "images/certif-20.png",  
+        "full": "images/webP/certificat-20.webp",
         "alt": "Certification 20"
     },
     { 
         "id": 21, 
-        "preview": "/images/certif-21.png",  
-        "full": "/images/webP/certificat-21.webp",
+        "preview": "images/certif-21.png",  
+        "full": "images/webP/certificat-21.webp",
         "alt": "Certification 21"
     },
     { 
         "id": 22, 
-        "preview": "/images/certif-22.png",  
-        "full": "/images/webP/certificat-22.webp",
+        "preview": "images/certif-22.png",  
+        "full": "images/webP/certificat-22.webp",
         "alt": "Certification 22"
     }
 ]

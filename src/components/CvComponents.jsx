@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import AnimatedTitle from './AnimatedTitle.jsx';
 
 // COMPOSANT DES PROJETS DU CV
-export function ProjectCard({ id, title, objectives, isLeft }) {
+export function ProjectCard({ id, title, objectives }) {
     const navigate = useNavigate();
 
     const handleViewClick = () => {
@@ -11,21 +11,19 @@ export function ProjectCard({ id, title, objectives, isLeft }) {
 
 
     return (
-        <div className={`cv-openclassrooms__projects ${isLeft ? 'left' : 'right'}`}>
-            <div className={`cv-openclassrooms__projects-title ${isLeft ? 'left' : 'right'}`}>
+        <div className="cv-openclassrooms__projects">
+            <div className="cv-openclassrooms__projects-title">
                 <button onClick={handleViewClick}>VOIR</button>
-                <p>
-                    {isLeft
-                        ? `PROJET ${id} : ${title}`
-                        : `${title} : ${id} PROJET`}
-                </p>
+                <p>{`PROJET ${id} : ${title}`}</p>
             </div>
-            <p className={`cv-openclassrooms__projects-competences ${isLeft ? 'left' : 'right'}`}>
-                Compétences à développer
+
+            <p className="cv-openclassrooms__projects-competences">
+                Compétences à développer : 
             </p>
+            
             <ul>
                 {objectives.map((objective, index) => (
-                    <li key={index}>{objective}</li>
+                    <li key={index}>---► {objective}</li>
                 ))}
             </ul>
         </div>
@@ -36,7 +34,7 @@ export function ProjectCard({ id, title, objectives, isLeft }) {
 export function CertificationCard({ src, alt, onClick }) {
     return (
         <div className='cv-certification__card' onClick={onClick}>
-            <img src={src} alt={alt} loading="lazy"/>
+            <img src={src} alt={alt} loading="lazy" />
         </div>
     );
 }

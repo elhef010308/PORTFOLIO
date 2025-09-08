@@ -18,18 +18,18 @@ export function ProjectsPage({ src, alt, id, title, description, github, onClick
     return (
         <div className={`projects__cards-card ${size}`}>
             <div className='projects-card__image'>
-                <button className='projects-card__button left' onClick={handlePrev}>←</button>
+                <button type="button" className='projects-card__button left' onClick={handlePrev}>←</button>
 
                 <img
                     src={src[currentIndex]}
                     alt={alt?.[currentIndex] || ""}
                 />
 
-                <button className='projects-card__button right' onClick={handleNext}>→</button>
+                <button  type="button" className='projects-card__button right' onClick={handleNext}>→</button>
             </div>
             <p className='projects-card__id'>PROJET {id}</p>
             <p className='projects-card__title'>{title}</p>
-            <button className='projects-card__details-button' onClick={onClick}>Voir la description</button>
+            <button type="button" className='projects-card__details-button' onClick={onClick}>Voir la description</button>
         </div>
     );
 }

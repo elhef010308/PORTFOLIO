@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "num": 1,
         "title": "Démarrez votre formation de Développeur web",
         "objectives": [
             "Définir son objectif professionnel",
@@ -9,9 +10,9 @@
             "Confirmer les outils de collaboration avec son mentor"
         ],
         "src": [
-            "/images/webP/projet-1-first.webp",
-            "/images/webP/projet-1-second.webp",
-            "/images/webP/projet-1-third.webp"
+            "images/webP/projet-1-first.webp",
+            "images/webP/projet-1-second.webp",
+            "images/webP/projet-1-third.webp"
         ],
         "alt": [
             "Aperçu du projet 1",
@@ -24,6 +25,7 @@
     },
     {
         "id": 2,
+        "num": 2,
         "title": "Créez la page d'accueil d'une agence de voyage (HTML & CSS)",
         "objectives": [
             "Implémenter une interface responsive avec HTML et CSS",
@@ -32,8 +34,8 @@
             "Installer un environnement de développement Frontend"
         ],
         "src": [
-            "/images/webP/projet-2-first.webp",
-            "/images/webP/projet-2-second.webp"
+            "images/webP/projet-2-first.webp",
+            "images/webP/projet-2-second.webp"
         ],
         "alt": [
             "Aperçu du projet 2",
@@ -46,6 +48,7 @@
     },
     {
         "id": 3,
+        "num": 3,
         "title": "Créez une page web dynamique avec Javascript",
         "objectives": [
             "Récupérer les données utilisateurs dans le Javascript via des formulaires",
@@ -53,8 +56,8 @@
             "Manipuler les éléments du DOM avec Javascript"
         ],
         "src": [
-            "/images/webP/projet-3-first.webp",
-            "/images/webP/projet-3-second.webp"
+            "images/webP/projet-3-first.webp",
+            "images/webP/projet-3-second.webp"
         ],
         "alt": [
             "Aperçu du projet 3",
@@ -67,6 +70,7 @@
     },
     {
         "id": 4,
+        "num": 4,
         "title": "Débuggez et optimisez un site de photographe",
         "objectives": [
             "Optimiser les performances d'un site web",
@@ -74,8 +78,8 @@
             "Rédiger un cahier de recette pour tester un site"
         ],
         "src": [
-            "/images/webP/projet-4-first.webp",
-            "/images/webP/projet-4-second.webp"
+            "images/webP/projet-4-first.webp",
+            "images/webP/projet-4-second.webp"
         ],
         "alt": [
             "Aperçu du projet 4",
@@ -88,17 +92,18 @@
     },
     {
         "id": 5,
+        "num": "🔑",
         "title": "Créez une application web de location immobilière avec React",
         "objectives": [
             "Initialiser une application avec Create React App",
-            "Configurer la navigation entre les pages de l'application avec React Router",
+            "Configurer la navigation entre les pages de l'appli avec React Router",
             "Développer des éléments de l'interface d'un site web grâce à des composants React",
             "Mettre en oeuvre des animations CSS",
             "Développer une interface web avec Sass"
         ],
         "src": [
-            "/images/webP/projet-5-first.webp",
-            "/images/webP/projet-5-second.webp"
+            "images/webP/projet-5-first.webp",
+            "images/webP/projet-5-second.webp"
         ],
         "alt": [
             "Aperçu du projet 5",
@@ -111,6 +116,7 @@
     },
     {
         "id": 6,
+        "num": 6,
         "title": "Développez le Backend d'un site de notation de livres",
         "objectives": [
             "Implémenter une modèle logique de données conformément à la règlementation",
@@ -118,8 +124,8 @@
             "Stocker des données de manière sécurisée"
         ],
         "src": [
-            "/images/webP/projet-6-first.webp",
-            "/images/webP/projet-6-second.webp"
+            "images/webP/projet-6-first.webp",
+            "images/webP/projet-6-second.webp"
         ],
         "alt": [
             "Aperçu du projet 6",
@@ -132,6 +138,7 @@
     },
     {
         "id": 7,
+        "num": 7,
         "title": "Planifiez le déveeloppement d'un site de votre client",
         "objectives": [
             "Découper une fonctionnalité en tâche pour préparer le développement",
@@ -141,11 +148,11 @@
             "Suivre le déroulement du projet grâce à un outil de gestion de projet"
         ],
         "src": [
-            "/images/webP/projet-7-first.webp",
-            "/images/webP/projet-7-second.webp",
-            "/images/webP/projet-7-third.webp",
-            "/images/webP/projet-7-fourth.webp",
-            "/images/webP/projet-7-fiveth.webp"
+            "images/webP/projet-7-first.webp",
+            "images/webP/projet-7-second.webp",
+            "images/webP/projet-7-third.webp",
+            "images/webP/projet-7-fourth.webp",
+            "images/webP/projet-7-fiveth.webp"
         ],
         "alt": [
             "Aperçu du projet 7",
@@ -161,6 +168,7 @@
     },
     {
         "id": 8,
+        "num": 8,
         "title": "Créez et publiez votre portfolio de développeur",
         "objectives": [
             "Déployer un site statique en ligne",
@@ -168,7 +176,7 @@
             "Clarifier son objectif d'embauche"
         ],
         "src": [
-            "/images/webP/projet-8-first.webp"
+            "images/webP/projet-8-first.webp"
         ],
         "alt": [
             "Aperçu du projet 8"

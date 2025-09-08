@@ -139,6 +139,66 @@
 }
 
 
+// COMPOSANT BOITE MODALE AFFICHÉE A L'OUVERTURE DU PORTFOLIO
+.home-first-modal__container {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 50px);
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+
+    .home-first-modal__content {
+        position: relative;
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+        width: 50vw;
+        max-height: 75vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        .home-first-modal__title {
+            color: black;
+            font-size: 22px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .home-first-modal__text {
+            margin: 10px 20px;
+            text-align: justify;
+        }
+
+        .home-first-modal__close-button {
+            background-color: var(--color-fourteen);
+            border: black 2px solid;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 18px;
+            color: var(--color-eleven);
+            width: auto;
+            height: 40px;
+            padding: 5px;
+            margin: 10px 20px 20px 20px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: var(--color-eleven);
+                color: var(--color-fourteen);
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
 
 // COMPOSANT TITRE PRINCIPAL DE LA PAGE d'ACCUEIL
 #text {
@@ -204,6 +264,7 @@
     }
 }
 
+
 // Petits mobiles (jusqu'à 480px)
 @media (max-width: 480px) {
     .home {
@@ -255,7 +316,7 @@
         }
     }
 
-    
+
     // TITRE PRINCIPAL
     #text {
         font-size: 22px;
@@ -276,6 +337,7 @@
 @media (min-width: 481px) and (max-width: 769px) {
     .home {
         padding-top: 25px;
+
         .home__intro {
             flex-direction: column;
             height: auto;
