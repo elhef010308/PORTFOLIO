@@ -15,7 +15,7 @@ function Router({ darkMode, toggleTheme }) {
       <Route path="/contact" element={<Layout><Contact /></Layout>} />
       <Route path="/projects" element={<Layout><Projects /></Layout>} />
       <Route path="*" element={<NoFound />} />
-      <Route path="/secret" element={<SecretPage />} />
+      {/*<Route path="/secret" element={<SecretPage />} />*/}
     </Routes>
   );
 }
