@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import AnimatedTitle from './AnimatedTitle.jsx';
+import { memo } from 'react';
 
 // COMPOSANT DES PROJETS DU CV
 export function ProjectCard({ id, title, objectives }) {
@@ -40,6 +41,6 @@ export function CertificationCard({ src, alt, onClick }) {
 }
 
 // COMPOSANT POUR LE TITRE "CURRICULUM VITAE"
-export function TitleCurriculum() {
+export const TitleCurriculum = memo(function TitleCurriculum() {
     return <AnimatedTitle text={['Curriculum', 'vitae']} id="text-curriculum" />;
-}
+});

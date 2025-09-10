@@ -1,5 +1,6 @@
 .contact {
-    height: auto;
+    position: relative; // nécessaire pour borner le voile
+    isolation: isolate; // isole les z-index internes
     width: 100%;
     max-width: 1440px;
     padding-top: 130px;
@@ -9,24 +10,7 @@
     align-items: center;
     justify-content: center;
     background-color: var(--color-fourteen);
-
-    .contact_info-message {
-        position: fixed;  /* ou absolute selon ton besoin */
-        top: 50%;  /* à 50px du haut */
-        left: 50%;  /* centré horizontalement */
-        transform: translateX(-50%);
-
-        display: flex;
-        font-style: italic;
-        font-size: 20px;
-        font-weight: 900;
-        color: black;
-        border: 2px solid black;
-        padding: 5px;
-
-        background-color: white;  /* petit fond pour la lisibilité */
-        z-index: 3;
-    }
+    overscroll-behavior: contain; // évite l'élasticité du body
 
     h2 {
         color: var(--color-sixteen);
@@ -81,16 +65,38 @@
     }
 }
 
-.contact::after {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(115, 111, 111, 0.585); 
-    z-index: 2;
-    pointer-events: none;  /* optionnel : laisse passer les clics */
+/* ==================== WIP (en travaux) ==================== */
+/* Lorsque la page sera prête :
+   1) supprimer TOUT le bloc .contact--wip ci-dessous
+   2) enlever la classe "contact--wip" dans le JSX
+   3) supprimer aussi l’élément <p class="contact_info-message"> dans le JSX
+*/
+
+.contact--wip {
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(115, 111, 111, 0.585);
+        z-index: 2;
+        pointer-events: all; // bloquer les clics dans le formulaire
+    }
+
+    .contact_info-message {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        font-style: italic;
+        font-size: 20px;
+        font-weight: 900;
+        color: black;
+        border: 2px solid black;
+        padding: 5px;
+        background-color: white;
+        z-index: 3;
+    }
 }
 
 // Petits mobiles (jusqu'à 480px)
@@ -151,7 +157,7 @@
 @media (min-width: 770px) and (max-width: 1025px) {
     .contact {
         min-height: 500px;
-        
+
         .contact_info-message {
             font-size: 15px;
         }

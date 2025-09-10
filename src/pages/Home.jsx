@@ -131,9 +131,10 @@ function Home({ darkMode, toggleTheme }) {
                     <div className="container-3">
                         <div className='home__school-content three'>
                             <div className='home__school__content-infos'>
-                                <h3>My Digital School</h3>
-                                <p>Dernière année en alternance de bachelor
-                                    "Développeur web et mobile" (à venir)</p>
+                                <h3>Première expérience</h3>
+                                <p>Monter suffisamment en compétences
+                                    pour réussir à trouver mon premier emploi
+                                    en dev</p>
                             </div>
                             <p className='date-3'>2025-2026</p>
                         </div>

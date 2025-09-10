@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, memo } from 'react';
 import AnimatedTitle from './AnimatedTitle.jsx';
 
 export function ProjectsPage({ src, alt, id, title, description, github, onClick, size = 'center' }) {
@@ -25,7 +25,7 @@ export function ProjectsPage({ src, alt, id, title, description, github, onClick
                     alt={alt?.[currentIndex] || ""}
                 />
 
-                <button  type="button" className='projects-card__button right' onClick={handleNext}>→</button>
+                <button type="button" className='projects-card__button right' onClick={handleNext}>→</button>
             </div>
             <p className='projects-card__id'>PROJET {id}</p>
             <p className='projects-card__title'>{title}</p>
@@ -37,6 +37,6 @@ export function ProjectsPage({ src, alt, id, title, description, github, onClick
 
 
 // COMPOSANT POUR LE TITRE PRINCIPAL DE LA PAGE PROJETS
-export function TitleProjectsPage() {
+export const TitleProjectsPage = memo(function TitleProjectsPage() {
     return <AnimatedTitle text={['Ma page des projets']} id="text-page-projets" />;
-}
+});

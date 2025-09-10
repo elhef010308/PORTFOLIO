@@ -1,30 +1,39 @@
 import { Helmet } from 'react-helmet';
+import { useEffect } from 'react';
 
 function Contact() {
-    return (
-        <div className='contact'>
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
+    return (
+        // ⚠️ Quand la page sera prête : simplement SUPPRIMER la classe "contact--wip"
+        <div className='contact contact--wip'>
             <Helmet>
                 <title>Page de contact – Portfolio</title>
                 <meta name="description" content="Bienvenue sur ma pagede contact, où je vous invite à me contacter pour toutes questions, demandes, conseils, etc. " />
             </Helmet>
-            <p className='contact_info-message'>Formulaire de contact en cours de création</p>
+
+            {/* ===== WIP: À SUPPRIMER lorsque la page sera prête ===== */}
+            <p className="contact_info-message">Formulaire de contact en cours de création</p>
+            {/* ===== FIN WIP ===== */}
+
             <h2>Page de contact</h2>
 
             <form action='' method='post'>
-                <label for='nom'>NOM</label><br />
+                <label htmlFor='nom'>NOM</label><br />
                 <input type='text' id='nom' name='nom' required />
                 <br /><br />
 
-                <label for='firstname'>PRÉNOM</label><br />
+                <label htmlFor='firstname'>PRÉNOM</label><br />
                 <input type='text' id='firstname' name='prenom' required />
                 <br /><br />
 
-                <label for='email'>E-MAIL</label><br />
+                <label htmlFor='email'>E-MAIL</label><br />
                 <input type='email' id='email' name='email' required />
                 <br /><br />
 
-                <label for="message">MESSAGE</label><br />
+                <label htmlFor="message">MESSAGE</label><br />
                 <textarea id="message" name="message" rows="5" required></textarea>
                 <br /><br />
 
