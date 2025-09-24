@@ -1,33 +1,56 @@
 import { Link } from 'react-router-dom';
 
 function SecretPage() {
-    // Importe toutes les images d'un dossier précis
-    const importAll = (importFn) => importFn.keys().map(importFn);
-
-    // import.meta.glob permet d'importer dynamiquement
-    // on importe toutes les images du dossier "SecretPage"
-    // "eager: true" signifie : importe immédiatement tous les fichiers au chargement du module
-    const images = Object.values(
-        import.meta.glob('../images/SecretPage/*.webp', { eager: true })
-    );
-
     return (
         <div className='secret-page'>
-            <h1 className='secret-page__title'>Ma gallerie photos</h1>           
+            <section className='secret-page__title'>
+                <h1>MY SOCIAL NETWORK</h1>
+            </section>
 
-            <div className='secret-page__gallery'>
-                {images.map((img, index) => (
-                    <figure key={index}>
-                        <img src={img.default} alt={`image ${index + 1}`} />
-                    </figure>
-                ))}
-            </div>
+            <section className='secret-page__contain'>
+                <div className='secret-page__contain-left'>
+                    <div className='contain-left__profil'>
+                        <img src='' alt='image de profil' aria-label='image de profil' />
+                        <h3 className='contain-left__profil-title'></h3>
+                        <p className='contain-left__profil-description'></p>
+                    </div>
 
-            <div className='secret-page__to-back-home-page'>
-                <Link className='secret-page__button-to-back' to='/'>Revenir à la page d'acceuil</Link>
-            </div>
+                    <div className='contain-left__categories'>
+                        <div>
+                            <div className='contain-left__categories-bloc'></div>
+                            <p className='contain-left__categories-name'>TOUT</p>
+                        </div>
+                        <div>
+                            <div className='contain-left__categories-bloc'></div>
+                            <p className='contain-left__categories-name'>POSTS</p>
+                        </div>
+                        <div>
+                            <div className='contain-left__categories-bloc'></div>
+                            <p className='contain-left__categories-name'>IMAGES</p>
+                        </div>
+                        <div>
+                            <div className='contain-left__categories-bloc'></div>
+                            <p className='contain-left__categories-name'>VEILLE</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div className='secret-page__contain-middle'></div>
+
+
+                <div className='secret-page__contain-right'>
+                    <Link className='contain-right__button-to-back' to='/'>Revenir à la page d'acceuil</Link>
+                </div>
+            
+            </section>
         </div>
     )
 }
 
 export default SecretPage;
+
+
+/*
+🖉⌘▦
+*/
